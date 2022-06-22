@@ -1,0 +1,14 @@
+.first-button{
+    .btn-send{
+      border: 1px solid rgba(0, 36, 84, 0.95);
+      padding:15px 25px;
+      background-color: transparent;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 500;
+      &:hover{
+        color:rgba(0, 36, 84, 0.95);
+      }
+    }
+  }

@@ -1,0 +1,33 @@
+.main-container-px20{
+    max-width: 1160px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:20px;
+    padding-right:20px;
+}
+.main-container{
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+//main-nav
+.front-page-nav{
+    background-color: transparent!important;
+    color:white!important;
+}
+.arrow {
+    border: solid rgba(255,255,255,.5);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    color: rgba(255,255,255,.5);
+    margin-bottom: 2px;
+    margin-left:6px;
+    margin-right:6px;
+  }
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    color: rgba(255,255,255,.5);
+  }

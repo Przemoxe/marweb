@@ -1,0 +1,105 @@
+.nav-top{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index: 30;
+    margin-left:auto;
+    margin-right:auto;
+    transition: .2s;
+    .nav-container{
+        border-bottom: 1px solid rgba(255,255,255,.1);
+        height:$nav-height;
+        display: flex;
+        align-items: center;
+        padding-bottom: 2px;
+        div{
+            a{
+                img{
+                    width:100%;
+                }
+            }
+        }
+        .main-menu{
+            width:100%;
+            #main-menu{
+                display: flex;
+                justify-content: end;
+                .current-menu-item{
+                    a{
+                        color:orange!important;
+                    }
+                }
+                li{
+                    list-style-type: none;
+                    position: relative;
+                    a{
+                        padding-left:20px;
+                        margin-right:20px;
+                        background-color: transparent;
+                        text-decoration: none;
+                        color:white;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-family: Objective,sans-serif;
+                        line-height: 4;
+                        &:hover{
+                            color:orange!important;
+                        }
+                    }
+                    &:last-child{
+                        a{
+                            margin-right:0px;
+                            border-left: 1px solid rgba(255,255,255,.1);
+                        }
+
+                    }
+                    .sub-menu{
+                        display: none;
+                        position: absolute;
+                        background-color: white;
+                        padding: 0;
+                        width: 198px;
+                        li{
+                            border-top: 1px solid rgba(0,0,0,.1);
+                            a{
+                                color:black;
+                                display: flex;
+                                margin: 0;
+                            }
+                        }
+                    }
+                    &:hover{
+                        .sub-menu{
+                            display:block;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+.nav-top-active{
+    background-color: white;
+    color:black!important;
+    transition: .3s;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.nav-top-not-front{
+    background-color: white;
+    transition: .3s;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    .nav-container{
+        .menu{
+            li{
+                a{
+                    color: #212529!important;;
+                }
+            }
+        }
+    }
+}
+.text-black{
+    color: #212529!important;
+}

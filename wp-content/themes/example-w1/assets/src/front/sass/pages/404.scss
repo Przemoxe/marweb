@@ -1,0 +1,76 @@
+.template-404-section {
+  padding: 100px 0 80px 0;
+  .main-container-px20 {
+    .template-404-container {
+      display: flex;
+      .left-navbar {
+        width: 200px;
+        .title {
+          color: #212529;
+          font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          font-weight: 600;
+          font-size: 12px;
+          margin: 0;
+          text-transform: uppercase;
+          &::after {
+            content: "";
+            display: block;
+            width: 2rem;
+            margin: 1rem 0 1.5rem;
+            border-top: 2px solid #f5ba4b;
+          }
+        }
+      }
+      .content-404 {
+        padding-bottom: 40px;
+        width: calc(100% - 300px);
+        h3 {
+          padding: 0 0 20px 0;
+          color: #212529;
+          font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          font-weight: 600;
+          font-size: 18px;
+          margin: 0;
+          span {
+            color: orange;
+          }
+        }
+        p {
+          font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.75;
+          color: #6c757d;
+          margin-top: 0;
+        }
+        .first-button {
+          .btn-send {
+            .right {
+              border-color: #212529;
+              margin-bottom: 1px;
+            }
+          }
+          &:hover {
+            .btn-send {
+              .right {
+                border-color: orange;
+              }
+            }
+          }
+        }
+      }
+      .content-404-image {
+        width: calc(100% - 600px);
+        display: flex;
+        justify-content: center;
+        img {
+          width: 75%;
+          margin-top: -55px;
+        }
+      }
+    }
+  }
+}

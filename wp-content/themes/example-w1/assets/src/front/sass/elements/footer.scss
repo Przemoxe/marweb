@@ -1,0 +1,162 @@
+footer {
+  padding-top: 60px;
+  // background-color: #343a40;
+  background-color: rgba(0, 36, 84, 0.95);
+  .main-container {
+    .footer-widgets-container {
+      display: flex;
+      flex-wrap: wrap;
+      .footer-widgets {
+          width:25%;
+        @media (max-width: 768px) {
+            width: 50%;
+          }
+          @media (max-width: 576px) {
+            width: 100%;
+          }
+        .widget {
+          padding-left: 20px;
+          padding-right: 20px;
+          .widget-title {
+            h6 {
+              text-transform: uppercase;
+              letter-spacing: 2.1px;
+              font-weight: 700;
+              color: #fff;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-size: 9px;
+            }
+          }
+          .textwidget {
+            p {
+              font-family: "Poppins", Arial;
+              font-size: 13px;
+              font-weight: 400;
+              line-height: 1.8;
+              color: #788487;
+            }
+          }
+        }
+        .widget-recent-entries {
+          ul {
+            list-style: none;
+            padding-left: 0;
+            li {
+              padding-top: 12px;
+              padding-bottom: 12px;
+              border-bottom: 1px solid rgba(182, 182, 182, 0.1);
+              &:last-child {
+                border-bottom: 0;
+              }
+              &:first-child {
+                padding-top: 0;
+              }
+              a {
+                font-size: 13px;
+                color: #cecece;
+                transition: all 0.3s ease-in-out;
+                text-decoration: none;
+                cursor: pointer;
+                display: block;
+                font-family: "Poppins", Arial;
+                line-height: 1.8;
+                &:hover {
+                  color: white;
+                }
+              }
+              .post-date {
+                padding-top: 2px;
+                font-size: 11px;
+                color: #a3a6a8;
+                display: block;
+                font-family: "Poppins", Arial;
+                line-height: 1.8;
+              }
+            }
+          }
+        }
+        .widget-menu {
+          .footer-menu {
+            ul {
+              list-style: none;
+              padding: 0;
+              li {
+                color: #cecece;
+
+                a {
+                  display: block;
+                  padding: 7px 0px;
+                  text-decoration: none;
+                  font-size: 13px;
+                  color: #cecece !important;
+                  font-family: "Poppins", Arial;
+                  &:first-child {
+                    padding-top: 4px;
+                  }
+                  &:hover {
+                    color: white !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .widget-recent-works {
+          .container-recent-works {
+            margin: 0 -4px;
+            display: flex;
+            flex-wrap: wrap;
+            .container-card-recent-work {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: calc(100% / 3);
+              height: 75px;
+              .card-recent-work {
+                background-color: black;
+                width: calc(100% - 8px);
+                height: calc(100% - 8px);
+                overflow: hidden;
+                position: relative;
+                a {
+                  position: absolute;
+                  text-decoration: none;
+                  width: 100%;
+                  height: 100%;
+                  transition: 0.2s;
+                  &:hover {
+                    opacity: 0.8;
+                  }
+                  img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .main-container-px20 {
+    border-top: 1px solid rgba(182, 182, 182, 0.1);
+    .copyright {
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        margin: 0;
+        text-align: center;
+        font-size: 8px;
+        font-family: "Poppins", Arial;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.8;
+        color: #788487;
+      }
+    }
+  }
+}

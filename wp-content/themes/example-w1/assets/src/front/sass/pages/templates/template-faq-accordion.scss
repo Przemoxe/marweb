@@ -1,0 +1,88 @@
+.accordion {
+  border-bottom: 1px solid #dee2e6;
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.accordion-header {
+  cursor: pointer;
+  color: #212529;
+  display: flex;
+  align-items: center;
+}
+
+.accordion-header h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: .4;
+}
+.accordion-plus {
+  width: 24px;
+  height: 24px;
+  background: #343a40;
+  &::before {
+    content: "+";
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    margin-right: 1rem;
+    background-color: #343a40;
+    font-weight: 700;
+    color: #fff;
+    -webkit-transition: inherit;
+    transition: inherit;
+  }
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.accordion-body p {
+  line-height: 1.8;
+}
+
+.accordion-icon {
+  transition: transform 0.4s ease-in-out;
+}
+
+.accordion.active .accordion-header {
+  color: orange;
+}
+
+.accordion.active .accordion-plus {
+  background-color: orange;
+  &::before {
+    content: "-";
+    background-color: orange;
+    width: 24px;
+    height: 20px;
+  }
+}
+.accordion {
+  .accordion-header {
+    &:hover {
+      .accordion-plus {
+        &::before {
+          background-color: orange;
+        }
+      }
+      h4 {
+        color: orange;
+      }
+    }
+  }
+}
