@@ -23,7 +23,7 @@
 </head>
 
 <body>
-	<div class=" nav-top <?= !is_front_page() ? 'nav-top-not-front' : '' ?>">
+	<div class="nav-top <?= !is_front_page() ? 'nav-top-not-front' : '' ?>">
 		<div class="main-container-px20 nav-container">
 			<div>
 				<a href="<?= get_home_url() ?>">
@@ -41,9 +41,34 @@
 				'container_class'   => 'main-menu',
 
 				// 'after'             => '</div><button class="more"></button>'
-				
+
 			]);
 			?>
 		</div>
 	</div>
 
+	<div class="nav-top-mobile <?= !is_front_page() ? 'nav-top-not-front-mobile' : '' ?>">
+		<div class="main-container-px20">
+			<div class="nav-mobile">
+				<div class="nav-logo">
+					<a href="<?= get_home_url() ?>">
+						LOGO
+					</a>
+				</div>
+				<div class="nav-hamburger">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div>
+				<div class="nav-lists">
+					<?php
+						wp_nav_menu([
+							'theme_location'    => 'main-menu',
+							'menu_id'        	=> 'mobile-main-menu',
+							'container_class'   => 'mobile-main-menu',
+							// 'after'             => '</div><button class="more"></button>'
+						]);
+					?>
+				</div>
+			</div>
+
+		</div>
+	</div>

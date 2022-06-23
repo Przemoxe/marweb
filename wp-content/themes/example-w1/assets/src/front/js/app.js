@@ -10,7 +10,7 @@ window.$ = jQuery;
 import Navigation from './plugins/Navigation';
 import FaqAccordion from './plugins/FaqAccordion';
 import AutoResizeTextarea from './plugins/AutoResizeTextarea';
-
+import ShowHamburgerMenu from './plugins/ShowHamburgerMenu';
 // import CookieNotice from './plugins/CookieNotice';
 // import StickyMenu from './plugins/StickyMenu';
 // import EqualHeight from './plugins/EqualHeight';
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // schema: new Component().init();
     requestAnimationFrame(() => {
         [
-            Navigation, FaqAccordion, AutoResizeTextarea
+            Navigation, FaqAccordion, AutoResizeTextarea, ShowHamburgerMenu
         ]
     
     });
