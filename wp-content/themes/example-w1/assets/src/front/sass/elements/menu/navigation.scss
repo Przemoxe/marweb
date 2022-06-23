@@ -27,11 +27,6 @@
             #main-menu{
                 display: flex;
                 justify-content: end;
-                .current-menu-item{
-                    a{
-                        color:orange!important;
-                    }
-                }
                 li{
                     list-style-type: none;
                     position: relative;
@@ -163,12 +158,26 @@
     color:black!important;
     transition: .3s;
     border-bottom: 1px solid rgba(0,0,0,.1);
+    .nav-container{
+        .main-menu{
+            #main-menu{
+                li{
+                    &:last-child{
+                        a{
+                            border-left: 1px solid rgba(0,0,0,.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .nav-top-mobile-active{
     background-color: white;
     color:black!important;
     border-bottom: 1px solid rgba(0,0,0,.1);
+    
 }
 
 .nav-top-not-front-mobile{
@@ -181,10 +190,17 @@
     transition: .3s;
     border-bottom: 1px solid rgba(0,0,0,.1);
     .nav-container{
-        .menu{
-            li{
-                a{
-                    color: #212529!important;;
+        .main-menu{
+            #main-menu{
+                li{
+                    &:last-child{
+                        a{
+                            border-left: 1px solid rgba(0,0,0,.1);
+                        }
+                    }
+                    a{
+                        color: #212529!important;;
+                    }
                 }
             }
         }

@@ -74,11 +74,11 @@ get_header();
             <h1>Your Site, Your Way.</h1>
             <p>See how your users experience your website in realtime or view trends to see any changes in performance over time.</p>
         </div>
-        <div class="rwd-image">
+        <div class="rwd-image" id="services">
             <img src="<?= get_template_directory_uri() . '/assets/src/front/images/rwd-2.png' ?>" alt="">
         </div>
     </div>
-    <div class="main-container">
+    <div class="main-container" >
         <div class="icon-box-container">
             <div class="icon-box">
                 <div class="icon-box-icon">
