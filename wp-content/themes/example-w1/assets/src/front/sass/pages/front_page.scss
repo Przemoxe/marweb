@@ -61,10 +61,13 @@
       }
       .subheading {
         color: rgba(255, 255, 255, 0.65);
-        font-weight: 600;
         font-family: Objective, sans-serif;
         font-size: 12px;
         margin-bottom: 34px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.75;
       }
       .buttons {
         display: flex;
@@ -78,7 +81,14 @@
           padding: 15px 22px;
         }
         .btn-check {
-          border: 1px solid rgba(0, 36, 84, 0.95);
+          background-color: var(--MW-btn-color-background);
+          border: 1px solid var(--MW-btn-color-border);
+          color: var(--MW-btn-color);
+          &:hover{
+            background-color: var(--MW-btn-color-background-hover);
+            border: 1px solid var(--MW-btn-color-border-hover);
+            color:var(--MW-btn-color-hover);
+          }
         }
       }
     }
@@ -88,12 +98,12 @@
       }
       form {
         width: 400px;
-        background-color: white;
+        background-color: var(--MW-form-background);
         padding: 40px;
         border-top: 4px solid rgba(0, 36, 84, 0.95);
         h4 {
           margin-top: 0;
-          color: #212529;
+          color: var(--MW-form-h4);
           line-height: 1.35;
           font-weight: 600;
           font-family: Objective, sans-serif;
@@ -111,9 +121,9 @@
             margin-bottom: 13px;
             transition: 0.2s;
             &:focus-within {
-              border: 1px solid rgba(0, 36, 84, 0.95);
+              border: 1px solid var(--MW-form-input-border-hover);
               i {
-                color: rgba(0, 36, 84, 0.95);
+                color:  var(--MW-form-input-border-hover);
               }
             }
             i {
@@ -124,7 +134,8 @@
               transition: 0.2s;
             }
             input {
-              color: #495057;
+              background-color: transparent;
+              color: var(--MW-form-input-color);
               border: 0;
               width: calc(100% - 82px);
               padding: 13px 0;
@@ -139,6 +150,8 @@
               margin-top: 10px;
             }
             textarea {
+              color: var(--MW-form-input-color);
+              background-color: transparent;
               width: calc(100% - 75px);
               border: 0;
               overflow: hidden;
@@ -156,15 +169,19 @@
           align-items: center;
           justify-content: space-between;
           .btn-send {
-            border: 1px solid rgba(0, 36, 84, 0.95);
+            border: 1px solid var(--MW-btn-color-border);
             padding: 15px 25px;
-            background-color: transparent;
+            background-color: var(--MW-btn-color-background);
+            color: var(--MW-btn-color);
             cursor: pointer;
             text-transform: uppercase;
             font-size: 11px;
             font-weight: 500;
+            color:white;
             &:hover {
-              color: rgba(0, 36, 84, 0.95);
+              color: var(--MW-btn-color-hover);
+              background-color: var(--MW-btn-color-background-hover);
+              border: 1px solid var(--MW-btn-color-border-hover);
             }
           }
         }
@@ -179,12 +196,12 @@
           color: orange;
         }
         .call-us-text {
-          color: #6c757d;
+          color: var(--MW-form-input-color);
           font-family: "Poppins", Arial;
           padding-left: 10px;
         }
         a {
-          color: #6c757d;
+          color: var(--MW-form-input-color);
           text-decoration: none;
           padding-left: 10px;
         }
@@ -194,6 +211,7 @@
 }
 
 .rwd-section {
+  background-color: var(--second-color);
   .main-container-px20 {
     .rwd-description {
       display: flex;
@@ -202,7 +220,7 @@
       padding: 60px 0 0 0;
       h1 {
         line-height: 1.5;
-        color: #212529;
+        color: var(--MW-form-h4);
         font-family: Objective, sans-serif;
         font-weight: 500;
         font-size: 1.625rem;
@@ -213,7 +231,7 @@
         font-size: 14px;
         font-weight: 500;
         line-height: 1.75;
-        color: #6c757d;
+        color: var(--MW-p-text);
         max-width: 500px;
         text-align: center;
         margin-top: 0;
@@ -238,11 +256,17 @@
       @media (max-width: 576px) {
         width: 100%;
       }
+      .icon-box-icon{
+        i{
+          color: var(--MW-color-const-1);
+        }
+      }
       .icon-box {
         text-align: center;
         padding: 20px;
         .icon-box-title {
           h6 {
+            color: var(--MW-form-h4);
             margin: 0;
             font-size: 14px;
             font-family: "Poppins", Arial;
@@ -259,7 +283,7 @@
             font-size: 14px;
             font-weight: 500;
             line-height: 1.75;
-            color: #6c757d;
+            color: var(--MW-p-text);
             max-width: 500px;
             text-align: center;
             margin-top: 0;
@@ -271,7 +295,7 @@
 }
 
 .portfolio-section {
-  background-color: #f8f8f8;
+  background-color: var(--third-color);
   padding-top: 60px;
   padding-bottom: 120px;
   .main-container-px20 {
@@ -287,7 +311,7 @@
 
       h1 {
         line-height: 1.5;
-        color: #212529;
+        color: var(--MW-form-h4);
         font-family: Objective, sans-serif;
         font-weight: 500;
         font-size: 1.625rem;
@@ -298,7 +322,7 @@
         font-size: 14px;
         font-weight: 500;
         line-height: 1.75;
-        color: #6c757d;
+        color: var(--MW-p-text);
         max-width: 500px;
         margin-top: 0;
         text-align: center;
@@ -311,16 +335,17 @@
       margin-right: auto;
       align-items: start;
       padding-top: 100px;
-      img {
-        width: 30px;
+      i {
+        font-size: 30px;
         padding-right: 40px;
+        color:var(--MW-btn-color-hover);
       }
       p {
         margin: 0;
         font-size: 18px;
         font-weight: 400;
         line-height: 1.75;
-        color: #212529ce;
+        color: var(--MW-form-h4);
         text-align: left;
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
@@ -365,7 +390,7 @@
                 font-family: "Poppins", Arial;
                 font-weight: 600;
                 line-height: 50px;
-                color: #212529;
+                color: var(--MW-form-h4);
               }
               .card-text {
                 font-family: "Trebuchet MS", "Lucida Sans Unicode",
@@ -373,7 +398,7 @@
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 1.75;
-                color: #6c757d;
+                color: var(--MW-p-text);
                 margin-top: 0;
               }
             }
@@ -396,8 +421,7 @@
 }
 
 .section-our-techonologies {
-  // background-color: #343a40;
-  background-color: rgba(0, 36, 84, 0.95);
+  background-color: var(--first-color);
   padding-top: 60px;
   padding-bottom: 60px;
   .main-container-px20 {
@@ -418,7 +442,7 @@
       font-size: 14px;
       font-weight: 500;
       line-height: 1.75;
-      color: #a1a4a7;
+      color: var(--MW-p2-text);
       max-width: 500px;
       margin-top: 0;
       text-align: center;

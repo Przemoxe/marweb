@@ -1,7 +1,7 @@
 footer {
   padding-top: 60px;
   // background-color: #343a40;
-  background-color: rgba(0, 36, 84, 0.95);
+  background-color: var(--first-color);
   .main-container {
     .footer-widgets-container {
       display: flex;

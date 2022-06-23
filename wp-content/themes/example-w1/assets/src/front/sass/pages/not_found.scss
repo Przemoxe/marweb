@@ -1,12 +1,16 @@
 .template-404-section {
   padding: 100px 0 80px 0;
+  background-color: var(--third-color);
   .main-container-px20 {
     .template-404-container {
       display: flex;
       .left-navbar {
+        @media(max-width: 992px){
+          display: none;
+        }
         width: 200px;
         .title {
-          color: #212529;
+          color: var(--MW-form-h4);
           font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
             "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
           font-weight: 600;
@@ -18,23 +22,26 @@
             display: block;
             width: 2rem;
             margin: 1rem 0 1.5rem;
-            border-top: 2px solid #f5ba4b;
+            border-top: 2px solid var(--MW-color-const-1);
           }
         }
       }
       .content-404 {
+        @media(max-width: 992px){
+          width:100%;
+        }
         padding-bottom: 40px;
         width: calc(100% - 300px);
         h3 {
           padding: 0 0 20px 0;
-          color: #212529;
+          color: var(--MW-form-h4);
           font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
             "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
           font-weight: 600;
           font-size: 18px;
           margin: 0;
           span {
-            color: orange;
+            color: var(--MW-color-const-1);
           }
         }
         p {
@@ -43,26 +50,36 @@
           font-size: 16px;
           font-weight: 500;
           line-height: 1.75;
-          color: #6c757d;
+          color: var(--MW-p-text);
           margin-top: 0;
         }
         .first-button {
           .btn-send {
+            border: 1px solid var(--MW-btn-color-border);
+            background-color: var(--MW-btn-color-background);
+            color: var(--MW-btn-color);
             .right {
-              border-color: #212529;
+              border-color:  var(--MW-menu-background-active-color);
               margin-bottom: 1px;
+              
             }
           }
           &:hover {
             .btn-send {
+              border: 1px solid var(--MW-btn-color-border-hover);
+              background-color: var(--MW-btn-color-background-hover);
+              color: var(--MW-btn-color-hover);
               .right {
-                border-color: orange;
+                border-color: var(--MW-btn-color-hover);
               }
             }
           }
         }
       }
       .content-404-image {
+        @media(max-width: 992px){
+          display: none;
+        }
         width: calc(100% - 600px);
         display: flex;
         justify-content: center;

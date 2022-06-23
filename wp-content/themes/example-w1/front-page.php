@@ -203,7 +203,7 @@ get_header();
     </div>
     <div class="main-container-px20">
         <div class="quote">
-            <img src="<?= get_template_directory_uri() . '/assets/src/front/favicons/quote-left-1.svg' ?>" class="img-fluid">
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
             <p class="quote-blockquote-content">
                 This theme is a Swiss Army knife of Bootstrap themes. Built with components in mind, it can be easily adjusted to create layouts of any complexity within a few minutes.
             </p>

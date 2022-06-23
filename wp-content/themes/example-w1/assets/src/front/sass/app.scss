@@ -1,11 +1,11 @@
 
 @import "variables/navigation";
+@import "variables/colors";
 @import "main";
 
 // /**
 //  * variables
 //  */
-@import "variables/navigation";
 
 //
 @import "main";
@@ -19,7 +19,7 @@
 @import "pages/archive_portfolio";
 @import "pages/archive_blog";
 @import "pages/single_blog";
-@import "pages/404";
+@import "pages/not_found";
 @import "pages/templates/template-about-us";
 @import "pages/templates/template-contact";
 @import "pages/templates/template-faq";

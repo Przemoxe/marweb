@@ -27,11 +27,18 @@
 		<div class="main-container-px20 nav-container">
 			<div>
 				<a href="<?= get_home_url() ?>">
-					LOGO
+					MARWEB
 				</a>
 				<a href=""></a>
 				<a href=""></a>
 				<a href=""></a>
+
+			</div>
+			<div class="change-color-container">
+				<div class="color-icon ">
+					<i class="fa fa-sun-o" aria-hidden="true"></i>
+					<i class="fa fa-moon-o " aria-hidden="true"></i>
+				</div>
 			</div>
 			<?php
 
@@ -54,18 +61,24 @@
 					<a href="<?= get_home_url() ?>">
 						LOGO
 					</a>
+					<div class="change-color-container">
+						<div class="color-icon color-icon-mobile">
+							<i class="fa fa-sun-o" aria-hidden="true"></i>
+							<i class="fa fa-moon-o " aria-hidden="true"></i>
+						</div>
+					</div>
 				</div>
 				<div class="nav-hamburger">
 					<i class="fa fa-bars" aria-hidden="true"></i>
 				</div>
 				<div class="nav-lists">
 					<?php
-						wp_nav_menu([
-							'theme_location'    => 'main-menu',
-							'menu_id'        	=> 'mobile-main-menu',
-							'container_class'   => 'mobile-main-menu',
-							// 'after'             => '</div><button class="more"></button>'
-						]);
+					wp_nav_menu([
+						'theme_location'    => 'main-menu',
+						'menu_id'        	=> 'mobile-main-menu',
+						'container_class'   => 'mobile-main-menu',
+						// 'after'             => '</div><button class="more"></button>'
+					]);
 					?>
 				</div>
 			</div>

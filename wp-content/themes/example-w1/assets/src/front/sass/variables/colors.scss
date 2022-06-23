@@ -7,3 +7,82 @@ $white: rgb(255, 255, 255);
 $font: #404040;
 $red-ul: #c4103a;
 $blue_header: rgb(16, 52, 125);
+
+
+:root {
+    //constants
+    --MW-color-const-1:#00608a;
+
+    //diffrent
+    --first-color: #00608a;
+    --second-color: white;
+    --third-color: #f8f8f8;
+
+    //btn
+    --MW-btn-color-background: #00608a;
+    --MW-btn-color-background-hover: #004563;;
+    --MW-btn-color-border: #00608a;
+    --MW-btn-color-border-hover: #004563;
+    --MW-btn-color: white;
+    --MW-btn-color-hover: white;
+
+    //contact us form front page
+    --MW-form-background: white;
+    --MW-form-h4: #212529;
+    --MW-form-input-color: #212529;
+    --MW-form-input-border-hover: rgba(0, 36, 84, 0.95);
+
+    //menu
+    --MW-menu-background:transparent;
+    --MW-menu-background-active:white;
+    --MW-menu-background-active-color:white;
+    --MW-menu-border-bottom:rgba(255,255,255,.1);
+    --MW-mobile-dark-hamburger: #212529;
+
+    //blog faq
+    --MW-post-border-bottom:rgba(0, 0, 0, 0.1);
+    --MW-post-text-content:#6c757d;
+
+    //p
+    --MW-p-text:#6c757d;
+    --MW-p2-text:#b8b8b8;
+
+
+}
+:root.dark {
+    
+    //diffrent
+    --first-color: rgba(29,26,32);
+    --second-color: rgba(29,26,32);
+    --third-color: #252427;
+
+    //btn
+    --MW-btn-color-background: #00608a;
+    --MW-btn-color-background-hover: #004563;;
+    --MW-btn-color-border: #00608a;
+    --MW-btn-color-border-hover: #004563;
+    --MW-btn-color: white;
+    --MW-btn-color-hover: white;
+
+    //contact us form front page
+    --MW-form-background: rgba(37,36,39);
+    --MW-form-h4: white;
+    --MW-form-input-color: white;
+    --MW-form-input-border-hover: white;
+
+    //menu
+    --MW-menu-background:rgba(46,46,46);
+    --MW-menu-background-active:rgba(46,46,46);
+    --MW-menu-background-active-color:white;
+    --MW-menu-border-bottom:transparent;
+    --MW-mobile-dark-hamburger: white;
+
+    //blog faq posts
+    --MW-post-border-bottom:rgba(219, 218, 218, 0.1);
+    --MW-post-text-content:#6c757d;
+
+    //p
+    --MW-p-text:#a1a4a7;
+    --MW-p2-text:#a1a4a7;
+
+}

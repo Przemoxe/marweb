@@ -1,5 +1,6 @@
 .archive-portfolio-top-section {
-  margin-top: 94px;
+  background-color: var(--third-color);
+  padding-top: 94px;
   .main-container-px20 {
     .portfolio-top-container {
       display: flex;
@@ -14,7 +15,7 @@
         justify-content: center;
         width: 40%;
         .preheading {
-          color: orange;
+          color: var(--MW-color-const-1);
           font-weight: 600;
           text-transform: uppercase;
           font-family: Objective, sans-serif;
@@ -23,7 +24,7 @@
         }
         h1 {
           line-height: 1.5;
-          color: #212529;
+          color: var(--MW-form-h4);
           font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
             "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
           font-weight: 600;
@@ -35,7 +36,7 @@
           font-size: 16px;
           font-weight: 500;
           line-height: 1.75;
-          color: #6c757d;
+          color: var(--MW-p-text);
           max-width: 500px;
           margin-top: 0;
         }
@@ -64,6 +65,7 @@
 }
 
 .archive-portfolio-projects-section {
+  background-color: var(--third-color);
   @media(max-width:768px){
     padding: 60px 0;
   }
@@ -102,7 +104,7 @@
                 right: 30px;
                 width: 35px;
                 height: 35px;
-                background-color: orange;
+                background-color: var(--MW-color-const-1);
                 border: 0;
                 border-radius: 50%;
                 display: flex;
@@ -130,7 +132,7 @@
                 font-family: "Poppins", Arial;
                 font-weight: 600;
                 line-height: 50px;
-                color: #212529;
+                color: var(--MW-form-h4);
               }
               .card-text {
                 font-family: "Trebuchet MS", "Lucida Sans Unicode",
@@ -138,7 +140,7 @@
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 1.75;
-                color: #6c757d;
+                color: var(--MW-p-text);
                 margin-top: 0;
               }
             }
@@ -150,7 +152,7 @@
                     }
                 }
                 .card-body{
-                    border: 1px rgba(255, 166, 0, 0.308) solid;
+                    border: 1px solid var(--MW-form-input-border-hover);
                     border-top: 0;
                 }
             }

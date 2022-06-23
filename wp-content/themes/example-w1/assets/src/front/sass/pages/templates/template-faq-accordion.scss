@@ -1,5 +1,5 @@
 .accordion {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid var(--MW-post-border-bottom);
   &:last-child {
     border-bottom: 0;
   }
@@ -13,6 +13,7 @@
 }
 
 .accordion-header h4 {
+  color:var(--MW-form-h4);
   font-size: 1rem;
   font-weight: 600;
   margin-left: 16px;
@@ -60,14 +61,14 @@
 }
 
 .accordion.active .accordion-header {
-  color: orange;
+  color: var(--MW-form-h4);
 }
 
 .accordion.active .accordion-plus {
-  background-color: orange;
+  background-color: var(--MW-color-const-1);
   &::before {
     content: "-";
-    background-color: orange;
+    background-color: var(--MW-color-const-1);
     width: 24px;
     height: 20px;
   }
@@ -77,11 +78,11 @@
     &:hover {
       .accordion-plus {
         &::before {
-          background-color: orange;
+          background-color: var(--MW-color-const-1);
         }
       }
       h4 {
-        color: orange;
+        color: var(--MW-color-const-1);
       }
     }
   }

@@ -136,14 +136,6 @@ get_header();
                         </button>
                     </div>
                 </form>
-                <p class="call-us">
-                    <span class="call-us-text">
-                        Or call us:
-                    </span>
-                    <a href="#">
-                        +123-456-78-90
-                    </a>
-                </p>
             </div>
         </div>
     </div>
