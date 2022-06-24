@@ -24,9 +24,20 @@
                         <h6>Recent Posts</h6>
                     </div>
                     <ul>
-                        <li><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2018</span></li>
-                        <li><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">April 7, 2018</span></li>
-                        <li><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">September 7, 2018</span></li>
+                        <?php
+                        $blog = new WP_Query(array(
+                            'posts_per_page' => 6,
+                            'post_type' => 'blog',
+                        ));
+                        while ($blog->have_posts()) {
+                            $blog->the_post(); ?>
+
+                            <li><a href="#"><?= get_the_excerpt() ?></a><span class="post-date"><?= get_the_date() ?></span></li>
+
+                        <?php }
+                        wp_reset_postdata();
+                        ?>
+                       
                     </ul>
                 </aside>
             </div>
@@ -51,36 +62,24 @@
                         <h6>Portfolio</h6>
                     </div>
                     <div class="container-recent-works">
-                        <div class="container-card-recent-work">
-                            <div class="card-recent-work">
-                                <a href="#"><img src="<?= get_template_directory_uri() . '/assets/src/front/images/asdas.jpg' ?>" alt=""></a>
+                        <?php
+                        $blog = new WP_Query(array(
+                            'posts_per_page' => 6,
+                            'post_type' => 'portfolio',
+                        ));
+                        while ($blog->have_posts()) {
+                            $blog->the_post(); ?>
+                            <div class="container-card-recent-work">
+                                <div class="card-recent-work">
+                                    <a href="#">
+                                        <?= get_the_post_thumbnail() ?>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="container-card-recent-work">
-                            <div class="card-recent-work">
-                                <a href="#"><img src="<?= get_template_directory_uri() . '/assets/src/front/images/asdas.jpg' ?>" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="container-card-recent-work">
-                            <div class="card-recent-work">
-                                <a href="#"><img src="<?= get_template_directory_uri() . '/assets/src/front/images/asdas.jpg' ?>" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="container-card-recent-work">
-                            <div class="card-recent-work">
-                                <a href="#"><img src="<?= get_template_directory_uri() . '/assets/src/front/images/asdas.jpg' ?>" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="container-card-recent-work">
-                            <div class="card-recent-work">
-                                <a href="#"><img src="<?= get_template_directory_uri() . '/assets/src/front/images/asdas.jpg' ?>" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="container-card-recent-work">
-                            <div class="card-recent-work">
-                                <a href="#"><img src="<?= get_template_directory_uri() . '/assets/src/front/images/asdas.jpg' ?>" alt=""></a>
-                            </div>
-                        </div>
+
+                        <?php }
+                        wp_reset_postdata();
+                        ?>
                     </div>
                 </aside>
             </div>

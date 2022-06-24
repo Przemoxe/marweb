@@ -1,0 +1,84 @@
+{
+    "key": "group_62b58cd8a02a3",
+    "title": "Main Page - Blog",
+    "fields": [
+        {
+            "key": "field_62b58cee3662c",
+            "label": "blog title",
+            "name": "blog_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62b58cfe3662d",
+            "label": "blog section description",
+            "name": "blog_section_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_62b5a2bf73ce0",
+            "label": "blog section posts",
+            "name": "blog_section_posts",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "blog"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "object",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "2"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1656071408
+}

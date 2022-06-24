@@ -80,5 +80,34 @@ class Theme
 
         ///////////
         add_theme_support('post-thumbnails');
+
+        //Change all Excerpt Length
+        add_filter('excerpt_length', function () {
+            return 15;
+        });
+        add_filter('excerpt_more', function () {
+            return '...';
+        });
+
+        //Add ACF LOCAL
+
+        add_filter('acf/settings/save_json', function ($path) {
+            return get_stylesheet_directory() . '/application/ACF_LOCAL';
+        });
+        add_filter('acf/settings/load_json', function($path){
+            return [get_stylesheet_directory() . '/application/ACF_LOCAL'];
+        });
+
+        //Add Cpt archive page
+        add_action('init', function(){
+            if(function_exists('acf_add_options_page')) {
+                acf_add_options_sub_page(array(
+                  'page_title'      => 'Portfolio Archive Page', /* Use whatever title you want */
+                  
+                  'parent_slug'     => 'edit.php?post_type=portfolio', /* Change "services" to fit your situation */
+                  'capability' => 'manage_options'
+                ));
+              }
+        });
     }
 }

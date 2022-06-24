@@ -107,12 +107,18 @@
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
+            line-height: 1.5;
             .nav-logo{
                 width:50%;
                 display: flex;
                 a{
                     text-decoration: none;
-                    color:orange;
+                    color:var(--MW-color-const-1);
+                    font-weight: 700;
+                    font-family: Objective, sans-serif;
+                    img{
+                        width:100%;
+                    }
                 }
             }
             .nav-hamburger{
@@ -172,7 +178,7 @@
                 li{
                     &:last-child{
                         a{
-                            border-left: 1px solid rgba(0,0,0,.1);
+                            border-left: 1px solid var(--MW-mobile-last-child-border-left);
                         }
                     }
                 }

@@ -26,51 +26,31 @@ get_header();
 <section class="archive-blog-content-section">
     <div class="main-container-px20">
         <div class="archive-blog-posts">
-            <div class="archive-blog-single-post">
-                <a class="" href="#">
-                    <div class="img-container">
-                        <img src="<?= get_template_directory_uri() . '/assets/src/front/images/asdas.jpg' ?>" alt="">
-                    </div>
-                    <div class="content-container">
-                        <h4>
-                            Free classifieds using them to promote your stuff online
-                        </h4>
-                        <p class="mb-0 text-sm text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="archive-blog-single-post">
-                <a class="" href="#">
-                    <div class="img-container">
-                        <img src="<?= get_template_directory_uri() . '/assets/src/front/images/asdas.jpg' ?>" alt="">
-                    </div>
-                    <div class="content-container">
-                        <h4>
-                            Free classifieds using them to promote your stuff online
-                        </h4>
-                        <p class="mb-0 text-sm text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="archive-blog-single-post">
-                <a class="" href="#">
-                    <div class="img-container">
-                        <img src="<?= get_template_directory_uri() . '/assets/src/front/images/asdas.jpg' ?>" alt="">
-                    </div>
-                    <div class="content-container">
-                        <h4>
-                            Free classifieds using them to promote your stuff online
-                        </h4>
-                        <p class="mb-0 text-sm text-muted">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </a>
-            </div>
+            <?php
+            $blog = new WP_Query(array(
+                'posts_per_page' => -1,
+                'post_type' => 'blog',
+            ));
+            while ($blog->have_posts()) {
+                $blog->the_post(); ?>
+                <div class="archive-blog-single-post">
+                    <a class="" href="<?= get_the_permalink() ?>">
+                        <div class="img-container">
+                            <img src="<?= get_the_post_thumbnail_url() ?>" alt="">
+                        </div>
+                        <div class="content-container">
+                            <h4>
+                                <?= get_the_title() ?>
+                            </h4>
+                            <p class="mb-0 text-sm text-muted">
+                                <?= get_the_excerpt() ?>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            <?php }
+            wp_reset_postdata();
+            ?>
         </div>
         <div class="archive-blog-posts-nav">
             <div>

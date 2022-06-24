@@ -39,9 +39,9 @@ get_header();
                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi voluptatibus, natus labore ratione numquam expedita nostrum voluptate ipsum iste esse in aliquid, ipsam fugit? In.
                 </p>
                 <div class="first-button">
-                    <button type="submit" class="btn-send">
+                    <a type="submit" class="btn-send" href="<?= get_home_url()?>">
                         HomePage<i class="arrow right"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
             <div class="content-404-image">

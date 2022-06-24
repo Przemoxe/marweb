@@ -52,12 +52,16 @@
           line-height: 1.75;
           color: var(--MW-p-text);
           margin-top: 0;
+          
         }
         .first-button {
+          padding-top:20px;
           .btn-send {
+
             border: 1px solid var(--MW-btn-color-border);
             background-color: var(--MW-btn-color-background);
             color: var(--MW-btn-color);
+            text-decoration: none;
             .right {
               border-color:  var(--MW-menu-background-active-color);
               margin-bottom: 1px;

@@ -1,0 +1,103 @@
+{
+    "key": "group_62b58be512253",
+    "title": "Main Page - Portfolio",
+    "fields": [
+        {
+            "key": "field_62b58c04e99ec",
+            "label": "portfolio title",
+            "name": "portfolio_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62b58c16e99ed",
+            "label": "portfolio section description",
+            "name": "portfolio_section_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_62b59eedb343f",
+            "label": "portfolio section works",
+            "name": "portfolio_section_works",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "portfolio"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_62b58c2ee99ee",
+            "label": "portfolio section quote",
+            "name": "portfolio_section_quote",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "2"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1656071213
+}

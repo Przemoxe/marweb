@@ -27,28 +27,15 @@ get_header();
     <div class="main-container-px20">
         <div class="blog-header">
             <h1>
-                What are the big reasons for marketing your business
+                <?= get_the_title() ?>
             </h1>
         </div>
         <div class="blog-thumbnail">
-            <img src="<?= get_template_directory_uri() . '/assets/src/front/images/asdas.jpg' ?>" alt="">
+            <img src="<?= get_the_post_thumbnail_url() ?>" alt="">
         </div>
         <div class="blog-content-container">
             <div class="blog-content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum labore molestiae voluptatibus officia quae aliquid aperiam nulla suscipit, eveniet distinctio. Officiis quis impedit quo nobis dolores architecto quos perferendis! Aliquam?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum labore molestiae voluptatibus officia quae aliquid aperiam nulla suscipit, eveniet distinctio. Officiis quis impedit quo nobis dolores architecto quos perferendis! Aliquam?
-                <br><br>
-
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum labore molestiae voluptatibus officia quae aliquid aperiam nulla suscipit, eveniet distinctio. Officiis quis impedit quo nobis dolores architecto quos perferendis! Aliquam?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum labore molestiae voluptatibus officia quae aliquid aperiam nulla suscipit, eveniet distinctio. Officiis quis impedit quo nobis dolores architecto quos perferendis! Aliquam?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum labore molestiae voluptatibus officia quae aliquid aperiam nulla suscipit, eveniet distinctio. Officiis quis impedit quo nobis dolores architecto quos perferendis! Aliquam?
-                <br>
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum labore molestiae voluptatibus officia quae aliquid aperiam nulla suscipit, eveniet distinctio. Officiis quis impedit quo nobis dolores architecto quos perferendis! Aliquam?
-                <br>
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum labore molestiae voluptatibus officia quae aliquid aperiam nulla suscipit, eveniet distinctio. Officiis quis impedit quo nobis dolores architecto quos perferendis! Aliquam?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum labore molestiae voluptatibus officia quae aliquid aperiam nulla suscipit, eveniet distinctio. Officiis quis impedit quo nobis dolores architecto quos perferendis! Aliquam?
+                <?= get_the_content() ?>
             </div>
         </div>
     </div>
@@ -65,57 +52,33 @@ get_header();
     </div>
     <div class="main-container">
         <div class="container-portfolio-projects">
-            <div class="portfolio-project">
-                <div class="single-project">
-                    <a href="index-header-carousel.html" class="card">
-                        <div class="card-img-top">
-                            <img src="<?= get_template_directory_uri() . '/assets/src/front/images/42.jpg' ?>" class="img-fluid">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                Carousel header
-                            </h4>
-                            <p class="card-text">
-                                Switch between multiple slides with full cover background images.
-                            </p>
-                        </div>
-                    </a>
+            <?php
+            $blog = new WP_Query(array(
+                'posts_per_page' => 3,
+                'post_type' => 'blog',
+            ));
+            while ($blog->have_posts()) {
+                $blog->the_post(); ?>
+                <div class="portfolio-project">
+                    <div class="single-project">
+                        <a href="<?= get_permalink() ?>" class="card">
+                            <div class="card-img-top">
+                                <img src="<?= get_the_post_thumbnail_url() ?>" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <?= get_the_title() ?>
+                                </h4>
+                                <p class="card-text">
+                                    <?= get_the_excerpt() ?>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="portfolio-project">
-                <div class="single-project">
-                    <a href="index-header-carousel.html" class="card">
-                        <div class="card-img-top">
-                            <img src="<?= get_template_directory_uri() . '/assets/src/front/images/42.jpg' ?>" class="img-fluid">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                Carousel header
-                            </h4>
-                            <p class="card-text">
-                                Switch between multiple slides with full cover background images.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="portfolio-project">
-                <div class="single-project">
-                    <a href="index-header-carousel.html" class="card">
-                        <div class="card-img-top">
-                            <img src="<?= get_template_directory_uri() . '/assets/src/front/images/42.jpg' ?>" class="img-fluid">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                Carousel header
-                            </h4>
-                            <p class="card-text">
-                                Switch between multiple slides with full cover background images.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            <?php }
+            wp_reset_postdata();
+            ?>
         </div>
     </div>
 </section>
