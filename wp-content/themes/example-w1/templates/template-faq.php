@@ -6,6 +6,23 @@
 get_header();
 ?>
 
+<?php
+
+$accordionNavbarTitle = get_field('accordion_navbar_title');
+$accordionTitle = get_field('accordion_title');
+$accordionTitleColored = get_field('accordion_title_colored');
+$accordionDescription = get_field('accordion_description');
+$accordionAccordions = get_field('accordion_accordions');
+
+$infoNavbarTitle = get_field('info_navbar_title');
+$infoTitle = get_field('info_title');
+$infoDescription = get_field('info_description');
+$infoButtons = get_field('info_buttons');
+
+
+
+?>
+
 <nav class="single-blog-nav">
     <div class="main-container-px20">
         <nav class="single-blog-nav">
@@ -32,67 +49,40 @@ get_header();
         <div class="template-faq-container">
             <div class="left-navbar">
                 <h6 class="title">
-                    HELP CENTER
+                    <?= $accordionNavbarTitle ?>
                 </h6>
             </div>
             <div class="faq-content">
                 <h3>
-                    Need help? Browse our <span>FAQs</span>
+                    <?= $accordionTitle ?> <span><?= $accordionTitleColored ?></span>
                 </h3>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores tempore omnis non nemo distinctio, perspiciatis ut reprehenderit tenetur eveniet, et doloribus ipsa eligendi incidunt voluptas? Incidunt perferendis reiciendis velit optio corporis, delectus commodi nam ad distinctio, omnis fuga obcaecati consequatur numquam reprehenderit amet necessitatibus eum aspernatur sequi. Accusantium, quo cum.
+                    <?= $accordionDescription ?>
                 </p>
 
                 <div class="accordions-wrapper">
-                    <div class="accordion">
-                        <div class="accordion-header">
-                            <div class="accordion-plus"></div>
-                            <h4>Accordion #1</h4>
+                    <?php
+
+                    foreach ($accordionAccordions as $el) { ?>
+
+                        <div class="accordion">
+                            <div class="accordion-header">
+                                <div class="accordion-plus"></div>
+                                <h4><?= $el['title'] ?></h4>
+                            </div>
+
+                            <div class="accordion-body">
+                                <p>
+                                    <?= $el['description'] ?>
+                                </p>
+                            </div>
                         </div>
 
-                        <div class="accordion-body">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                                eaque sint distinctio, cupiditate placeat iusto perferendis magnam
-                                possimus sapiente! Delectus aspernatur numquam laborum impedit
-                                corporis.
-                            </p>
-                        </div>
-                    </div>
+                    <?php
+                    }
+                    ?>
 
-                    <div class="accordion">
-                        <div class="accordion-header">
-                            <div class="accordion-plus"></div>
-                            <h4>Accordion #2</h4>
-                        </div>
-
-                        <div class="accordion-body">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                                eaque sint distinctio, cupiditate placeat iusto perferendis magnam
-                                possimus sapiente! Delectus aspernatur numquam laborum impedit
-                                corporis.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="accordion">
-                        <div class="accordion-header">
-                            <div class="accordion-plus"></div>
-                            <h4>Accordion #3</h4>
-                        </div>
-
-                        <div class="accordion-body">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                                eaque sint distinctio, cupiditate placeat iusto perferendis magnam
-                                possimus sapiente! Delectus aspernatur numquam laborum impedit
-                                corporis.
-                            </p>
-                        </div>
-                    </div>
                 </div>
-
             </div>
         </div>
         <div class="template-faq-container">

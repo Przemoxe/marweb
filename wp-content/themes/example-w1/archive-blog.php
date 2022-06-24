@@ -1,19 +1,27 @@
 <?php
 get_header();
 ?>
+<?php
+
+$options = get_fields('option');
+$preheading = $options["blog-cpt-preheading"];
+$title = $options["blog-cpt-title"];
+$description = $options["blog-cpt-description"];
+
+?>
 
 <section class="archive-blog-top-section">
     <div class="main-container-px20">
         <div class="blog-top-container">
             <div class="blog-top-left">
                 <p class="preheading">
-                    by Simpleqode
+                    <?= $preheading ?>
                 </p>
                 <h1>
-                    What are the big reasons for marketing your business
+                    <?= $title  ?>
                 </h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus odio nesciunt harum neque deserunt deleniti nemo, explicabo id accusamus voluptatum dolor.
+                    <?= $description ?>
                 </p>
             </div>
             <div class="blog-top-right">

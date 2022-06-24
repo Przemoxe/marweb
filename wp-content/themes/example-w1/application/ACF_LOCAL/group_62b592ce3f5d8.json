@@ -4,8 +4,8 @@
     "fields": [
         {
             "key": "field_62b592eb04d96",
-            "label": "navbar title",
-            "name": "navbar_title",
+            "label": "info navbar title",
+            "name": "info_navbar_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -23,8 +23,8 @@
         },
         {
             "key": "field_62b592fd04d97",
-            "label": "title",
-            "name": "title",
+            "label": "info title",
+            "name": "info_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -42,8 +42,8 @@
         },
         {
             "key": "field_62b5930404d98",
-            "label": "description",
-            "name": "description",
+            "label": "info description",
+            "name": "info_description",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -155,5 +155,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1656067851
+    "modified": 1656079210
 }

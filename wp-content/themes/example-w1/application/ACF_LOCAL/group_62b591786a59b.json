@@ -1,11 +1,30 @@
 {
     "key": "group_62b591786a59b",
-    "title": "Blog",
+    "title": "Blog CPT",
     "fields": [
         {
+            "key": "field_62b59194701d6",
+            "label": "blog-cpt-preheading",
+            "name": "blog-cpt-preheading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_62b59184701d4",
-            "label": "title",
-            "name": "title",
+            "label": "blog-cpt-title",
+            "name": "blog-cpt-title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -23,8 +42,8 @@
         },
         {
             "key": "field_62b59189701d5",
-            "label": "description",
-            "name": "description",
+            "label": "blog-cpt-description",
+            "name": "blog-cpt-description",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -39,33 +58,14 @@
             "maxlength": "",
             "rows": "",
             "new_lines": ""
-        },
-        {
-            "key": "field_62b59194701d6",
-            "label": "preheading",
-            "name": "preheading",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
         }
     ],
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "options_page",
                 "operator": "==",
-                "value": "blog"
+                "value": "acf-options-archive-blog-page"
             }
         ]
     ],
@@ -77,5 +77,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1656067829
+    "modified": 1656078108
 }

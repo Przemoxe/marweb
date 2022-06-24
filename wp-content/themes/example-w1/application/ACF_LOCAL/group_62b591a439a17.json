@@ -4,8 +4,8 @@
     "fields": [
         {
             "key": "field_62b5920b79083",
-            "label": "navbar title",
-            "name": "navbar_title",
+            "label": "accordion navbar title",
+            "name": "accordion_navbar_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -23,8 +23,8 @@
         },
         {
             "key": "field_62b5921879084",
-            "label": "title",
-            "name": "title",
+            "label": "accordion title",
+            "name": "accordion_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -42,8 +42,8 @@
         },
         {
             "key": "field_62b5924179085",
-            "label": "title colored",
-            "name": "title_colored",
+            "label": "accordion title colored",
+            "name": "accordion_title_colored",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -60,9 +60,28 @@
             "maxlength": ""
         },
         {
+            "key": "field_62b5c4e0076eb",
+            "label": "accordion description",
+            "name": "accordion_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
             "key": "field_62b5927079086",
-            "label": "accordions",
-            "name": "accordions",
+            "label": "accordion accordions",
+            "name": "accordion_accordions",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -136,5 +155,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1656066763
+    "modified": 1656079602
 }

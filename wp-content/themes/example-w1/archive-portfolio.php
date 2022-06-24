@@ -3,11 +3,10 @@ get_header();
 ?>
 <?php
 $options = get_fields('option');
-$preheading = $options["preheading"];
-$title = $options["title"];
-$description = $options["description"];
-$image = $options["image"]["sizes"]["medium_large"];
-$projects = $options["projects"];
+$preheading = $options["portfolio-cpt-preheading"];
+$title = $options["portfolio-cpt-title"];
+$description = $options["portfolio-cpt-description"];
+$image = $options["portfolio-cpt-image"]["sizes"]["medium_large"];
 
 ?>
 
@@ -16,7 +15,7 @@ $projects = $options["projects"];
         <div class="portfolio-top-container">
             <div class="portfolio-top-left">
                 <p class="preheading">
-                    <?= $options["preheading"] ?>
+                    <?= $preheading ?>
                 </p>
                 <h1>
                     <?= $title ?>
@@ -37,7 +36,7 @@ $projects = $options["projects"];
         <div class="container-portfolio-projects">
             <?php
             $blog = new WP_Query(array(
-                'posts_per_page' => 3,
+                'posts_per_page' => -1,
                 'post_type' => 'blog',
             ));
             while ($blog->have_posts()) {

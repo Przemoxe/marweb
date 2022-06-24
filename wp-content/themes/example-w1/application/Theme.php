@@ -102,11 +102,17 @@ class Theme
         add_action('init', function(){
             if(function_exists('acf_add_options_page')) {
                 acf_add_options_sub_page(array(
-                  'page_title'      => 'Portfolio Archive Page', /* Use whatever title you want */
+                  'page_title'      => 'Archive portfolio page', /* Use whatever title you want */
                   
                   'parent_slug'     => 'edit.php?post_type=portfolio', /* Change "services" to fit your situation */
                   'capability' => 'manage_options'
                 ));
+                acf_add_options_sub_page(array(
+                    'page_title'      => 'Archive blog page', /* Use whatever title you want */
+                    
+                    'parent_slug'     => 'edit.php?post_type=blog', /* Change "services" to fit your situation */
+                    'capability' => 'manage_options'
+                  ));
               }
         });
     }
