@@ -1,3 +1,5 @@
+export default function(){
+  
 function setCookie(cvalue) {
   var d = new Date();
   d.setTime(d.getTime() + 30 * 24 * 60 * 60 * 1000);
@@ -12,7 +14,7 @@ function getCookie(theme) {
   for (var i = 0; i < ca.length; i++) {
     var c = ca[i];
     while (c.charAt(0) == " ") {
-      c = c.substring(1);
+      c = c.substring(1); 
     }
     if (c.indexOf(name) == 0) {
       return c.substring(name.length, c.length);
@@ -29,8 +31,8 @@ function checkCookie() {
   if (theme == "dark") {
     body.className = "dark";
   }
-}
-// Getting
+} 
+// Gettings
 var theme = window.localStorage.getItem("theme");
 // Setting
 window.localStorage.setItem("theme", "dark");
@@ -78,3 +80,5 @@ buttonColors.forEach((el) => {
     }
   });
 });
+
+}
