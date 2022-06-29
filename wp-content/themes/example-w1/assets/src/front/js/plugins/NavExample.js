@@ -1,4 +1,4 @@
-export default function(){
+
   window.onscroll = function () {
     // pageYOffset or scrollY
     const navContainer = document.querySelector(".nav-top");
@@ -20,4 +20,4 @@ export default function(){
     }
   };
   
-}
+

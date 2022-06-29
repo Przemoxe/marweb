@@ -1,4 +1,4 @@
-export default function(){
+
     
 const accordionHeaders = document.querySelectorAll(".accordion-header");
  
@@ -41,4 +41,3 @@ window.addEventListener("resize", function () {
   resizeActiveAccordionBody();
 });
 
-}

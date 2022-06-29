@@ -19,6 +19,7 @@ $formNavbarTitle = get_field('form_navbar_title');
 $formTitle = get_field('form_title');
 $formTitleColored = get_field('form_title_colored');
 $formDescription = get_field('form_description');
+$bannerFormShortCode = get_field('form_shortcode');
 
 ?>
 
@@ -100,36 +101,9 @@ $formDescription = get_field('form_description');
                         <?= $formDescription ?>
                     </p>
                 </div>
-                <form action="">
-                    <div class="form-group-container">
-                        <div class="form-group">
-                            <label><?= __('Imię*', 'marweb') ?></label>
-                            <div class="input-group">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                                <input type="text" class="form-control order-1">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Email:</label>
-                            <div class="input-group">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                                <input type="text" class="form-control order-1">
-                            </div>
-                        </div>
-                        <div class="form-group form-comments">
-                            <label><?= __('Treść*', 'marweb') ?></label>
-                            <div class="input-group input-group-textarea">
-                                <i class="fa fa-comments" aria-hidden="true"></i>
-                                <textarea type="text" id="autoresizing" class="form-control order-1"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="button-container">
-                        <button type="submit" class="btn-send">
-                            <?= __('Wyślij wiadomość', 'marweb') ?>
-                        </button>
-                    </div>
-                </form>
+                <div class="form">
+                <?= apply_shortcodes($bannerFormShortCode); ?>
+                </div>
             </div>
         </div>
     </div>

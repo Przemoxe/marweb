@@ -1,4 +1,4 @@
-export default function(){
+
     const hamburgerButton = document.querySelector(".nav-hamburger .fa-bars");
 const hamburgerMenuLists = document.querySelector(".nav-top-mobile .main-container-px20 .nav-lists");
 const backgroundMobileMenu = document.querySelector(".nav-top-mobile")
@@ -18,4 +18,4 @@ singleLink.addEventListener("click", function(){
 });
 
 
-}
+

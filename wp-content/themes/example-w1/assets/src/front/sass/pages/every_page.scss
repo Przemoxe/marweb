@@ -37,4 +37,9 @@
   }
   .wpcf7 form.sent .wpcf7-response-output {
     border-color: var(--MW-color-const-1);
+    color: var(--MW-form-h4);
+}
+.wpcf7 form .wpcf7-response-output {
+  margin: 20px 0;
+  color: var(--MW-form-h4);
 }

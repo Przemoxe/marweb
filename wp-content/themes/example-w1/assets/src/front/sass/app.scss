@@ -1,19 +1,22 @@
+body{
+    padding-top: 94px;
+    margin:0;
+    max-width: 1920px;
+}
 
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active   {
+    caret-color: auto;
+    -webkit-text-fill-color: var(--MW-form-h4);
+    -webkit-box-shadow: 0 0 0 30px var(--MW-form-background) inset !important;
+}
 @import "variables/navigation";
 @import "variables/colors";
-@import "main";
 
-// /**
-//  * variables
-//  */
 
-//
-@import "main";
-//
-
-// /**
-//  * pages
-//  */
 @import "pages/front_page";
 @import "pages/every_page";
 @import "pages/archive_portfolio";
@@ -24,58 +27,9 @@
 @import "pages/templates/template-contact";
 @import "pages/templates/template-faq";
 @import "pages/templates/template-faq-accordion";
-// /**
-//  * Elements
-//  */
-// @import "elements/gutenberg";
-// @import "elements/drop_down_list";
-// @import "elements/header";
-@import "elements/footer";
-// @import "elements/fonts";
-// @import "elements/breadcrumbs";
-// @import "elements/icons";
-// @import "elements/main";
-// @import "elements/mailchimp";
-// @import "elements/social-media-blocks";
-// @import "elements/cookie_info";
-// @import "elements/404";
-// @import "elements/archive_fairs";
-// @import "elements/posts_list";
-// @import "elements/pagination";
-// @import "elements/base";
-// @import "elements/hamburger";
-// @import "elements/product-gallery";
-// @import "elements/gallery";
-// @import "elements/blocks";
-// @import "elements/search";
-// @import "elements/buttons";
-// @import "elements/oembed";
-// @import "elements/single";
-// @import "elements/fair";
-// @import "elements/carousel";
-// @import "elements/scrollbar";
-// @import "elements/form";
 
-// /**
-//  * Elements blocks
-//  */
+
 @import "elements/blocks/first_button";
-// @import "elements/blocks/product-search";
 
-// /**
-//  * Elements product
-//  */
-//  @import "elements/product/product";
-
-// /**
-//  * Elements menu
-//  */
-// @import "elements/menu/header";
-// @import "elements/menu/children_pages";
-// @import "elements/menu/products";
 @import "elements/menu/navigation";
-
-// /**
-//  * Vendor
-//  */
-// @import "node_modules/vue-select/src/scss/vue-select";
+@import "elements/footer";
