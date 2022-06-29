@@ -6,17 +6,33 @@
 get_header();
 ?>
 
+<?php
+
+$dataNavbarTitle = get_field('data_navbar_title');
+$dataTitle = get_field('data_title');
+$dataTitleColored = get_field('data_title_colored');
+$dataTitleAfterColored = get_field('data_title_after_colored');
+$dataDescription = get_field('data_description');
+$dataInfoCards = get_field('data_info_cards');
+
+$formNavbarTitle = get_field('form_navbar_title');
+$formTitle = get_field('form_title');
+$formTitleColored = get_field('form_title_colored');
+$formDescription = get_field('form_description');
+
+?>
+
 <nav class="single-blog-nav">
     <div class="main-container-px20">
         <nav class="single-blog-nav">
             <div class="container-title">
                 <h5>
-                    Contact
+                <?= get_the_title() ?>
                 </h5>
             </div>
             <div class="container-links">
                 <span class="breadcrumb-item">
-                    <a href="<?= get_home_url() ?>">Home</a>
+                    <a href="<?= get_home_url() ?>"><?= get_the_title( get_option('page_on_front') ); ?></a>
                 </span>
                 <span class="breadcrumb-item active">
                     <i class="arrow right"></i>
@@ -32,55 +48,33 @@ get_header();
         <div class="template-contact-container">
             <div class="left-navbar">
                 <h6 class="title">
-                    Our offices
+                    <?= $dataNavbarTitle ?>
                 </h6>
             </div>
             <div class="contact-content">
                 <h3>
-                    Want to talk <span>in person</span>? Call us or visit us
+                    <?= $dataTitle ?> <span><?= $dataTitleColored ?></span><?= $dataTitleAfterColored ?>
                 </h3>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores tempore omnis non nemo distinctio, perspiciatis ut reprehenderit tenetur eveniet, et doloribus ipsa eligendi incidunt voluptas? Incidunt perferendis reiciendis velit optio corporis, delectus commodi nam ad distinctio, omnis fuga obcaecati consequatur numquam reprehenderit amet necessitatibus eum aspernatur sequi. Accusantium, quo cum.
+                    <?= $dataDescription ?>
                 </p>
                 <div class="content-data">
-                    <div class="single-data">
-                        <h5>
-                            Location:
-                        </h5>
-                        <p>
-                            1234 Altschul, New York, NY 10027-0000
-                        </p>
-                    </div>
-                    <div class="single-data">
-                        <h5>
-                            Email:
-                        </h5>
-                        <p>
-                            <a href="mailto:admin@domain.com">
-                                admin@domain.com
-                            </a>
-                        </p>
-                    </div>
-                    <div class="single-data">
-                        <h5>
-                            Call us:
-                        </h5>
-                        <p>
-                            <a href="tel:1234567890">
-                                132-465-78-90
-                            </a>
-                        </p>
-                    </div>
-                    <div class="single-data">
-                        <h5>
-                            Skype:
-                        </h5>
-                        <p>
-                            <a href="tel:1234567890">
-                                simpleqode.skype
-                            </a>
-                        </p>
-                    </div>
+                    <?php
+
+                    foreach ($dataInfoCards as $el) {
+                    ?>
+                        <div class="single-data">
+                            <h5>
+                                <?= $el['info_title'] ?>
+                            </h5>
+                            <p>
+                                <?= $el['data'] ?>
+                            </p>
+                        </div>
+                    <?php
+                    }
+
+                    ?>
                 </div>
             </div>
         </div>
@@ -94,22 +88,22 @@ get_header();
         <div class="template-contact-container">
             <div class="left-navbar">
                 <h6 class="title">
-                    CONTACT FORM AND INFORMATION
+                    <?= $formNavbarTitle ?>
                 </h6>
             </div>
             <div class="ask-us-container">
                 <div class="contact-content">
                     <h3>
-                    Have questions? Send us an <span>e-mail</span>
+                        <?= $formTitle ?> <span><?= $formTitleColored ?></span>
                     </h3>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores tempore omnis non nemo distinctio, perspiciatis ut reprehenderit tenetur eveniet, et doloribus ipsa eligendi incidunt voluptas? Incidunt perferendis reiciendis velit optio corporis, delectus commodi nam ad distinctio, omnis fuga obcaecati consequatur numquam reprehenderit amet necessitatibus eum aspernatur sequi. Accusantium, quo cum.
+                        <?= $formDescription ?>
                     </p>
                 </div>
                 <form action="">
                     <div class="form-group-container">
                         <div class="form-group">
-                            <label>Name:</label>
+                            <label><?= __('Imię*', 'marweb') ?></label>
                             <div class="input-group">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                                 <input type="text" class="form-control order-1">
@@ -123,7 +117,7 @@ get_header();
                             </div>
                         </div>
                         <div class="form-group form-comments">
-                            <label>Comments:</label>
+                            <label><?= __('Treść*', 'marweb') ?></label>
                             <div class="input-group input-group-textarea">
                                 <i class="fa fa-comments" aria-hidden="true"></i>
                                 <textarea type="text" id="autoresizing" class="form-control order-1"></textarea>
@@ -132,7 +126,7 @@ get_header();
                     </div>
                     <div class="button-container">
                         <button type="submit" class="btn-send">
-                            Send the message
+                            <?= __('Wyślij wiadomość', 'marweb') ?>
                         </button>
                     </div>
                 </form>

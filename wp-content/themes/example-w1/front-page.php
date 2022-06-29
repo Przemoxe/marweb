@@ -1,4 +1,8 @@
 <?php
+/* Template Name: Stronga główna*/
+?>
+
+<?php
 get_header();
 ?>
 <?php
@@ -11,6 +15,7 @@ $bannerSubheading = get_field('subheading');
 $bannerFirstButtonText = get_field('first_button_text');
 $bannerSecondButtonText = get_field('second_button_text');
 $bannerFormTitle = get_field('form_title');
+$bannerFormShortCode = get_field('form_shortcode');
 $bannerFormTelNumber = get_field('form_tel_number');
 
 $serviceSectionTitle = get_field('service_section_title');
@@ -38,7 +43,6 @@ $blogSectionPosts = get_field('blog_section_posts');
     <div class="bg-overlay"></div>
     <div class="main-container-px20">
         <div class="banner-container">
-
             <p class="preheading">
                 <?= $bannerPreheading ?>
             </p>
@@ -58,52 +62,18 @@ $blogSectionPosts = get_field('blog_section_posts');
             </div>
         </div>
         <div class="ask-us-container">
-            <form action="">
-                <h4><?= $bannerFormTitle ?></h4>
-                <label>Name:</label>
-                <div class="form-group">
-                    <div class="input-group">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                        <input type="text" class="form-control order-1">
-                    </div>
-                </div>
-                <label>Email:</label>
-                <div class="form-group">
-                    <div class="input-group">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <input type="text" class="form-control order-1">
-                    </div>
-                </div>
-                <label>Comments:</label>
-                <div class="form-group">
-                    <div class="input-group input-group-textarea">
-                        <i class="fa fa-comments" aria-hidden="true"></i>
-                        <textarea type="text" id="autoresizing" class="form-control order-1"></textarea>
-                    </div>
-                </div>
-                <div class="button-container">
-                    <button type="submit" class="btn-send">
-                        Send the message
-                    </button>
-                    <p class="call-us">
-                        <span class="call-us-text">
-                            Or call us:
-                        </span>
-                        <a href="#">
-                            <?= $bannerFormTelNumber ?>
-                        </a>
-                    </p>
-                </div>
-            </form>
+            <div class="form">
+                <?= apply_shortcodes($bannerFormShortCode); ?>
+            </div>
+           
         </div>
     </div>
 </section>
-
 <section class="services-section">
     <div class="main-container-px20">
         <div class="services-description">
             <h1><?= $serviceSectionTitle ?></h1>
-            <p><?= $serviceSectionDescription ?></p>
+            <p><?= __($serviceSectionDescription, 'marweb') ?></p>
         </div>
         <div class="services-image" id="services">
             <img src="<?= $serviceImage ?>" alt="">

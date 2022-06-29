@@ -1,4 +1,4 @@
-<?php
+<?php        
 require_once get_template_directory() . '/application/vendor/autoload.php';
 
 /**

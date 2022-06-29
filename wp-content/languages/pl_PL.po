@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 6.0.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-06-08 06:56:07+0000\n"
+"PO-Revision-Date: 2022-06-22 07:30:29+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -5104,7 +5104,7 @@ msgstr "Edytuj profil"
 
 #: wp-includes/sitemaps/class-wp-sitemaps-stylesheet.php:64
 msgid "Priority"
-msgstr "Priorytetowe"
+msgstr "Priorytet"
 
 #: wp-includes/sitemaps/class-wp-sitemaps-stylesheet.php:63
 msgid "Change Frequency"
@@ -15624,7 +15624,7 @@ msgstr "Jedna odpowiedź"
 
 #: wp-includes/theme-compat/comments.php:24
 msgid "This post is password protected. Enter the password to view comments."
-msgstr "Ten wpis jest zabezpieczony hasłem. Wprowadź je, aby zobaczyć komentarze."
+msgstr "Wpis jest chroniony hasłem. Proszę wprowadzić hasło, aby zobaczyć jego komentarze."
 
 #: wp-includes/class-wp-taxonomy.php:631
 msgid "Choose from the most used tags"
@@ -17880,7 +17880,7 @@ msgstr "%1$s o %2$s"
 #: wp-includes/class-walker-comment.php:313
 #: wp-includes/class-walker-comment.php:417
 msgid "Your comment is awaiting moderation."
-msgstr "Twój komentarz oczekuje na moderację."
+msgstr "Twój komentarz oczekuje na zatwierdzenie."
 
 #: wp-includes/theme-compat/comments.php:72
 msgid "Comments are closed."

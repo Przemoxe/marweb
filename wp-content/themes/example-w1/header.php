@@ -27,7 +27,7 @@
 		<div class="main-container-px20 nav-container">
 			<div>
 				<a href="<?= get_home_url() ?>">
-					
+					MarszWeb.pl
 				</a>
 				<a href=""></a>
 				<a href=""></a>
@@ -46,10 +46,13 @@
 				'theme_location'    => 'main-menu',
 				'menu_id'        	=> 'main-menu',
 				'container_class'   => 'main-menu',
-
-				// 'after'             => '</div><button class="more"></button>'
-
 			]);
+			wp_nav_menu([
+				'theme_location'    => 'language-menu',
+				'menu_id'        	=> 'language-menu',
+				'container_class'   => 'language-menu',
+			]);
+
 			?>
 		</div>
 	</div>
@@ -59,7 +62,7 @@
 			<div class="nav-mobile">
 				<div class="nav-logo">
 					<a href="<?= get_home_url() ?>">
-						
+						MarszWeb.pl
 					</a>
 					<div class="change-color-container">
 						<div class="color-icon color-icon-mobile">
@@ -73,12 +76,18 @@
 				</div>
 				<div class="nav-lists">
 					<?php
+
 					wp_nav_menu([
 						'theme_location'    => 'main-menu',
 						'menu_id'        	=> 'mobile-main-menu',
 						'container_class'   => 'mobile-main-menu',
-						// 'after'             => '</div><button class="more"></button>'
 					]);
+					wp_nav_menu([
+						'theme_location'    => 'language-menu',
+						'menu_id'        	=> 'language-menu',
+						'container_class'   => 'language-menu',
+					]);
+
 					?>
 				</div>
 			</div>

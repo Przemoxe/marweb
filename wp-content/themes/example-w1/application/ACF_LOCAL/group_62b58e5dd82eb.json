@@ -23,8 +23,8 @@
         },
         {
             "key": "field_62b58ed20798d",
-            "label": "contact section title",
-            "name": "contact_section_title",
+            "label": "data title",
+            "name": "data_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -42,8 +42,8 @@
         },
         {
             "key": "field_62b58f030798e",
-            "label": "contact section title colored",
-            "name": "contact_section_title_colored",
+            "label": "data title colored",
+            "name": "data_title_colored",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -61,8 +61,8 @@
         },
         {
             "key": "field_62b58f260798f",
-            "label": "contact section title after colored",
-            "name": "contact_section_title_after_colored",
+            "label": "data title after colored",
+            "name": "data_title_after_colored",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -80,8 +80,8 @@
         },
         {
             "key": "field_62b58f5b07990",
-            "label": "contact section description",
-            "name": "contact_section_description",
+            "label": "data description",
+            "name": "data_description",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -98,10 +98,10 @@
             "new_lines": ""
         },
         {
-            "key": "field_62b58f7207991",
-            "label": "contact section data card title",
-            "name": "contact_section_data_card_title",
-            "type": "text",
+            "key": "field_62b9517c7138c",
+            "label": "data info cards",
+            "name": "data_info_cards",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -110,30 +110,51 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_62b58fbc07992",
-            "label": "contact section data card info",
-            "name": "contact_section_data_card_info",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_62b951857138d",
+                    "label": "info title",
+                    "name": "info_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62b951b97138e",
+                    "label": "data",
+                    "name": "data",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
         }
     ],
     "location": [
@@ -153,5 +174,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1656066100
+    "modified": 1656314090
 }

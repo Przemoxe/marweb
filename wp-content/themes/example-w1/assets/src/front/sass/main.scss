@@ -3,3 +3,13 @@ body{
     margin:0;
     max-width: 1920px;
 }
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    caret-color: auto;
+    -webkit-text-fill-color: var(--MW-form-h4);
+    -webkit-box-shadow: 0 0 0 30px var(--MW-form-background) inset !important;
+}

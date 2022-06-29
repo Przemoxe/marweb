@@ -31,3 +31,10 @@
     -webkit-transform: rotate(-45deg);
     color: rgba(255,255,255,.5);
   }
+
+  .wpcf7 form.invalid .wpcf7-response-output{
+    border-color: red;
+  }
+  .wpcf7 form.sent .wpcf7-response-output {
+    border-color: var(--MW-color-const-1);
+}

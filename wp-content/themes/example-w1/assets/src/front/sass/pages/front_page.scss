@@ -1,6 +1,6 @@
 .banner-section {
   @media (max-width: 992px) {
-    height:55vh;
+    height: 55vh;
   }
   position: relative;
   width: 100%;
@@ -64,7 +64,8 @@
         font-family: Objective, sans-serif;
         font-size: 12px;
         margin-bottom: 34px;
-        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
         font-size: 14px;
         font-weight: 500;
         line-height: 1.75;
@@ -84,10 +85,10 @@
           background-color: var(--MW-btn-color-background);
           border: 1px solid var(--MW-btn-color-border);
           color: var(--MW-btn-color);
-          &:hover{
+          &:hover {
             background-color: var(--MW-btn-color-background-hover);
             border: 1px solid var(--MW-btn-color-border-hover);
-            color:var(--MW-btn-color-hover);
+            color: var(--MW-btn-color-hover);
           }
         }
       }
@@ -96,11 +97,22 @@
       @media (max-width: 992px) {
         display: none;
       }
-      form {
+      .form {
         width: 400px;
         background-color: var(--MW-form-background);
         padding: 40px;
-        border-top: 4px solid rgba(0, 36, 84, 0.95);
+        border-top: 4px solid var(--MW-color-const-1);
+        .wpcf7 {
+          form {
+            .wpcf7-response-output {
+              padding: 10px 10px;
+              margin: 23px 0 1em 0;
+              color: var(--MW-form-h4);
+              font-family: "Trebuchet MS", "Lucida Sans Unicode",
+                "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+            }
+          }
+        }
         h4 {
           margin-top: 0;
           color: var(--MW-form-h4);
@@ -120,44 +132,77 @@
             margin-top: 7px;
             margin-bottom: 13px;
             transition: 0.2s;
+            display: flex;
             &:focus-within {
               border: 1px solid var(--MW-form-input-border-hover);
               i {
-                color:  var(--MW-form-input-border-hover);
+                color: var(--MW-form-input-border-hover);
               }
             }
             i {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 2px;
               text-align: center;
               width: 40px;
               margin-right: 5px;
               color: #6c757d;
               transition: 0.2s;
             }
+            .fa-comments {
+              align-items: start;
+            }
             input {
+              caret-color: var(--MW-form-h4);
+              line-height: 18px;
+              width: 98%;
               background-color: transparent;
               color: var(--MW-form-input-color);
               border: 0;
-              width: calc(100% - 82px);
               padding: 13px 0;
+              font-size: 13px;
+              font-family: "Trebuchet MS", "Lucida Sans Unicode",
+                "Lucida Grande", "Lucida Sans", Arial, sans-serif;
               &:focus {
                 outline: none;
               }
             }
+
+            .wpcf7-not-valid-tip {
+              position: absolute;
+              margin-top: 5px;
+              right: -50px;;
+              font-family: "Trebuchet MS", "Lucida Sans Unicode",
+                "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+            }
           }
           .input-group-textarea {
-            display: flex;
+            .wpcf7-form-control-wrap {
+              margin: 10px 0;
+              .wpcf7-not-valid-tip{
+                margin-top: 15px;
+              }
+            }
             i {
-              margin-top: 10px;
+              margin-top: 12px;
+            }
+            .input:-internal-autofill-selected{
+              background-color: red;
             }
             textarea {
+              height: 18px;
+              line-height: 18px;
+              font-family: "Trebuchet MS", "Lucida Sans Unicode",
+                "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+              font-size: 13px;
               color: var(--MW-form-input-color);
               background-color: transparent;
-              width: calc(100% - 75px);
+              width: 97%;
               border: 0;
               overflow: hidden;
               resize: none;
-              padding-top: 14px;
-              height: 25px;
+
               &:focus {
                 outline: none;
               }
@@ -168,6 +213,7 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
+          padding-top: 10px;
           .btn-send {
             border: 1px solid var(--MW-btn-color-border);
             padding: 15px 25px;
@@ -177,12 +223,15 @@
             text-transform: uppercase;
             font-size: 11px;
             font-weight: 500;
-            color:white;
+            color: white;
             &:hover {
               color: var(--MW-btn-color-hover);
               background-color: var(--MW-btn-color-background-hover);
               border: 1px solid var(--MW-btn-color-border-hover);
             }
+          }
+          .wpcf7-spinner {
+            background-color: var(--MW-color-const-1);
           }
         }
       }
@@ -260,14 +309,14 @@
       .icon-box {
         text-align: center;
         padding: 20px;
-        .icon-box-icon{
-          transition: .2s;
-          i{
+        .icon-box-icon {
+          transition: 0.2s;
+          i {
             color: var(--MW-color-const-1);
           }
         }
         .icon-box-title {
-          transition: .2s;
+          transition: 0.2s;
           h6 {
             color: var(--MW-form-h4);
             margin: 0;
@@ -292,14 +341,14 @@
             margin-top: 0;
           }
         }
-        &:hover{
-          .icon-box-icon{
-            transition: .2s;
-            margin-top:-20px;
+        &:hover {
+          .icon-box-icon {
+            transition: 0.2s;
+            margin-top: -20px;
           }
-          .icon-box-title{
-            transition: .2s;
-            padding-top:20px;
+          .icon-box-title {
+            transition: 0.2s;
+            padding-top: 20px;
           }
         }
       }
@@ -351,7 +400,7 @@
       i {
         font-size: 30px;
         padding-right: 40px;
-        color:var(--MW-color-const-1);
+        color: var(--MW-color-const-1);
       }
       p {
         margin: 0;
@@ -387,10 +436,10 @@
             background: green;
             .card-img-top {
               transition: 0.2s;
-              height:220px;
+              height: 220px;
               img {
                 width: 100%;
-                height:100%;
+                height: 100%;
                 object-fit: cover;
                 transition: 0.2s;
               }
@@ -498,13 +547,13 @@
       height: 140px;
       position: relative;
       perspective: 1000px;
-      @media(max-width:700px){
+      @media (max-width: 700px) {
         width: 140px;
       }
-      @media(max-width:420px){
+      @media (max-width: 420px) {
         width: 110px;
       }
-      @media(max-width:350px){
+      @media (max-width: 350px) {
         width: 100px;
       }
     }
@@ -528,15 +577,15 @@
       background: black;
       overflow: hidden;
       border: solid 2px black;
-      @media(max-width:700px){
+      @media (max-width: 700px) {
         width: 100px;
-        height:100px;
+        height: 100px;
       }
-      @media(max-width:420px){
+      @media (max-width: 420px) {
         width: 90px;
         height: 90px;
       }
-      @media(max-width:350px){
+      @media (max-width: 350px) {
         width: 80px;
         height: 90px;
       }
@@ -548,109 +597,109 @@
     }
     #carousel figure:nth-child(1) {
       transform: rotateY(0deg) translateZ(288px);
-      @media(max-width:700px){
+      @media (max-width: 700px) {
         transform: rotateY(0deg) translateZ(160px);
       }
-      @media(max-width:420px){
+      @media (max-width: 420px) {
         transform: rotateY(0deg) translateZ(140px);
       }
-      @media(max-width:350px){
+      @media (max-width: 350px) {
         transform: rotateY(0deg) translateZ(120px);
       }
     }
     #carousel figure:nth-child(2) {
       transform: rotateY(40deg) translateZ(288px);
-      @media(max-width:700px){
+      @media (max-width: 700px) {
         transform: rotateY(40deg) translateZ(160px);
       }
-      @media(max-width:420px){
+      @media (max-width: 420px) {
         transform: rotateY(40deg) translateZ(140px);
       }
-      @media(max-width:350px){
+      @media (max-width: 350px) {
         transform: rotateY(40deg) translateZ(120px);
       }
     }
     #carousel figure:nth-child(3) {
       transform: rotateY(80deg) translateZ(288px);
-      @media(max-width:700px){
+      @media (max-width: 700px) {
         transform: rotateY(80deg) translateZ(160px);
       }
-      @media(max-width:420px){
+      @media (max-width: 420px) {
         transform: rotateY(80deg) translateZ(140px);
       }
-      @media(max-width:350px){
+      @media (max-width: 350px) {
         transform: rotateY(80deg) translateZ(120px);
       }
     }
     #carousel figure:nth-child(4) {
       transform: rotateY(120deg) translateZ(288px);
-      @media(max-width:700px){
+      @media (max-width: 700px) {
         transform: rotateY(120deg) translateZ(160px);
       }
-      @media(max-width:420px){
+      @media (max-width: 420px) {
         transform: rotateY(120deg) translateZ(140px);
       }
-      @media(max-width:350px){
+      @media (max-width: 350px) {
         transform: rotateY(120deg) translateZ(120px);
       }
     }
     #carousel figure:nth-child(5) {
       transform: rotateY(160deg) translateZ(288px);
-      @media(max-width:700px){
+      @media (max-width: 700px) {
         transform: rotateY(160deg) translateZ(160px);
       }
-      @media(max-width:420px){
+      @media (max-width: 420px) {
         transform: rotateY(160deg) translateZ(140px);
       }
-      @media(max-width:350px){
+      @media (max-width: 350px) {
         transform: rotateY(160deg) translateZ(120px);
       }
     }
     #carousel figure:nth-child(6) {
       transform: rotateY(200deg) translateZ(288px);
-      @media(max-width:700px){
+      @media (max-width: 700px) {
         transform: rotateY(200deg) translateZ(160px);
       }
-      @media(max-width:420px){
+      @media (max-width: 420px) {
         transform: rotateY(200deg) translateZ(140px);
       }
-      @media(max-width:350px){
+      @media (max-width: 350px) {
         transform: rotateY(200deg) translateZ(120px);
       }
     }
     #carousel figure:nth-child(7) {
       transform: rotateY(240deg) translateZ(288px);
-      @media(max-width:700px){
+      @media (max-width: 700px) {
         transform: rotateY(240deg) translateZ(160px);
       }
-      @media(max-width:420px){
+      @media (max-width: 420px) {
         transform: rotateY(240deg) translateZ(140px);
       }
-      @media(max-width:350px){
+      @media (max-width: 350px) {
         transform: rotateY(240deg) translateZ(120px);
       }
     }
     #carousel figure:nth-child(8) {
       transform: rotateY(280deg) translateZ(288px);
-      @media(max-width:700px){
+      @media (max-width: 700px) {
         transform: rotateY(280deg) translateZ(160px);
       }
-      @media(max-width:420px){
+      @media (max-width: 420px) {
         transform: rotateY(280deg) translateZ(140px);
       }
-      @media(max-width:350px){
+      @media (max-width: 350px) {
         transform: rotateY(280deg) translateZ(120px);
       }
     }
     #carousel figure:nth-child(9) {
       transform: rotateY(320deg) translateZ(288px);
-      @media(max-width:700px){
+      @media (max-width: 700px) {
         transform: rotateY(320deg) translateZ(160px);
       }
-      @media(max-width:420px){
+      @media (max-width: 420px) {
         transform: rotateY(320deg) translateZ(140px);
       }
-      @media(max-width:350px){
+      @media (max-width: 350px) {
         transform: rotateY(320deg) translateZ(120px);
       }
     }

@@ -28,12 +28,12 @@ $infoButtons = get_field('info_buttons');
         <nav class="single-blog-nav">
             <div class="container-title">
                 <h5>
-                    FAQ
+                <?= get_the_title() ?>
                 </h5>
             </div>
             <div class="container-links">
                 <span class="breadcrumb-item">
-                    <a href="<?= get_home_url() ?>">Home</a>
+                    <a href="<?= get_home_url() ?>"><?= get_the_title( get_option('page_on_front') ); ?></a>
                 </span>
                 <span class="breadcrumb-item active">
                     <i class="arrow right"></i>
@@ -88,47 +88,41 @@ $infoButtons = get_field('info_buttons');
         <div class="template-faq-container">
             <div class="left-navbar">
                 <h6 class="title">
-                    ADDITIONAL RESOURCES
+                    <?= $infoNavbarTitle ?>
                 </h6>
             </div>
             <div class="faq-content">
                 <h3>
-                    Still confused?
+                    <?= $infoTitle ?>
                 </h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, explicabo nam fugit aspernatur quaerat est id sequi, molestias dolore laboriosam perferendis officiis provident asperiores. Eveniet vitae cumque at ab dolorem!
+                    <?= $infoDescription ?>
                 </p>
                 <div class="more-info-container">
-                    <div class="contact-support">
-                        <div class="card-body">
-                            <div class="card-icon">
-                                <i class="fa fa-search" aria-hidden="true"></i>
+
+                    <?php
+
+                    foreach ($infoButtons as $el) { ?>
+
+                        <div class="contact-support">
+                            <div class="card-body">
+                                <div class="card-icon">
+                                    <i class="fa <?= $el['icon'] ?>" aria-hidden="true"></i>
+                                </div>
+                                <h5>
+                                    <?= $el['title'] ?>
+                                </h5>
+                                <p>
+                                    <?= $el['description'] ?>
+                                </p>
                             </div>
-                            <h5>
-                                Contact support
-                            </h5>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit deserunt vero pariatur.
-                            </p>
+                            <a href="">
+                            </a>
                         </div>
-                        <a href="">
-                        </a>
-                    </div>
-                    <div class="contact-support">
-                        <div class="card-body">
-                            <div class="card-icon">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </div>
-                            <h5>
-                                Ask a question
-                            </h5>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit deserunt vero pariatur.
-                            </p>
-                        </div>
-                        <a href="">
-                        </a>
-                    </div>
+
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
         </div>

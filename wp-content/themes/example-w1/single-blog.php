@@ -12,7 +12,7 @@ get_header();
             </div>
             <div class="container-links">
                 <span class="breadcrumb-item">
-                    <a href="<?= get_home_url() ?>">Home</a>
+                    <a href="<?= get_home_url() ?>"><?= get_the_title( get_option('page_on_front') ); ?></a>
                 </span>
                 <span class="breadcrumb-item active">
                     <i class="arrow right"></i>

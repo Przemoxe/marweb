@@ -4,8 +4,8 @@
     "fields": [
         {
             "key": "field_62b5904aa9d73",
-            "label": "data navbar title",
-            "name": "data_navbar_title",
+            "label": "form navbar title",
+            "name": "form_navbar_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -23,8 +23,8 @@
         },
         {
             "key": "field_62b59055a9d74",
-            "label": "contact section title",
-            "name": "contact_section_title",
+            "label": "form title",
+            "name": "form_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -42,8 +42,8 @@
         },
         {
             "key": "field_62b59079a9d75",
-            "label": "contact section title colored",
-            "name": "contact_section_title_colored",
+            "label": "form title colored",
+            "name": "form_title_colored",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -61,8 +61,8 @@
         },
         {
             "key": "field_62b59089a9d76",
-            "label": "contact section description",
-            "name": "contact_section_description",
+            "label": "form description",
+            "name": "form_description",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -96,5 +96,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1656066239
+    "modified": 1656312928
 }

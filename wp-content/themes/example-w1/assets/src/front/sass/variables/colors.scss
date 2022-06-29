@@ -17,6 +17,7 @@ $blue_header: rgb(16, 52, 125);
     --first-color: #00608a;
     --second-color: white;
     --third-color: #f8f8f8;
+    --fourth-color: black;
 
     //btn
     --MW-btn-color-background: #00608a;
@@ -39,6 +40,7 @@ $blue_header: rgb(16, 52, 125);
     --MW-menu-border-bottom:rgba(255,255,255,.1);
     --MW-mobile-dark-hamburger: #212529;
     --MW-mobile-last-child-border-left: rgba(255,255,255,.1);
+    --MB-mobile-last-child-border:rgba(0, 0, 0, 0.1);
 
     //blog faq
     --MW-post-border-bottom:rgba(0, 0, 0, 0.1);
@@ -56,6 +58,7 @@ $blue_header: rgb(16, 52, 125);
     --first-color: rgba(29,26,32);
     --second-color: rgba(29,26,32);
     --third-color: #252427;
+    --fourth-color: white;
 
     //btn
     --MW-btn-color-background: #00608a;
@@ -78,6 +81,7 @@ $blue_header: rgb(16, 52, 125);
     --MW-menu-border-bottom:transparent;
     --MW-mobile-dark-hamburger: white;
     --MW-mobile-last-child-border-left: rgba(255,255,255,.1);
+    --MB-mobile-last-child-border:rgba(255, 255, 255, 0.1);
 
     //blog faq posts
     --MW-post-border-bottom:rgba(219, 218, 218, 0.1);

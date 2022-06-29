@@ -9,12 +9,61 @@
                         <h6>About Us</h6>
                     </div>
                     <div class="textwidget">
-                        <p>Map where your photos were taken and discover local points of interest. Map where your photos.</p>
                         <p>
-                            Location: 12 London Avenue, Suite 18<br>
-                            E-mail: support@theme.com<br>
-                            Phone: 8 800 123 4567<br>
+                            <?php
+                            $query = new WP_Query(
+                                array(
+                                    'post_type' => 'page', //it is a Page right?
+                                    'post_status' => 'publish',
+                                    'meta_query' => array(
+                                        array(
+                                            'key' => '_wp_page_template',
+                                            'value' => 'templates/about-us.php', // folder + template name as stored in the dB
+                                        )
+                                    )
+                                )
+                            );
+                            while ($query->have_posts()) {
+                                $query->the_post();
+                                $description = get_field('description', get_the_ID());
+                            ?>
+                                <a href="<?= get_the_permalink() ?>">
+                                    <?= mb_strimwidth($description, 0, 100, "..."); ?>
+                                </a>
+                            <?php
+                            }
+                            wp_reset_postdata();
+
+                            ?>
                         </p>
+                        <div class="data">
+                            <?php
+                            $query = new WP_Query(
+                                array(
+                                    'post_type' => 'page', //it is a Page right?
+                                    'post_status' => 'publish',
+                                    'meta_query' => array(
+                                        array(
+                                            'key' => '_wp_page_template',
+                                            'value' => 'templates/template-kontakt.php', // folder + template name as stored in the dB
+                                        )
+                                    )
+                                )
+                            );
+                            while ($query->have_posts()) {
+                                $query->the_post();
+
+                                $dataInfoCards = get_field('data_info_cards', get_the_ID());
+                                foreach ($dataInfoCards as $el) {
+                            ?>
+                                    <p> <?= $el["info_title"] ?> <?= $el["data"] ?></p><br>
+                            <?php
+                                }
+                            }
+                            wp_reset_postdata();
+
+                            ?>
+                        </div>
                     </div>
                 </aside>
             </div>
@@ -37,7 +86,7 @@
                         <?php }
                         wp_reset_postdata();
                         ?>
-                       
+
                     </ul>
                 </aside>
             </div>

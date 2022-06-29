@@ -33,14 +33,14 @@ get_header();
             </div>
             <div class="content-404">
                 <h3>
-                    Page <span>not</span> found
+                    <?= __('Strona', 'marweb') ?> <span><?= __('nie', 'marweb') ?> </span><?= __('odnaleziona', 'marweb') ?> 
                 </h3>
                 <p>
-                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi voluptatibus, natus labore ratione numquam expedita nostrum voluptate ipsum iste esse in aliquid, ipsam fugit? In.
+                   <?= __('Nie udało się odnaleźć strony www', 'marweb') ?>
                 </p>
                 <div class="first-button">
                     <a type="submit" class="btn-send" href="<?= get_home_url()?>">
-                        HomePage<i class="arrow right"></i>
+                        <?= __('Stronga główna', 'marweb') ?><i class="arrow right"></i>
                     </a>
                 </div>
             </div>
@@ -54,9 +54,6 @@ get_header();
 
 
 
-<?php
-get_footer();
-?>
 <?php
 get_footer();
 ?>
