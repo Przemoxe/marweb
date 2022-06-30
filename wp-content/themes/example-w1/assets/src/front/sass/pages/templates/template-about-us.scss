@@ -1,7 +1,7 @@
 .template-about-us-section{
     background-color: var(--third-color);
-    padding-top:100px;
-    padding-bottom:80px;
+    padding-top:60px;
+    padding-bottom:20px;
     .main-container-px20{
         .about-us-image{
             img{
@@ -14,7 +14,7 @@
         .template-about-us-container{
           display: flex;
           flex-wrap: wrap;
-          padding-top:100px;
+          padding-top:25px;
           .left-navbar {
             @media(max-width:768px){
                 width:100%;

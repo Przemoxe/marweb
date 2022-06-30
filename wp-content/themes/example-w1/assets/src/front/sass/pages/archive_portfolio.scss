@@ -1,6 +1,6 @@
 .archive-portfolio-top-section {
   background-color: var(--third-color);
-  padding-top: 94px;
+  padding-top: 60px;
   .main-container-px20 {
     .portfolio-top-container {
       display: flex;
@@ -9,6 +9,7 @@
         @media (max-width: 768px) {
           width: 100%;
           order: 2;
+          padding-top:5px;
         }
         display: flex;
         flex-direction: column;
@@ -67,9 +68,10 @@
 .archive-portfolio-projects-section {
   background-color: var(--third-color);
   @media(max-width:768px){
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom:10px;
   }
-  padding:120px 0;
+  padding-top:120px;
   .main-container {
     .container-portfolio-projects {
       width: 100%;
