@@ -89,7 +89,7 @@ class Theme
             'show_in_rest' => true,
             'supports' => array('title', 'editor', 'thumbnail'),
             'public' => true,
-            'has_archive' => true,
+            'has_archive' => false,
             'label'  => __("Portfolio", 'marweb'),
             'labels' => array(
                 'name' => __("Portfolio", 'marweb'),
@@ -100,35 +100,6 @@ class Theme
             ),
             'menu_icon' => 'dashicons-awards'
         ));
-        register_post_type('blog', array(
-            'show_in_rest' => true,
-            'supports' => array('title', 'editor', 'thumbnail'),
-            'public' => true,
-            'has_archive' => false,
-            'labels' => array(
-                'name' => __("Blog", 'marweb'),
-                'add_new' => __('Dodaj wpis', 'marweb'),
-                'edit_item' => __('Edytuj wpis', 'marweb'),
-                'all_items' => __('Wszystkie wpisy', 'marweb'),
-                'singular_name' => 'blog'
-            ),
-            'menu_icon' => 'dashicons-awards'
-        ));
 
-        //Add Cpt archive page
-        if (function_exists('acf_add_options_page')) {
-            acf_add_options_sub_page(array(
-                'page_title'      => __('Strona portfolio', 'marweb'), /* Use whatever title you want */
-
-                'parent_slug'     => 'edit.php?post_type=portfolio', /* Change "services" to fit your situation */
-                'capability' => 'manage_options'
-            ));
-            // acf_add_options_sub_page(array(
-            //     'page_title'      => __('Strona blog', 'marweb'), /* Use whatever title you want */
-
-            //     'parent_slug'     => 'edit.php?post_type=blog', /* Change "services" to fit your situation */
-            //     'capability' => 'manage_options'
-            // ));
-        }
     }
 }

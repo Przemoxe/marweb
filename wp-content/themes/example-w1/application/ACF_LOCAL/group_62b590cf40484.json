@@ -1,11 +1,11 @@
 {
     "key": "group_62b590cf40484",
-    "title": "Portfolio CPT",
+    "title": "Realizacje\/Realizations page",
     "fields": [
         {
             "key": "field_62b5b2d04b406",
-            "label": "portfolio-cpt-image",
-            "name": "portfolio-cpt-image",
+            "label": "portfolio-image",
+            "name": "portfolio-image",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -28,8 +28,8 @@
         },
         {
             "key": "field_62b59129ad880",
-            "label": "portfolio-cpt-preheading",
-            "name": "portfolio-cpt-preheading",
+            "label": "portfolio-preheading",
+            "name": "portfolio-preheading",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -47,8 +47,8 @@
         },
         {
             "key": "field_62b59136ad881",
-            "label": "portfolio-cpt-title",
-            "name": "portfolio-cpt-title",
+            "label": "portfolio-title",
+            "name": "portfolio-title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -66,8 +66,8 @@
         },
         {
             "key": "field_62b59143ad882",
-            "label": "portfolio-cpt-description",
-            "name": "portfolio-cpt-description",
+            "label": "portfolio-description",
+            "name": "portfolio-description",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -87,9 +87,16 @@
     "location": [
         [
             {
-                "param": "options_page",
+                "param": "page",
                 "operator": "==",
-                "value": "acf-options-archive-portfolio-page"
+                "value": "428"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "431"
             }
         ]
     ],
@@ -101,5 +108,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1656078353
+    "modified": 1656598569
 }
