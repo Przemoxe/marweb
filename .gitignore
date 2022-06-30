@@ -14,5 +14,5 @@ wp-config.env.php
 node_modules/
 bower_components/
 
-/vendor
-/wp-content/themes/*/application/vendor
+# /vendor
+# /wp-content/themes/*/application/vendor
