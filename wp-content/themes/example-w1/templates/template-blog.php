@@ -1,12 +1,16 @@
 <?php
+/* Template Name: blog */
+?>
+
+<?php
 get_header();
 ?>
 <?php
 
-$options = get_fields('option');
-$preheading = $options["blog-cpt-preheading"];
-$title = $options["blog-cpt-title"];
-$description = $options["blog-cpt-description"];
+
+$preheading = get_field("blog-preheading");
+$title = get_field("blog-title");
+$description = get_field("blog-description");
 
 ?>
 
@@ -37,7 +41,7 @@ $description = $options["blog-cpt-description"];
             <?php
             $blog = new WP_Query(array(
                 'posts_per_page' => -1,
-                'post_type' => 'blog',
+                'post_type' => 'post',
             ));
             while ($blog->have_posts()) {
                 $blog->the_post(); ?>

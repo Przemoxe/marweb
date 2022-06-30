@@ -27,7 +27,7 @@
 		<div class="main-container-px20 nav-container">
 			<div>
 				<a href="<?= get_home_url() ?>">
-					MarszWeb.pl
+					elCode.pl
 				</a>
 				<a href=""></a>
 				<a href=""></a>
@@ -62,7 +62,7 @@
 			<div class="nav-mobile">
 				<div class="nav-logo">
 					<a href="<?= get_home_url() ?>">
-						MarszWeb.pl
+						MarWeb.pl
 					</a>
 					<div class="change-color-container">
 						<div class="color-icon color-icon-mobile">

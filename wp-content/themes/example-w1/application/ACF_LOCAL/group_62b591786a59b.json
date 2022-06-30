@@ -1,11 +1,11 @@
 {
     "key": "group_62b591786a59b",
-    "title": "Blog CPT",
+    "title": "Wiedza\/Blog page",
     "fields": [
         {
             "key": "field_62b59194701d6",
-            "label": "blog-cpt-preheading",
-            "name": "blog-cpt-preheading",
+            "label": "blog-preheading",
+            "name": "blog-preheading",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -23,8 +23,8 @@
         },
         {
             "key": "field_62b59184701d4",
-            "label": "blog-cpt-title",
-            "name": "blog-cpt-title",
+            "label": "blog-title",
+            "name": "blog-title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -42,8 +42,8 @@
         },
         {
             "key": "field_62b59189701d5",
-            "label": "blog-cpt-description",
-            "name": "blog-cpt-description",
+            "label": "blog-description",
+            "name": "blog-description",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -63,9 +63,16 @@
     "location": [
         [
             {
-                "param": "options_page",
+                "param": "page",
                 "operator": "==",
-                "value": "acf-options-archive-blog-page"
+                "value": "405"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "401"
             }
         ]
     ],
@@ -77,5 +84,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1656078108
+    "modified": 1656574652
 }

@@ -104,7 +104,7 @@ class Theme
             'show_in_rest' => true,
             'supports' => array('title', 'editor', 'thumbnail'),
             'public' => true,
-            'has_archive' => true,
+            'has_archive' => false,
             'labels' => array(
                 'name' => __("Blog", 'marweb'),
                 'add_new' => __('Dodaj wpis', 'marweb'),
@@ -123,12 +123,12 @@ class Theme
                 'parent_slug'     => 'edit.php?post_type=portfolio', /* Change "services" to fit your situation */
                 'capability' => 'manage_options'
             ));
-            acf_add_options_sub_page(array(
-                'page_title'      => __('Strona blog', 'marweb'), /* Use whatever title you want */
+            // acf_add_options_sub_page(array(
+            //     'page_title'      => __('Strona blog', 'marweb'), /* Use whatever title you want */
 
-                'parent_slug'     => 'edit.php?post_type=blog', /* Change "services" to fit your situation */
-                'capability' => 'manage_options'
-            ));
+            //     'parent_slug'     => 'edit.php?post_type=blog', /* Change "services" to fit your situation */
+            //     'capability' => 'manage_options'
+            // ));
         }
     }
 }
