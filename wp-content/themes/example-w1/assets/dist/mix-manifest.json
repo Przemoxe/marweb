@@ -1,0 +1,8 @@
+{
+    "/js/build.js": "/js/build.js",
+    "/css/build.css": "/css/build.css",
+    "/css/build-front.css": "/css/build-front.css",
+    "/css/build-print.css": "/css/build-print.css",
+    "/js/build-vendor.js": "/js/build-vendor.js",
+    "/css/build-vendor.css": "/css/build-vendor.css"
+}
