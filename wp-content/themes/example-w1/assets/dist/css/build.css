@@ -4,6 +4,12 @@ body {
   max-width: 1920px;
 }
 
+@media (max-width: 1200px) {
+  body {
+    padding-top: 72px;
+  }
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
