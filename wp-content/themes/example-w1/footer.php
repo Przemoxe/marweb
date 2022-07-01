@@ -6,7 +6,7 @@
             <div class="footer-widgets">
                 <aside class="widget">
                     <div class="widget-title">
-                        <h6>About Us</h6>
+                        <h6><?= __('O Nas', 'marweb') ?></h6>
                     </div>
                     <div class="textwidget">
                         <p>
@@ -70,7 +70,7 @@
             <div class="footer-widgets">
                 <aside class="widget widget-recent-entries">
                     <div class="widget-title">
-                        <h6>Recent Posts</h6>
+                        <h6><?= __('Ostatnie wpisy', 'marweb') ?></h6>
                     </div>
                     <ul>
                         <?php
@@ -136,7 +136,7 @@
     </div>
     <div class="main-container-px20">
         <div class="copyright">
-            <p>© 2022 Marweb.pl, All Rights Reserved</p>
+            <p>© 2022 elcode.pl, All Rights Reserved</p>
         </div>
     </div>
 </footer>
