@@ -2940,8 +2940,8 @@ input:-webkit-autofill:active {
 
 .nav-top-mobile .main-container-px20 .nav-mobile {
   border-bottom: 1px solid var(--MW-menu-border-bottom);
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2954,6 +2954,13 @@ input:-webkit-autofill:active {
       -ms-flex-align: center;
           align-items: center;
   line-height: 1.5;
+}
+
+@media (max-width: 576px) {
+  .nav-top-mobile .main-container-px20 .nav-mobile {
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+  }
 }
 
 .nav-top-mobile .main-container-px20 .nav-mobile .nav-logo {

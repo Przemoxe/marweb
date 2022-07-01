@@ -107,9 +107,13 @@
   .main-container-px20 {
     height: 100%;
     .nav-mobile {
+      @media(max-width:576px){
+        padding-top: 12.5px;
+        padding-bottom: 12.5px;
+      }
       border-bottom: 1px solid var(--MW-menu-border-bottom);
-      padding-top: 23px;
-      padding-bottom: 23px;
+      padding-top: 9px;
+      padding-bottom: 9px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
