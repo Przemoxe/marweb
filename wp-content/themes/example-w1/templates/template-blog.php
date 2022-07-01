@@ -13,6 +13,26 @@ $title = get_field("blog-title");
 $description = get_field("blog-description");
 
 ?>
+<nav class="single-blog-nav">
+    <div class="main-container-px20">
+        <nav class="single-blog-nav">
+            <div class="container-title">
+                <h5>
+                <?= get_the_title() ?>
+                </h5>
+            </div>
+            <div class="container-links">
+                <span class="breadcrumb-item">
+                    <a href="<?= get_home_url() ?>"><?= get_the_title( get_option('page_on_front') ); ?></a>
+                </span>
+                <span class="breadcrumb-item active">
+                    <i class="arrow right"></i>
+                    <?= get_the_title() ?>
+                </span>
+            </div>
+        </nav>
+    </div>
+</nav>
 
 <section class="archive-blog-top-section">
     <div class="main-container-px20">

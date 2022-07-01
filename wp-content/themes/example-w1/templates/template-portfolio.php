@@ -12,7 +12,26 @@ $description = get_field("portfolio-description");
 $image = get_field("portfolio-image")["sizes"]["medium_large"];
 
 ?>
-
+<nav class="single-blog-nav">
+    <div class="main-container-px20">
+        <nav class="single-blog-nav">
+            <div class="container-title">
+                <h5>
+                <?= get_the_title() ?>
+                </h5>
+            </div>
+            <div class="container-links">
+                <span class="breadcrumb-item">
+                    <a href="<?= get_home_url() ?>"><?= get_the_title( get_option('page_on_front') ); ?></a>
+                </span>
+                <span class="breadcrumb-item active">
+                    <i class="arrow right"></i>
+                    <?= get_the_title() ?>
+                </span>
+            </div>
+        </nav>
+    </div>
+</nav>
 <section class="archive-portfolio-top-section">
     <div class="main-container-px20">
         <div class="portfolio-top-container">
@@ -23,12 +42,6 @@ $image = get_field("portfolio-image")["sizes"]["medium_large"];
                 <h1>
                     <?= $title ?>
                 </h1>
-                <p>
-                    <?= $description ?>
-                </p>
-            </div>
-            <div class="portfolio-top-right">
-                <img src="<?= $image ?>" alt="">
             </div>
         </div>
     </div>

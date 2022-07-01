@@ -1202,7 +1202,7 @@ input:-webkit-autofill:active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 40%;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -1230,6 +1230,7 @@ input:-webkit-autofill:active {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 600;
   font-size: 25px;
+  text-align: center;
 }
 
 .archive-portfolio-top-section .main-container-px20 .portfolio-top-container .portfolio-top-left p {
@@ -1238,8 +1239,8 @@ input:-webkit-autofill:active {
   font-weight: 500;
   line-height: 1.75;
   color: var(--MW-p-text);
-  max-width: 500px;
   margin-top: 0;
+  text-align: center;
 }
 
 .archive-portfolio-top-section .main-container-px20 .portfolio-top-container .portfolio-top-right {
@@ -1281,12 +1282,11 @@ input:-webkit-autofill:active {
 
 .archive-portfolio-projects-section {
   background-color: var(--third-color);
-  padding-top: 120px;
+  padding-top: 60px;
 }
 
 @media (max-width: 768px) {
   .archive-portfolio-projects-section {
-    padding-top: 60px;
     padding-bottom: 10px;
   }
 }
@@ -1503,6 +1503,9 @@ input:-webkit-autofill:active {
 }
 
 .archive-blog-top-section .main-container-px20 .blog-top-container .blog-top-right img {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 85%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 6% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 6% 100%);
@@ -1514,6 +1517,7 @@ input:-webkit-autofill:active {
     width: 100%;
     -webkit-clip-path: unset;
             clip-path: unset;
+    height: 200px;
   }
 }
 

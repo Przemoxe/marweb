@@ -55,7 +55,11 @@
             padding-bottom: 20px;
             width: 100%;
             clip-path: unset;
+            height:200px;
+            
           }
+          height:250px;
+          object-fit: cover;
           width: 85%;
           clip-path: polygon(0 0, 100% 0, 100% 100%, 6% 100%);
         }
