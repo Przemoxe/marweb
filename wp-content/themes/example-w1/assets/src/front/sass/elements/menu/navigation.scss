@@ -22,6 +22,7 @@
         color: var(--MW-color-const-1);
         font-weight: 700;
         font-family: Objective, sans-serif;
+        display: flex;
         img {
           width: 100%;
         }
@@ -117,11 +118,16 @@
       line-height: 1.5;
       .nav-logo {
         display: flex;
+        align-items: center;
         a {
+          @media(max-width:576px){
+            width: 115px;
+          }
           text-decoration: none;
           color: var(--MW-color-const-1);
           font-weight: 700;
           font-family: Objective, sans-serif;
+          display: flex;
           img {
             width: 100%;
           }
