@@ -2834,9 +2834,6 @@ input:-webkit-autofill:active {
   color: var(--MW-color-const-1);
   font-weight: 700;
   font-family: Objective, sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .nav-top .nav-container div a img {
@@ -2980,7 +2977,7 @@ input:-webkit-autofill:active {
 
 @media (max-width: 576px) {
   .nav-top-mobile .main-container-px20 .nav-mobile .nav-logo a {
-    width: 115px;
+    width: 120px;
   }
 }
 

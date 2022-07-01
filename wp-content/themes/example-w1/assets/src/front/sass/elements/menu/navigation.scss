@@ -22,7 +22,6 @@
         color: var(--MW-color-const-1);
         font-weight: 700;
         font-family: Objective, sans-serif;
-        display: flex;
         img {
           width: 100%;
         }
@@ -121,7 +120,7 @@
         align-items: center;
         a {
           @media(max-width:576px){
-            width: 115px;
+            width:120px;
           }
           text-decoration: none;
           color: var(--MW-color-const-1);
