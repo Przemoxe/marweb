@@ -3057,6 +3057,16 @@ input:-webkit-autofill:active {
   margin: 0;
 }
 
+.nav-top-mobile .main-container-px20 .nav-lists .language-menu ul li {
+  position: relative;
+  height: 24px;
+}
+
+.nav-top-mobile .main-container-px20 .nav-lists .language-menu ul li a {
+  position: absolute;
+  width: 100%;
+}
+
 .nav-top-mobile .main-container-px20 .nav-mobile-visible {
   display: block;
 }
