@@ -422,6 +422,7 @@ input:-webkit-autofill:active {
 }
 
 .services-section .main-container-px20 .services-description h1 {
+  text-align: center;
   line-height: 1.5;
   color: var(--MW-form-h4);
   font-family: Objective, sans-serif;
