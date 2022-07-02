@@ -13,7 +13,9 @@ $bannerPreheading = get_field('preheading');
 $bannerHeading = get_field('heading');
 $bannerSubheading = get_field('subheading');
 $bannerFirstButtonText = get_field('first_button_text');
+$bannerFirstButtonUrl = get_field('first_button_url');
 $bannerSecondButtonText = get_field('second_button_text');
+$bannerSecondButtonUrl = get_field('second_button_url');
 $bannerFormTitle = get_field('form_title');
 $bannerFormShortCode = get_field('form_shortcode');
 $bannerFormTelNumber = get_field('form_tel_number');
@@ -53,10 +55,10 @@ $blogSectionPosts = get_field('blog_section_posts');
                 <?= $bannerSubheading ?>
             </p>
             <div class="buttons">
-                <a href="#!" class="btn-check">
+                <a href="<?= $bannerFirstButtonUrl ?>" class="btn-check">
                     <?= $bannerFirstButtonText ?>
                 </a>
-                <a href="#about" class="btn-read-more">
+                <a href="<?= $bannerSecondButtonUrl ?>" class="btn-read-more">
                     <?= $bannerSecondButtonText ?>
                 </a>
             </div>
