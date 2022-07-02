@@ -98,6 +98,22 @@
             "maxlength": ""
         },
         {
+            "key": "field_62c03e0949a48",
+            "label": "form faq link url",
+            "name": "form_faq_link_url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_62bc6ff30c25a",
             "label": "form shortcode",
             "name": "form_shortcode",
@@ -134,5 +150,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1656765365
+    "modified": 1656765998
 }

@@ -20,6 +20,7 @@ $formTitle = get_field('form_title');
 $formTitleColored = get_field('form_title_colored');
 $formDescription = get_field('form_description');
 $formFaqLink = get_field('form_faq_link');
+$formFaqLinkUrl = get_field('form_faq_link_url');
 $bannerFormShortCode = get_field('form_shortcode');
 
 ?>
@@ -99,7 +100,7 @@ $bannerFormShortCode = get_field('form_shortcode');
                         <?= $formTitle ?> <span><?= $formTitleColored ?></span>
                     </h3>
                     <p>
-                        <?= $formDescription ?> <a href=""><?= $formFaqLink ?></a>
+                        <?= $formDescription ?> <a href="<?=$formFaqLinkUrl?>"><?= $formFaqLink ?></a>
                     </p>
                 </div>
                 <div class="form">
