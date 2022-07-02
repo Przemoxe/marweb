@@ -657,6 +657,12 @@ input:-webkit-autofill:active {
   height: 220px;
 }
 
+@media (max-width: 576px) {
+  .portfolio-section .main-container .container-portfolio-projects .portfolio-project .single-project .card .card-img-top {
+    height: 160px;
+  }
+}
+
 .portfolio-section .main-container .container-portfolio-projects .portfolio-project .single-project .card .card-img-top img {
   width: 100%;
   height: 100%;

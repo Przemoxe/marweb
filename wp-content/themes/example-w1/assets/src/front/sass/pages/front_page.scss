@@ -436,6 +436,9 @@
             text-decoration: none;
             background: green;
             .card-img-top {
+              @media(max-width:576px){
+                height:160px;
+              }
               transition: 0.2s;
               height: 220px;
               img {
