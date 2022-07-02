@@ -90,12 +90,12 @@ $bannerFormShortCode = get_field('form_shortcode');
     <div class="main-container-px20">
         <div class="template-contact-container">
             <div class="left-navbar">
-                <h6 class="title">
+                <h6 class="title" id="contact">
                     <?= $formNavbarTitle ?>
                 </h6>
             </div>
             <div class="ask-us-container">
-                <div class="contact-content">
+                <div class="contact-content" >
                     <h3>
                         <?= $formTitle ?> <span><?= $formTitleColored ?></span>
                     </h3>

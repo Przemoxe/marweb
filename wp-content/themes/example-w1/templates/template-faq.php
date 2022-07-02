@@ -116,7 +116,7 @@ $infoButtons = get_field('info_buttons');
                                     <?= $el['description'] ?>
                                 </p>
                             </div>
-                            <a href="">
+                            <a href="<?=$el['url']?>">
                             </a>
                         </div>
 

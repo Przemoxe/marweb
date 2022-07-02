@@ -65,7 +65,6 @@ $description = get_field("blog-description");
             ));
             while ($blog->have_posts()) {
                 $blog->the_post(); 
-                continue;
                 ?>
                 <div class="archive-blog-single-post">
                     <a class="" href="<?= get_the_permalink() ?>">
