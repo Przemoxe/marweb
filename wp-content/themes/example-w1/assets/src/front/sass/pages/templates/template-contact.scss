@@ -149,6 +149,16 @@
             line-height: 1.75;
             color: var(--MW-p-text);
             margin-top: 0;
+            a{
+              color: var(--MW-color-const-1);
+              text-decoration: none;
+              font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+              font-weight: 600;
+              font-size: 18px;
+              &:hover{
+                color:var(--MW-btn-color-background-hover);
+              }
+            }
           }
         }
         .form {

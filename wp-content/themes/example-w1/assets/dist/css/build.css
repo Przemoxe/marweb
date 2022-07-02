@@ -2338,6 +2338,18 @@ input:-webkit-autofill:active {
   margin-top: 0;
 }
 
+.template-contact-form-section .main-container-px20 .template-contact-container .ask-us-container .contact-content p a {
+  color: var(--MW-color-const-1);
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.template-contact-form-section .main-container-px20 .template-contact-container .ask-us-container .contact-content p a:hover {
+  color: var(--MW-btn-color-background-hover);
+}
+
 .template-contact-form-section .main-container-px20 .template-contact-container .ask-us-container .form {
   width: 100%;
 }

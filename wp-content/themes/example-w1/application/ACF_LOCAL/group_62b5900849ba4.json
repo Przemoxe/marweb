@@ -79,6 +79,25 @@
             "new_lines": ""
         },
         {
+            "key": "field_62c03b9cfb96e",
+            "label": "form faq link",
+            "name": "form_faq_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_62bc6ff30c25a",
             "label": "form shortcode",
             "name": "form_shortcode",
@@ -115,5 +134,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1656516604
+    "modified": 1656765365
 }
