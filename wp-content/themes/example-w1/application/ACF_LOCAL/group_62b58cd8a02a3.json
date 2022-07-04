@@ -53,9 +53,7 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [
-                "blog"
-            ],
+            "post_type": "",
             "taxonomy": "",
             "allow_null": 0,
             "multiple": 1,
@@ -87,5 +85,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1656360159
+    "modified": 1656949926
 }

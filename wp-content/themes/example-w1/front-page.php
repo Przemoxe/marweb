@@ -184,11 +184,12 @@ $blogSectionPosts = get_field('blog_section_posts');
     <div class="main-container">
         <div class="container-portfolio-projects">
             <?php
+
             foreach ($blogSectionPosts as $el) {
             ?>
                 <div class="portfolio-project">
                     <div class="single-project">
-                        <a href="<?= get_permalink() ?>" class="card">
+                        <a href="<?= get_permalink($el->ID) ?>" class="card">
                             <div class="card-img-top">
                                 <img src="<?= get_the_post_thumbnail_url($el->ID) ?>" alt="">
                             </div>
