@@ -42,7 +42,7 @@ input:-webkit-autofill:active {
   --MW-mobile-dark-hamburger: #212529;
   --MW-mobile-last-child-border-left: rgba(255,255,255,.1);
   --MB-mobile-last-child-border:rgba(0, 0, 0, 0.1);
-  --MW-mobile-lists-li-color:rgb(226,226,226);
+  --MW-mobile-lists-li-color:#bdc2c7;
   --MW-footer-about-us: #b0bec4;
   --MW-post-border-bottom:rgba(0, 0, 0, 0.1);
   --MW-post-text-content:#6c757d;
@@ -3162,7 +3162,7 @@ input:-webkit-autofill:active {
 }
 
 .change-color-container {
-  background-color: #bdc2c7;
+  background-color: var(--MW-mobile-lists-li-color);
   width: 50px;
   height: 22px;
   border-radius: 50px;

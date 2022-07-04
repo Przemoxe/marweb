@@ -294,7 +294,7 @@
 }
 
 .change-color-container {
-  background-color: #bdc2c7;
+  background-color: var(--MW-mobile-lists-li-color);
   width: 50px;
   height: 22px;
   border-radius: 50px;
