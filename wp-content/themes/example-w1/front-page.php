@@ -118,7 +118,7 @@ $blogSectionPosts = get_field('blog_section_posts');
             ?>
                 <div class="portfolio-project">
                     <div class="single-project">
-                        <a href="<?= get_field('portfolio_single_url', $el->ID)?>" class="card">
+                        <a href="<?= get_field('portfolio_single_url', $el->ID)?>" class="card" target="_blank">
                             <div class="card-img-top">
                                 <img src="<?= get_the_post_thumbnail_url($el->ID) ?>" alt="">
                             </div>
