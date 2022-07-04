@@ -159,15 +159,15 @@ $blogSectionPosts = get_field('blog_section_posts');
         </p>
         <div class="container">
             <div id="carousel">
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/1093wordpress-1.jpg' ?>"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/sass.jpg' ?>"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/vuejs.jpg' ?>"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/jquery-js.png' ?>"></figure>
                 <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/Laravel-9.jpg' ?>"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/php-leader-1024x524.png' ?>"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/sta-je-html.jpg' ?>"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/useful-sass-scss-mixins-for-every-website.jpg' ?>"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/z74oqos1984w5g5ah0i9.webp' ?>"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/42.jpg' ?>"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/asdas.jpg' ?>"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/Responsive-Web-Design.png' ?>"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/php.png' ?>"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/mysql.png' ?>"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/google-analytics.jpg' ?>"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/woocommerce.png' ?>"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/wordpress.jpg' ?>"></figure>
             </div>
         </div>
     </div>
