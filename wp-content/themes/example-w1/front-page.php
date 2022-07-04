@@ -118,13 +118,14 @@ $blogSectionPosts = get_field('blog_section_posts');
             ?>
                 <div class="portfolio-project">
                     <div class="single-project">
-                        <a href="index-header-carousel.html" class="card">
+                        <a href="<?= get_field('portfolio_single_url', $el->ID)?>" class="card">
                             <div class="card-img-top">
                                 <img src="<?= get_the_post_thumbnail_url($el->ID) ?>" alt="">
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title">
                                     <?= $el->post_title ?>
+                                    
                                 </h4>
                                 <p class="card-text">
                                     <?= get_the_excerpt($el->ID) ?>
