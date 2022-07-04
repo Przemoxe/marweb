@@ -154,9 +154,13 @@
       .mobile-main-menu {
         #mobile-main-menu {
           padding-left: 0;
+
           .menu-item {
             list-style: none;
+            background-color: var(--MW-mobile-lists-li-color);
+            border-bottom: 1px solid var(--MW-menu-background-active);
             a {
+              justify-content: center;
               text-decoration: none;
               color: var(--MW-form-h4);
               display: flex;
@@ -169,7 +173,7 @@
               text-transform: uppercase;
 
               &:hover {
-                color: var(--MW-color-const-1);
+                color: var(--MW-color-const-1)!important;
               }
             }
           }
