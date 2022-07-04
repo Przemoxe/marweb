@@ -183,7 +183,6 @@
         ul {
           list-style: none;
           padding: 0;
-          height: 70px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -191,7 +190,10 @@
           li{
             position: relative;
             height: 24px;
+            background-color: var(--MW-mobile-lists-li-color);
+            margin-top:1px;
             a{
+              text-align: center;
               position: absolute;
               width:100%;
             }
