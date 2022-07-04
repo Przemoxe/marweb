@@ -120,7 +120,7 @@
                             $blog->the_post(); ?>
                             <div class="container-card-recent-work">
                                 <div class="card-recent-work">
-                                    <a href="#">
+                                    <a href="<?= get_field('portfolio_single_url', $el->ID)?>" target="_blank">
                                         <?= get_the_post_thumbnail() ?>
                                     </a>
                                 </div>
