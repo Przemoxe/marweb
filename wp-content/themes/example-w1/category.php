@@ -7,8 +7,8 @@ get_header();
 ?>
 <?php
 
-
 $preheading = get_field("blog-preheading");
+$cur_cat = get_cat_ID(single_cat_title("", false));
 
 ?>
 <nav class="single-blog-nav">
@@ -31,20 +31,20 @@ $preheading = get_field("blog-preheading");
         </nav>
     </div>
 </nav>
-
 <section class="archive-blog-top-section">
     <div class="main-container-px20">
         <?php
         $blog = new WP_Query(array(
             'posts_per_page' => -1,
             'post_type' => 'post',
+            'cat' => $cur_cat
+
         ));
         $counter = 0;
         while ($blog->have_posts()) {
             $blog->the_post();
             if ($counter < 1) {
         ?>
-
                 <div class="blog-top-container">
                     <div class="blog-top-left">
                         <p class="preheading">
@@ -62,32 +62,30 @@ $preheading = get_field("blog-preheading");
                         <img src="<?= get_the_post_thumbnail_url() ?>" alt="">
                     </div>
                 </div>
-
         <?php
             }
             $counter++;
         }
         wp_reset_postdata();
         ?>
-
     </div>
-
 </section>
-
 <section class="archive-blog-content-section">
     <div class="main-container-px20">
         <div class="archive-blog-posts">
             <?php
+
             $blog = new WP_Query(array(
                 'posts_per_page' => -1,
                 'post_type' => 'post',
+                'cat' => $cur_cat
+
             ));
             $counter = 0;
             while ($blog->have_posts()) {
                 $blog->the_post();
                 if ($counter > 0) {
             ?>
-
                     <div class="archive-blog-single-post">
                         <a class="" href="<?= get_the_permalink() ?>">
                             <div class="img-container">
@@ -95,7 +93,7 @@ $preheading = get_field("blog-preheading");
                             </div>
                             <div class="content-container">
                                 <h4>
-                                    <?= get_the_title() ?>
+                                    <?= get_the_title() ?> 
                                 </h4>
                                 <p class="mb-0 text-sm text-muted">
                                     <?= get_the_excerpt() ?>
@@ -104,13 +102,15 @@ $preheading = get_field("blog-preheading");
                         </a>
                     </div>
 
-            <?php
+                <?php
                 }
-                $counter++;
+                ?>
+
+            <?php
+            $counter++;
             }
             wp_reset_postdata();
             ?>
-
         </div>
         <div class="archive-blog-posts-nav">
             <div>
@@ -118,7 +118,6 @@ $preheading = get_field("blog-preheading");
                     Categories
                 </h6>
                 <div class="categories-cards">
-                    
                     <?php
                     $args = array(
                         "hide_empty" => 0,
@@ -129,22 +128,16 @@ $preheading = get_field("blog-preheading");
                     $types = get_categories($args);
 
                     foreach ($types as $el) {
-                        ?>
-                            <a href="<?= get_category_link($el->term_id) ?>"><?= $el->name ?></a>
-                        <?php
+                    ?>
+                        <a href="<?= get_category_link($el->term_id) ?>"><?= $el->name ?></a>
+                    <?php
                     }
                     ?>
                 </div>
-
-
-
-
             </div>
         </div>
     </div>
-
 </section>
-
 
 <?php
 get_footer();

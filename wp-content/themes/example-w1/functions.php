@@ -1,11 +1,12 @@
 <?php
+
 /**
-*  Functions and definitions
-*
-* @link https://developer.wordpress.org/themes/basics/theme-functions/
-*
-* @package CityFit
-*/
+ *  Functions and definitions
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package CityFit
+ */
 
 require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
