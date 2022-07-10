@@ -53,7 +53,7 @@ $image = get_field("portfolio-image")["sizes"]["medium_large"];
             <?php
             $blog = new WP_Query(array(
                 'posts_per_page' => -1,
-                'post_type' => 'blog',
+                'post_type' => 'portfolio',
             ));
             while ($blog->have_posts()) {
                 $blog->the_post(); ?>

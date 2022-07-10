@@ -1,0 +1,100 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: marweb\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-27 10:39+0000\n"
+"PO-Revision-Date: 2022-06-27 17:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.2; wp-6.0\n"
+"X-Domain: marweb"
+
+#. Author of the theme
+msgid "Anonymous"
+msgstr ""
+
+#: application/Theme.php:108
+msgid "Blog"
+msgstr ""
+
+#: application/Theme.php:95
+msgid "Dodaj projekt"
+msgstr ""
+
+#: application/Theme.php:109
+msgid "Dodaj wpis"
+msgstr ""
+
+#: application/Theme.php:96
+msgid "Edytuj projekt"
+msgstr ""
+
+#: application/Theme.php:110
+msgid "Edytuj wpis"
+msgstr ""
+
+#. Name of the template
+msgid "FAQ"
+msgstr ""
+
+#: front-page.php:63
+msgid "Imię*"
+msgstr "Name*"
+
+#. Name of the template
+msgid "Kontakt"
+msgstr "Contact"
+
+#. Name of the theme
+msgid "marweb"
+msgstr ""
+
+#: application/Theme.php:53
+msgid "Menu głowne"
+msgstr "Main Menu"
+
+#: application/Theme.php:54
+msgid "Menu stopka"
+msgstr "Footer Menu"
+
+#. Name of the template
+msgid "O Nas"
+msgstr "About Us"
+
+#: application/Theme.php:92 application/Theme.php:94 application/Theme.php:98
+msgid "Portfolio"
+msgstr ""
+
+#: application/Theme.php:126
+msgid "Strona blog"
+msgstr "archive blog"
+
+#: application/Theme.php:120
+msgid "Strona portfolio"
+msgstr "archive portfolio"
+
+#: front-page.php:77
+msgid "Treść*"
+msgstr ""
+
+#: application/Theme.php:97
+msgid "Wszystkie projekty"
+msgstr ""
+
+#: application/Theme.php:111
+msgid "Wszystkie wpisy"
+msgstr ""
+
+#: front-page.php:86
+msgid "Wyślij wiadomość"
+msgstr ""
+
+#: front-page.php:90
+msgid "Zadzwoń do Nas:"
+msgstr ""

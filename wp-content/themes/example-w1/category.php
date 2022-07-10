@@ -1,5 +1,5 @@
 <?php
-/* Template Name: blog */
+/* Template Name: blog category */
 ?>
 
 <?php
@@ -9,7 +9,10 @@ get_header();
 
 $preheading = get_field("blog-preheading");
 $cur_cat = get_cat_ID(single_cat_title("", false));
-
+//get blog url from acf
+$getAllUrlPL = get_field('all_categories_url', 401);
+$getAllUrlEng = get_field('all_categories_url', 405);
+$currentlang = get_bloginfo('language');
 ?>
 <nav class="single-blog-nav">
     <div class="main-container-px20">
@@ -25,12 +28,13 @@ $cur_cat = get_cat_ID(single_cat_title("", false));
                 </span>
                 <span class="breadcrumb-item active">
                     <i class="arrow right"></i>
-                    <?= get_the_title() ?>
+                    <?= single_cat_title("", false) ?>
                 </span>
             </div>
         </nav>
     </div>
 </nav>
+
 <section class="archive-blog-top-section">
     <div class="main-container-px20">
         <?php
@@ -118,6 +122,14 @@ $cur_cat = get_cat_ID(single_cat_title("", false));
                     Categories
                 </h6>
                 <div class="categories-cards">
+                    <a href="<?php 
+                        if($currentlang == 'en-US'){
+                            echo $getAllUrlEng;
+                        }
+                        if($currentlang == 'pl-PL'){
+                            echo $getAllUrlPL;
+                        }
+                    ?>"><?= __('All', 'marweb')?></a>
                     <?php
                     $args = array(
                         "hide_empty" => 0,

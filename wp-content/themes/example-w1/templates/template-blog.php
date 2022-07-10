@@ -9,6 +9,7 @@ get_header();
 
 
 $preheading = get_field("blog-preheading");
+$getAllUrl = get_field('all_categories_url');
 
 ?>
 <nav class="single-blog-nav">
@@ -118,7 +119,7 @@ $preheading = get_field("blog-preheading");
                     Categories
                 </h6>
                 <div class="categories-cards">
-                    
+                    <a href="<?= $getAllUrl ?>"><?= __('All', 'marweb')?></a>
                     <?php
                     $args = array(
                         "hide_empty" => 0,
