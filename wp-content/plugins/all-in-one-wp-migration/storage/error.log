@@ -1,0 +1,3 @@
+Jul 12 2022 17:48:23
+{"Number":2,"Message":"fopen(C:\\\\laragon\\\\www\\\\example-w1\\\\wp-content\\\\themes\\\\example-w1\\\\.babelrc): failed to open stream: Permission denied","File":"C:\\laragon\\www\\example-w1\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\archiver\\class-ai1wm-extractor.php","Line":486}
+

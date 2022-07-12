@@ -1,0 +1,97 @@
+@import "innovation";
+
+.management-list {
+    .management-description{
+        @extend .management-description;
+        background: #ffffff;
+        padding-left: 20px;
+        .content{
+            padding-left: 3px;
+            @media (max-width: 970px){
+                color: #404040;   
+            }
+            @media (max-width: 970px) and (min-width: 425px){
+                padding-left: 21px;
+            }
+            .box-title{
+                text-transform: unset;
+                margin-bottom: 2.9rem;
+                @media (max-width: 970px) and (min-width: 425px){
+                    margin-bottom: 1.5rem;
+                }
+            }
+            .box-description{
+                letter-spacing: -0.1px;
+                word-spacing: -0.3px;            
+                padding-right: 46px;
+                padding-bottom: 0.9rem;
+                @media (max-width: 970px) and (min-width: 425px){
+                    padding-right: 0;
+                    padding-bottom: 0.5rem;
+                }
+            }
+            .navbar{
+                padding-left: 0;
+                padding-right: 37px;
+
+                .nav{
+                    width: 100%;                    
+                    .nav-link{
+                        color: #404040;
+                        font-family: "LatoRegular";
+                        letter-spacing: -0.7px;
+                        word-spacing: 2.5px;
+                        padding-bottom: 0.1rem;        
+                        margin-bottom: 0;            
+                    }
+                    .active{
+                        font-size: 16px;
+                        border-bottom: solid 4px #c4103a;
+                    }
+                }
+                .ae-hide{
+                    display: block;
+                }
+            }
+        }
+    }
+       
+    .management-members{
+        @extend .management-members;
+        -webkit-box-flex: 0;
+        flex: 0 0 54.333333%;
+        max-width: 54.333333%;
+        background: #002454;
+        padding-bottom: 0;
+        
+        @media (max-width: 970px) and (min-width: 425px){
+            padding-left: 0;
+            padding-bottom: 0;
+        }
+        @media (max-width: 425px){
+            -webkit-box-flex: 0;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .tab-content{
+            padding-top: 0;
+            .tab-pane{
+                .row{
+                    margin: 0;
+                    @media (max-width: 425px){
+                        -webkit-box-pack: center !important;
+                        -ms-flex-pack: center !important;
+                        justify-content: center !important;
+                    }
+                    .photo{
+                        padding: 0;
+                        max-width: 334px;
+                        .image-fluid{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

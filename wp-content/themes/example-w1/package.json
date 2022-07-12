@@ -36,6 +36,7 @@
     "@google/markerclusterer": "^1.0.3",
     "axios": "^0.17.1",
     "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.3.1",
     "es6-promise": "^4.2.4",
     "events": "^3.0.0",
     "font-awesome": "^4.7.0",

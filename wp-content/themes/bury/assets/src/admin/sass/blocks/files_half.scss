@@ -1,0 +1,182 @@
+.files-half{
+    .description{
+        position: relative;
+        color: #404040;
+        padding: 0;
+        padding-top: 54px;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 45.666667%;
+        flex: 0 0 45.666667%;
+        padding-left: 10px;
+        letter-spacing: 0.5px;
+        text-align: -webkit-right;
+        max-width: 45.666667%;
+        padding-left: 30px;
+        @media (max-width: 970px) and (min-width: 425px){
+            padding-top: 30px;
+            max-width: 43.6%;
+        }
+        @media (max-width: 425px){
+            padding-top: 18px;
+            max-width: 100%;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+        }
+        .content{
+            max-width: 501px;
+            text-align: left;
+            position: relative;
+            height: 100%;
+            min-height: 450px;
+            font-family: "LatoLight";
+            color: #404040;
+            padding-right: 41px;
+            @media (max-width: 425px){
+                min-height: 250px;
+            }
+            .box-title{
+                font-size: 30px;
+                word-spacing: -4px;
+                letter-spacing: 0.45px;
+                margin-bottom: 46px;
+                @media (max-width: 970px) and (min-width: 425px){
+                    font-size: 23px;
+                    margin-bottom: 20px;
+                }
+                @media (max-width: 425px){
+                    font-size: 23px;
+                    margin-bottom: 20px;
+                }
+            }
+            .box-description{
+                font-size: 16px;
+                letter-spacing: 0.2px;
+                word-spacing: -2.3px;
+                line-height: 22px;
+                @media (max-width: 970px) and (min-width: 425px){
+                    font-size: 14px;
+                }
+                @media (max-width: 425px){
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .files-list{
+        max-width: 54.333333%;
+        position: relative;
+        padding: 0;
+        background-color: #002454;
+        @media (max-width: 970px) and (min-width: 425px){
+            max-width: 56.4%;
+        }
+        @media (max-width: 425px){
+            max-width: 100%;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+        }
+        .content{
+            max-width: 670px;
+            padding-top: 82px;
+            padding-left: 57px;
+            margin: 0;
+            padding-bottom: 90px;
+            @media (max-width: 1050px){
+                padding-left: 0;
+                padding-bottom: 0;
+            }
+            @media (max-width: 970px) and (min-width: 425px){
+                padding-top: 68px;
+            }
+            @media (max-width: 425px){
+                padding-top: 36px;
+            }
+            .file-box{  
+                color: #ffffff;
+                padding: 0 15px;
+                margin-right: 44px;
+                margin-bottom: 52px;
+                @media (max-width: 1050px){
+                    margin-right: 24px;
+                }
+                @media (max-width: 970px) and (min-width: 425px){
+                    margin-bottom: 40px;
+                }
+                @media (max-width: 425px){
+                    padding: 0;
+                    margin: 0px 25px;
+                    margin-bottom: 30px;
+                }
+                .files-link{
+                    color: #ffffff;
+                    font-family: "LatoBold";
+                    font-size: 16px;
+                    &:hover .circle{
+                        margin-top: -3px;
+                        margin-bottom: 17px;
+                    }
+                    @media (max-width: 970px) and (min-width: 425px){
+                        font-size: 15px;
+                    }
+                    @media (max-width: 425px){
+                        font-size: 15px;
+                    }
+                    .circle{
+                        width: 39px;
+                        height: 39px;
+                        border: solid 4px;
+                        display: inline-block;
+                        border-radius: 20px;
+                        margin-bottom: 14px;
+                        @media (max-width: 425px){
+                            margin-bottom: 11px;
+                        }
+                        .arrow{
+                            width: 13px;
+                            height: 13px;
+                            border-bottom: solid 4px;
+                            border-right: solid 4px;
+                            display: inline-block;
+                            transform: rotate(45deg);
+                            @media (max-width: 970px) and (min-width: 425px){
+                                margin-top: 4px;
+                            }
+                            @media (max-width: 425px){
+                                margin-top: 4px;
+                            }
+                        }
+                    }
+                    .file-name{
+                        margin-bottom: 18px;
+                        letter-spacing: 0.3px;
+                        word-spacing: -2px;
+                        p{
+                            @media (max-width: 425px){
+                                margin-bottom: 0.5rem;
+                            }
+                        }
+                        @media (max-width: 970px) and (min-width: 425px){
+                            margin-bottom: 16px;
+                        }
+                        @media (max-width: 425px){
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                .file-description{
+                    font-family: "LatoLight";
+                    font-size: 13px;
+                    @media (max-width: 970px) and (min-width: 425px){
+                        font-size: 12px;
+                    }
+                    @media (max-width: 425px){
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,339 @@
+.archive-fairs{
+
+    @media(max-width: 599px){
+        .container{
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            &>.row{
+                margin: 0;
+            }
+        }
+    }
+
+    .fair{
+        position: relative;
+    }
+
+    .text-left-side{
+            position: relative;
+            color: #404040;
+            padding: 0;
+            padding-top: 54px;
+            flex: 0 0 45.666667%;
+            letter-spacing: 0.5px;
+            padding-left: 15px;
+
+            @media(min-width: 970px){
+                max-width: 45.666667%;
+            }
+            @media (max-width: 970px) and (min-width: 600px){
+                max-width: 43.6%;
+                padding-top: 25px;
+            }
+            @media (max-width: 599px){
+                flex: 0 0 100%;
+                max-width: 100%;
+                padding-top: 18px;
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+        .post-content{
+            max-width: 501px;
+            text-align: left;
+            position: relative;
+            height: 100%;
+            min-height: 450px;
+            padding-right: 40px;
+            @media (max-width: 970px) and (min-width: 600px){
+                min-height: 352px;
+                padding-right: 10px;
+            }
+            @media (max-width: 599px){
+                min-height: 255px;
+                padding-right: 10px;
+                max-width: 100%;
+                width: 100%;
+            }
+
+            h1, h2{
+                font-family: "LatoLight";
+                font-size: 30px;
+                letter-spacing: 0px;
+                margin-bottom: 21px;
+                line-height: 40px;
+                @media (max-width: 970px) and (min-width: 600px){
+                    font-size: 20px;
+                    line-height: 26px;
+                    margin-bottom: 15px;
+                }
+                @media (max-width: 599px){
+                    margin-bottom: 15px;
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+                a{
+                    color: #404040;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+            .fair-dates{
+                font-family: "LatoLight";
+                font-size: 20px;
+                color: #002454;
+                letter-spacing: -0.9px;
+                @media (max-width: 970px) and (min-width: 600px){
+                    font-size: 17px;
+                }
+                @media (max-width: 599px){
+                    font-size: 17px;
+                }
+            }
+
+            p{
+                font-family: "LatoLight";
+                font-size: 16px;
+                margin-top: 24px;
+                line-height: 22px;
+                letter-spacing: 0px;
+                word-spacing: -0.5px;
+                padding-right: 17px;
+                @media (max-width: 970px) and (min-width: 600px){
+                    font-size: 14px;
+                }
+                @media (max-width: 599px){
+                    font-size: 14px;
+                }
+            }
+            .button{
+                float: left;
+                margin-right: 2px;
+                margin-top: 38px;
+                border: solid 1px #002454;
+                margin-right: 30px;
+                margin-bottom: 30px;
+                @media (max-width: 970px) and (min-width: 600px){
+                    margin-right: 21px;
+                    margin-top: 20px;
+                }
+                @media (max-width: 599px){
+                    float: right;
+                    margin-right: 0;
+                    margin-top: 20px;
+                }
+                &.read-more{
+                    font-family: "LatoRegular";
+                    font-size: 13px;
+                    color: #002454;;
+                    text-transform: uppercase;
+                    padding: 7px 19px;
+                    display: block;
+                    padding-top: 12px;
+                    letter-spacing: 0.1px;
+                    &:hover{
+                        text-decoration: none;
+                        color: #ffffff;
+                    }
+                }
+                &:hover{
+                    background-color: #002454;
+                }
+            }
+        }
+    }
+
+    .image-right{
+        padding: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top:0;
+        min-height: 450px;
+        height: 100%;
+
+        @media(min-width: 970px){
+            max-width: 54.333333%;
+        }
+        @media (max-width: 970px) and (min-width: 600px){
+            max-width: 56.4%;
+            min-height: 381px;
+        }
+        @media (max-width: 599px){
+            min-height: 313px;
+            max-width: 100%;
+            position: relative;
+            background-size: 100%!important;
+            background-position:top!important;
+        }
+        .fair-icon{
+            margin-left: 70px;
+        }
+    }
+
+    .text-right-side{
+        position: relative;
+        color: #404040;
+        padding: 0;
+        padding-top: 54px;
+        /* padding-right: 28px; */
+        /* padding-left: 29px; */
+        letter-spacing: 0.5px;
+        /*max-width: 26%;*/
+        padding-left: 30px;
+        @media(min-width: 970px){
+            max-width: 45.666667%;
+        }
+        @media (max-width: 970px) and (min-width: 600px){
+            max-width: 43.6%;
+            padding-top: 25px;
+            padding-left: 15px;
+        }
+        @media (max-width: 599px){
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-top: 18px; 
+            padding-right: 20px;    
+        }
+        .post-content{
+            max-width: 501px;
+            text-align: left;
+            position: relative;
+            height: 100%;
+            min-height: 450px;
+            padding-right: 39px;
+            @media (max-width: 1199px){
+                max-width: 415px;
+            }
+            @media (max-width: 970px) and (min-width: 600px){
+                min-height: 352px;
+                padding-right: 20px;
+            }
+            @media (max-width: 599px){
+                min-height: 255px;
+                padding-right: 10px;
+                max-width: 100%;
+                width: 100%;
+            }
+
+            h1, h2{
+                font-family: "LatoLight";
+                font-size: 30px;
+                letter-spacing: 0px;
+                line-height: 40px;
+                margin-bottom: 21px;
+                a{
+                    color: #404040;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+                @media (max-width: 970px) and (min-width: 600px){
+                    font-size: 20px;
+                    line-height: 26px;
+                    margin-bottom: 15px;
+                }
+                @media (max-width: 599px){
+                    margin-bottom: 15px;
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+            }
+            .fair-dates{
+                font-family: "LatoLight";
+                font-size: 20px;
+                color: #002454;
+                letter-spacing: -0.9px;
+                @media (max-width: 970px) and (min-width: 600px){
+                    font-size: 17px;
+                }
+                @media (max-width: 599px){
+                    font-size: 17px;
+                }
+            }
+            p{
+                font-family: "LatoLight";
+                font-size: 16px;
+                margin-top: 24px;
+                line-height: 22px;
+                letter-spacing: 0px;
+                word-spacing: -0.5px;
+                padding-right: 17px;
+                @media (max-width: 970px) and (min-width: 600px){
+                    font-size: 14px;
+                }
+                @media (max-width: 599px){
+                    font-size: 14px;
+                }
+            }
+            .button{
+                float: left;
+                margin-right: 2px;
+                margin-top: 38px;;
+                border: solid 1px #002454;
+                margin-right: 30px;
+                margin-bottom: 30px;
+                @media (max-width: 970px) and (min-width: 600px){
+                    margin-right: 21px;
+                    margin-top: 20px;
+                }
+                @media (max-width: 599px){
+                    margin-right: 0;
+                    margin-top: 20px;
+                    float: right;
+                }
+                &.read-more{
+                    font-family: "LatoRegular";
+                    font-size: 13px;
+                    color: #002454;;
+                    text-transform: uppercase;
+                    padding: 7px 19px;
+                    display: block;
+                    padding-top: 12px;
+                    letter-spacing: 0.1px;
+                    &:hover{
+                        text-decoration: none;
+                        color: #ffffff;
+                    }
+                }
+                &:hover{
+                    background-color: #002454;
+                }
+            }
+        }
+    }
+
+    .image-left{
+        float: left;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        background-size: cover;
+        min-height: 579px;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        @media(min-width: 970px){
+            max-width: 54.333333%;
+        }
+        @media (max-width: 970px) and (min-width: 600px){
+            max-width: 56.4%;
+            min-height: 381px;
+        }
+        @media (max-width: 599px){
+            min-height: 313px;
+            max-width: 100%;
+        }
+        .fair-icon{
+            margin-right: 80px;
+        }
+    }
+}

@@ -1,0 +1,380 @@
+.job-offer {
+    margin-top: 100px;
+}
+
+.post-type-archive-job_offers, .single-job_offers, .category-kariery {
+    .breadcrumb-wrap .breadcrumbs .trail-items span {
+        color: rgba(0, 36, 84, 0.7);
+    }
+    .breadcrumb-wrap .breadcrumbs .trail-items a {
+        color: rgba(0, 36, 84, 0.7);
+    }
+    .breadcrumb-wrap .breadcrumbs .trail-items a:hover span {
+        color: #002454;
+    }
+    .breadcrumb-wrap .breadcrumbs .trail-items a:after {
+        border-top: solid 2px rgba(0, 36, 84, 0.7);
+        border-right: solid 2px rgba(0, 36, 84, 0.7);
+    }
+}
+
+.single-job_offers {
+    .menu-item-object-job_offers {
+        &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background-color: #c4103a;
+        }
+        &:hover::after {
+            height: 4px !important;
+        }
+    }
+}
+
+.job-offer-list{
+    margin-bottom: 100px;
+
+    .job-offers &{
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    @media(max-width: 599px){
+        margin-bottom: 0;
+    }
+
+    .container{
+        @media(max-width: 599px){
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+
+    tr{
+        
+        @media(min-width: 600px){
+            display: table-row;
+            height: 100px;
+        }
+        @media(max-width: 599px){
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            &:not(.space){
+                min-height: 90px;
+            }          
+        }
+
+        &.ae-hide{
+            @media(max-width: 599px){
+                display: none;
+            }           
+        }
+
+        &.ae-select{
+            min-height: auto;
+            margin-bottom: 0;
+            margin-top: 0;
+            font-family: "LatoRegular";
+            font-size: 14px;
+            color: $font;
+            padding-top: 22px;
+            padding-bottom: 16px;
+            background-color: $gray;
+
+            @media(min-width: 600px){
+                display: none;
+            }
+
+            &.up{
+                background-color: $dark-blue;
+                color: white;
+
+                .ae-select-arrow{
+                    border-right: solid 2px white;
+                    border-bottom: solid 2px white;
+                }
+            }
+
+            tr{
+                min-height: auto;
+                margin-bottom: 0;
+            }
+
+            &>td{
+                width: 100%;
+            }
+
+            .job-offer-list__position{
+                display: table-row;
+                max-width: 90%;
+                padding-right: 10px;
+            }
+
+            .ae-select-arrow{
+                border-right: solid 2px $font;
+                border-bottom: solid 2px $font;
+            }
+        }
+
+        &:hover{
+            &:not(.space){
+                background-color: $dark-blue;
+            }   
+            
+            color: white;
+
+            .button{
+                background-color: white;
+                color: $dark-blue;
+            }
+
+            .employee-name{
+                color: white;
+            }
+
+            .job-offer-list__write-to-us{
+                color: white;
+                a{
+                    color: white;
+                }
+            }
+
+            .ae-select-arrow{
+                border-right: solid 2px white;
+                border-bottom: solid 2px white;
+            }
+        }
+
+        &.flex-column{
+            flex-direction: unset!important;
+        }
+    }
+
+    &__table{
+        margin-bottom: 15px;
+        background-color: $gray;
+
+        @media(max-width: 599px){
+            background-color:  $dark-blue;
+            color: white;
+        }
+    }
+
+    &__heading{
+        color: #002454;
+        height: 40px !important;
+        &:hover {
+            background-color: #eeeeee !important;
+            color: #002454 !important;
+        }
+        th:first-child {
+            padding-left: 30px;
+            padding-right: 15px;
+            @media(max-width: 970px) and (min-width: 600px){
+                padding-left: 15px;
+                padding-right: 0;
+            }
+        }
+        @media(max-width: 599px){
+            display: none !important;
+        }
+    }
+
+    &__discousure {
+        color: #002454;
+        font-weight: bold;
+        padding-left: 30px;
+        margin-top: 20px;
+        @media(max-width: 970px) and (min-width: 600px){
+            padding-left: 15px;
+        }
+    }
+
+    &__buttons {
+        width: 100%;
+        text-align: center;
+        .button-inverted {
+            margin-left: 30px;
+        }
+    }
+
+    &__row{
+        margin-bottom: 0;
+        @media(max-width: 599px){
+            padding: 0 15px;
+            padding-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0!important;
+        }
+        @media(max-width: 599px) and (min-width: 425px){
+            max-width: 98.5%;
+        }
+        @media(max-width: 425px){
+            max-width: 97%;
+        }
+    }
+
+    &__position{
+        padding-left: 30px;
+        padding-right: 15px;
+        width: 320px;
+
+        @media(max-width: 970px) and (min-width: 600px){
+            padding-right: 0;
+            padding-left: 15px;
+        }
+        @media(max-width: 599px){
+            width: 100%;
+            padding-left: 0;
+            display: none;
+        }
+    }
+
+    &__city{
+        padding-left: 10px;
+        padding-right: 15px;
+        width: 210px;
+
+        @media(max-width: 970px){
+            padding-right: 0;
+        }
+        @media(max-width: 599px){
+            width: 100%;
+            font-size: 14px;
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 22px;
+        }
+    }
+
+    &__thumbnail{
+        padding-left: 10px;
+        padding-right: 15px;
+        min-width: 85px;
+
+        @media(max-width: 970px){
+            padding-right: 0;
+        }
+        @media(max-width: 599px){
+            width: 24%;
+            min-width: auto;
+            padding-left: 0;
+        }
+    }
+
+    &__employee{
+        padding-left: 4px;
+        padding-right: 15px;
+        width: 273px;      
+
+        @media(max-width: 970px){
+            padding-right: 0;
+        }
+        @media(max-width: 599px){
+            width: 76%;
+            padding-right: 0;
+            padding-left: 3px;
+        }
+
+        .employee-name{
+            color: $dark-blue;
+            font-family: "LatoBold";
+            @media(max-width: 599px){
+                font-size: 16px;
+                color: white;
+            }
+        }
+
+        .employee-position{
+            line-height: 15px;
+            word-break: break-word;
+            @media(max-width: 599px){
+                font-family: "LatoRegular";
+                font-size: 12px;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &__write-to-us{
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 174px;
+        color: $red;
+        text-decoration: underline;
+
+        a{
+            color: $red;
+
+            @media(max-width: 599px){
+                color: white;
+            }
+        }
+
+        @media(max-width: 599px){
+            width: 100%;
+            font-size: 16px;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 21px;
+            color: white;
+        }
+    }
+
+    &__more{
+        padding-right: 0px;
+
+        @media(max-width: 970px) and (min-width: 600px){
+            width: 100px;
+        }
+        @media(max-width: 599px){
+            width: 100%;
+        }
+
+        .button{
+            margin-right: 20px;
+            @media(max-width: 970px) and (min-width: 600px){
+                margin-right: 15px;
+            }
+            @media(max-width: 599px){
+                background-color: white;
+                color: $dark-blue;
+            }
+        }
+    }
+
+    .space{
+        background-color: white;
+        height: 10px!important;
+        margin-bottom: 0;
+    }
+
+    &__button-container{
+        @media(min-width: 600px){
+            display: none;
+        }
+        @media(max-width: 599px){
+            max-width: 98.5%;
+            margin: 0 auto;
+            text-align: right;
+        }
+        @media(max-width: 425px){
+            max-width: 97%;
+        }
+    }
+
+    &__button{
+        margin-right: 0;
+        margin-top: 0;
+    
+        @media(min-width: 600px){
+            display: none;
+        }
+    }
+}

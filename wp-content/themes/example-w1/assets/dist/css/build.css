@@ -843,22 +843,22 @@ input:-webkit-autofill:active {
 
 @media (max-width: 700px) {
   .section-our-techonologies .main-container-px20 #carousel figure {
-    width: 100px;
-    height: 100px;
+    width: 109px;
+    height: 93px;
   }
 }
 
 @media (max-width: 420px) {
   .section-our-techonologies .main-container-px20 #carousel figure {
-    width: 90px;
-    height: 90px;
+    width: 96px;
+    height: 70px;
   }
 }
 
 @media (max-width: 350px) {
   .section-our-techonologies .main-container-px20 #carousel figure {
     width: 80px;
-    height: 90px;
+    height: 65px;
   }
 }
 

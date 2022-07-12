@@ -1,0 +1,84 @@
+@import "elements/archive_fairs";
+
+.category-kariery {
+    .posts-list {
+        margin-top: 100px;
+    }
+}
+
+.posts-list{
+
+    @media(max-width: 599px){
+        .container{
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            &>.row{
+                margin: 0;
+            }
+        }
+    }
+
+    .post{
+        position: relative;
+    }
+
+    @extend .archive-fairs;
+
+    .text-left-side{
+        padding-top: 49px;
+        .post-content{
+            padding-right: 37px;
+            h1{
+                margin-bottom: 24px;
+                letter-spacing: -0.3px;
+                @media (max-width: 970px) and (min-width: 425px){
+                    margin-bottom: 15px;
+                }
+                @media (max-width: 425px){
+                    margin-bottom: 15px;
+                }
+            }
+            @media (max-width: 970px) and (min-width: 425px){
+                padding-right: 10px;
+            }
+            @media (max-width: 425px){
+                padding-right: 10px;
+            }
+        }
+        @media (max-width: 970px) and (min-width: 425px){
+            padding-top: 25px;
+        }
+        @media (max-width: 425px){
+            padding-top: 18px;
+        }
+    }
+
+    .text-right-side{
+        padding-top: 51px;
+        .post-content{
+            h1{
+                margin-bottom: 22px;
+                @media (max-width: 970px) and (min-width: 425px){
+                    margin-bottom: 15px;
+                }
+                @media (max-width: 425px){
+                    margin-bottom: 15px;
+                }
+            }
+            @media (max-width: 970px) and (min-width: 425px){
+                padding-right: 20px;
+            }
+            @media (max-width: 425px){
+                padding-right: 10px;
+            }
+        }
+        @media (max-width: 970px) and (min-width: 425px){
+            padding-top: 25px;
+        }
+        @media (max-width: 425px){
+            padding-top: 18px;
+        }
+    }
+
+}

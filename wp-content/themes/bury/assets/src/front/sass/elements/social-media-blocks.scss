@@ -1,0 +1,25 @@
+.social-media{
+    display: block;
+    width: 34px;
+    height: 34px;
+    margin-right: 1px;
+    text-align: center;
+    &:hover{
+        margin-top: -2px;
+    }
+    a{
+        color: white;
+        line-height: 34px;
+
+        &:hover{
+            color: white;
+        }
+    }
+}
+
+.social-media-header{
+    .social-media{
+        display: inline-block;
+        margin-right: -3px;
+    }
+}

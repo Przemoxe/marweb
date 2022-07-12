@@ -1,0 +1,257 @@
+.link-block{
+    .page-template-template-career &{
+        margin-bottom: 119px;
+
+        @media(max-width: 599px){
+            margin-bottom: 0;
+        }
+   }
+       .services{
+           margin: 0 auto;
+           width: 100%;
+           .service{   
+               position: relative;
+               overflow: hidden;
+
+               .page-template-template-career &{
+                    flex: 0 0 33.33333333%;
+                    max-width: 33.33333333%;
+
+                    @media(max-width: 970px){
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                    }
+                    @media(max-width: 599px){
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+               }
+
+               &__link{
+                   position: absolute;
+                   height: 100%;
+                   width: 100%;
+                   left: 0;
+                   top: 0;
+                   z-index: 2;
+                   &:hover{
+                       text-decoration: none;
+                   }
+               }
+
+               &:hover{
+                    cursor: pointer;
+                    .text__link{
+                        border-bottom: solid 2px $red;
+                    }
+               }
+
+               &:after{
+                   content: "";
+                   display: block;
+                   padding-bottom: calc(100% + 30px);
+
+                   @media (max-width: 768px){
+                       padding-bottom: calc(100% + 10px);
+                   }
+               }
+
+               @media (max-width: 768px){
+                   padding-left: 5px;
+                   padding-right: 5px;
+               }
+               @media (max-width: 599px){
+                   min-height: 300px;
+                   flex: 0 0 100%;
+                   max-width: 100%;
+               }
+               @media (max-width: 425px){
+                   min-height: 360px;
+               }
+               .content{
+                   position: absolute;
+                   height: 100%;
+                   width: 100%;
+                   left: 0;
+                   top: 0;
+                   display: table;
+                   background-repeat: no-repeat;
+                   background-size: cover;
+                   transition: all 0.2s ease-out;
+               }
+               .text{
+                   height: 100%;
+                   position: absolute;
+                   width: calc(100% - 30px);
+                   margin: 0;
+                   align-items: center;
+                   
+                   @media (max-width: 768px){
+                       width: calc(100% - 10px);
+                   }
+
+                   .page-template-template-career &{
+                        align-items: baseline;
+                        display: block;
+                        margin-top: 105px;
+
+                        @media(max-width: 1199px) and (min-width: 971px){
+                            margin-top: 25px;
+                        }
+                        @media(max-width: 800px){
+                            margin-top: 55px;
+                        }
+                        @media(max-width: 700px){
+                            margin-top: 50px;
+                        }
+                        @media(max-width: 599px){
+                            margin-top: 99px;
+                        }
+                   }
+
+                   &-content{
+                       @media(max-width: 1199px){
+                           padding: 0;
+                       }
+
+                       .page-template-template-career &{
+                            margin-bottom: 34px;
+                            display: inline-block;
+                            @media(max-width: 1199px) and (min-width: 971px){
+                                margin-bottom: 15px;
+                            }
+                            @media(max-width: 800px){
+                                margin-bottom: 15px;
+                            }
+                            @media(max-width: 599px){
+                                padding: 0 37px;
+                                margin-bottom: 21px;
+                            }
+                        }
+                   }
+
+                   &-description{
+                        line-height: 22px;
+
+                        @media(max-width: 700px){
+                            font-size: 14px;
+                            line-height: 17px;
+                        }
+                        @media(max-width: 599px){
+                            padding: 0 35px;
+                            font-size: 18px;
+                            line-height: 21px;
+                        }
+                        @media(max-width: 424px){
+                            font-size: 14px;
+                            line-height: 17px;
+                        }
+
+                        p:last-child{
+                            margin-bottom: 5px;
+                        }
+                   }
+
+                   a, span{
+                       font-family: 'LatoBlack';
+                       font-size: 22px;
+                       text-transform: uppercase;
+                       vertical-align: middle;
+                       word-break: break-word;
+                     
+                       @media (max-width: 1199px) and (min-width: 970px){
+                           font-size: 19px;
+                       }
+                       @media (max-width: 970px) and (min-width: 670px){
+                           font-size: 14px;
+                       }
+                       @media (max-width: 670px) and (min-width: 600px){
+                           font-size: 13px;
+                       }
+
+                       .page-template-template-career &{
+                            font-family: 'LatoLight';
+                            font-size: 30px;
+                            line-height: 33px;
+
+                            @media(max-width: 700px){
+                                font-size: 24px;
+                                line-height: 26px;
+                            }
+                            @media(max-width: 599px){
+                                font-size: 18px;
+                                line-height: 21px;
+                            }
+                            @media(max-width: 599px){
+                                font-size: 28px;
+                                line-height: 31px;
+                            }
+                            @media(max-width: 424px){
+                                font-size: 18px;
+                                line-height: 21px;
+                            }
+                       }
+                   }
+               }
+               .overlay{
+                   transition: .5s ease;
+                   opacity: 0;
+                   position: absolute;
+                   top:50%;
+                   left: 50%;
+                   transform: translate(-50%, -50%);
+                   -ms-transform: translate(-50%, -50%);
+                   text-align: center;
+                   background-color: rgba(0,0,0,0.2);
+                   height: 100%;
+                   width: 100%;
+               }
+               &:hover{
+                   .overlay{
+                        opacity: 1;
+                   }
+                   .content{
+                        transform: scale(1.1);
+                        opacity: 0.8;
+                   }
+               }
+
+               &:nth-child(7n+1){
+                   background-color: #ffffff;
+               }
+               &:nth-child(2n+3){
+                   background-color: #f6f7f7;
+               }
+               &:nth-child(5n+2){
+                   background-color: #aec6de;
+                   a{
+                       color: #ffffff;
+                   }
+                   
+               }
+               &:nth-child(2n+4){
+                   background-color: #002454;
+                   a{
+                       color: #ffffff;
+                   }
+                   
+               }
+           }
+       }
+
+    .container{
+        @media (max-width: 991px){
+            max-width: 100%;
+            padding: 0;
+        }
+
+        .page-template-template-career &{
+            @media (max-width: 991px) and (min-width: 600px){
+                max-width: 98.5%;
+                padding: 0 15px;
+            }
+       }
+
+    }
+}
+

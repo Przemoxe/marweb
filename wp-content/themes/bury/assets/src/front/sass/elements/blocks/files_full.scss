@@ -1,0 +1,39 @@
+.files-full{
+
+    &.container{
+        max-width: 100%;
+    }
+
+    &__file-box{
+        @extend .files-half__files-list__file-box;
+        margin-right: 0;
+        padding-top: 60px;
+        padding-bottom: 66px;
+        margin-bottom: 0;
+
+        @media(max-width: 599px){
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin: 0;
+            padding-top: 40px;
+            padding-bottom: 46px;
+        }
+
+        &:nth-child(odd){
+            background-color: $white;
+            .files-link{
+                color: $dark-blue;
+            }
+            .file-description{
+                color: $font;
+            }
+        }
+        &:nth-child(even){
+            background-color: $dark-blue;
+        }
+
+        .file-description{
+            word-break: break-word;
+        }
+    }
+}

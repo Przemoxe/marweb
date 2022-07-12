@@ -1,0 +1,93 @@
+.breadcrumb-wrap{
+    margin-bottom: 15px;
+    padding-right: 41px;
+
+    @media(max-width: 599px){
+        display: none;
+    }
+}
+
+.breadcrumb-wrap .breadcrumbs {
+    color: #ffffff;
+    font-size: 15px;
+    text-align: left;
+}
+.breadcrumb-wrap .breadcrumbs .trail-items {
+    margin: 0;
+    padding-left: 0;
+}
+.breadcrumb-wrap .breadcrumbs .trail-items li {
+    display: inline-block;
+    line-height: 1.5;
+    list-style: none;
+}
+.breadcrumb-wrap .breadcrumbs .trail-items li:last-child span {
+    margin-right: 0;
+}
+.breadcrumb-wrap .breadcrumbs .trail-items .trail-begin a span {
+    margin-left: 0;
+}
+.breadcrumb-wrap .breadcrumbs .trail-items span {
+    font-size: 11px;
+    margin-right: 10px;
+    font-family: "LatoRegular";
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.2px;
+    //margin-left: 6px;
+    .page-template-template-career &{
+        color: rgba(0,36,84,0.7);
+    }
+}
+.breadcrumb-wrap .breadcrumbs .trail-items a {
+    color: #ffffff;
+    font-size: 11px;
+    margin-right: 8px;
+    padding-right: 1px;
+    position: relative;
+
+    .page-template-template-career &{
+        color: rgba(0,36,84,0.7);
+    }
+}
+.breadcrumb-wrap .breadcrumbs .trail-items a:hover span{
+    color: rgba(255,255,255,1);
+
+    .page-template-template-career &{
+        color: rgba(0,36,84,1);
+    }
+}
+.breadcrumb-wrap .breadcrumbs .trail-items a:after {
+    bottom: 0;
+    content: "";
+    height: 6px;
+    margin: auto;
+    position: absolute;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    top: -1px;
+    right: 0;
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    transform: rotate(25deg);
+    transform: rotate(45deg);
+    width: 6px;
+    border-top: solid 2px rgba(255,255,255,0.7);
+    border-right: solid 2px rgba(255,255,255,0.7);
+
+    .page-template-template-career &{
+        border-top: solid 2px rgba(0,36,84,0.7);
+        border-right: solid 2px rgba(0,36,84,0.7);
+    }
+}
+
+// .breadcrumb-wrap .breadcrumbs .trail-items a:hover, .breadcrumb-wrap .breadcrumbs .trail-items a:focus, .breadcrumb-wrap .breadcrumbs .trail-items a:active {
+//     color: $secondary-color-hover;
+// }
+// .breadcrumb-wrap .breadcrumbs .trail-items a:hover:after, .breadcrumb-wrap .breadcrumbs .trail-items a:focus:after, .breadcrumb-wrap .breadcrumbs .trail-items a:active:after {
+//     background-color: #474747;
+// }

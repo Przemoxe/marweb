@@ -1,0 +1,55 @@
+{
+    "key": "group_62062da80584b",
+    "title": "Opcje kompetencji",
+    "fields": [
+        {
+            "key": "field_62062dbb64075",
+            "label": "Kolor czcionki kafelka",
+            "name": "color",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "color_0": "szary ciemny",
+                "color_1": "szary jasny",
+                "color_2": "błekitny",
+                "color_3": "granat",
+                "color_4": "czerwony",
+                "color_5": "biały"
+            },
+            "default_value": "color_5",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": "",
+            "wpml_cf_preferences": 3
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "competences"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1644572147
+}

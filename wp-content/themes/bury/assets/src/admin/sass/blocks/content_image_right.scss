@@ -1,0 +1,284 @@
+.content-image-right{
+   // margin-left: 0;
+    .image-content{
+        position: relative;
+        padding: 0;
+        background-size: cover;
+        min-height: 579px;
+        background-repeat: no-repeat;
+        background-position: center;
+        @media(min-width: 970px){
+            max-width: 54.333333%;
+        }
+        @media (max-width: 970px) and (min-width: 600px){
+            max-width: 56.4%;
+            min-height: 381px;
+        }
+        @media (max-width: 599px){
+            min-height: 313px;
+            max-width: 100%;
+            background-size: 100%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .subtitle{
+            position: absolute;
+            background-color: rgba(255,255,255,0.5);
+            top: 39px;
+            left: 11px; // 2px
+            @media (max-width: 970px) and (min-width: 425px){
+                top: 20px;
+                left: 15px;
+            }
+            @media (max-width: 425px){
+                background-color: transparent;
+                top: 20px;
+                left: unset;
+                width: 100%;
+                text-align: center;
+            }
+            h2{
+                color: #404040;
+                font-family: "LatoLight";
+                text-transform: uppercase;
+                font-size: 30px;
+                margin-bottom: 0;
+                padding: 11px 22px;
+                padding-top: 15px;
+                letter-spacing: 0.2px;
+                padding-left: 14px;
+                @media (max-width: 970px) and (min-width: 425px){
+                    font-size: 18px;
+                    padding: 3px 9px;
+                    padding-top: 8px;
+                    padding-left: 7px;
+                }
+                @media (max-width: 425px){
+                    font-size: 18px;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    width: fit-content;
+                    display: inline-block;
+                    padding: 4px 9px;
+                    padding-top: 8px;
+                    padding-right: 7px;
+                }
+            }
+        }
+        .facts{
+            position: absolute;
+            right: 15px;
+            bottom: 0;
+            max-width: 87px;
+            @media (max-width: 600px) and (min-width: 425px){
+                right: 15;
+            }
+            @media (min-width: 971px){
+                display: none;
+            }
+            .fact{
+                padding-right: 8px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                .fact-label, .fact-text{
+                    display: block;
+                    text-align: right;
+                }
+                .fact-label{
+                    font-family: "LatoBlack";
+                    font-size: 20px;
+                    line-height: 36px;
+                }
+                .fact-text{
+                    font-family: "LatoRegular";
+                    font-size: 10px;
+                    letter-spacing: 0.1px;
+                }
+                &:nth-child(2){
+                    padding-bottom: 4px;
+                    .fact-label{
+                        padding-top: 4px;
+                        font-size: 24px;
+                    }
+                    .fact-text{
+                        padding-left: 16px;
+                        padding-bottom: 6px;
+                    }
+                }
+            }
+        }
+    }
+
+    .text-content{
+        position: relative;
+        color: #404040;
+        padding: 0;
+        padding-top: 54px;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 45.666667%;
+        flex: 0 0 45.666667%;
+        /* padding-right: 28px; */
+        padding-left: 30px;
+        letter-spacing: 0.5px;
+        text-align: -webkit-right;
+        @media(min-width: 970px){
+            max-width: 45.666667%;
+        }
+        @media (max-width: 970px) and (min-width: 600px){
+            max-width: 43.6%;
+            padding-left: 10px;
+            padding-top: 29px;
+        }
+        @media (max-width: 600px) and (min-width: 425px){
+            padding-left: 0;
+        }
+        @media (max-width: 599px){
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-top: 18px;
+            padding-left: 10px;
+        }
+        .content{
+            max-width: 501px;
+            text-align: left;
+            position: relative;
+            height: 100%;
+            min-height: 450px;
+            @media (max-width: 970px) and (min-width: 600px){
+                min-height: 352px;
+            }
+            @media (max-width: 599px){
+                max-width: 100%;
+                min-height: 245px;
+            }
+            @media (max-width: 425px){
+                min-height: 255px;
+            }
+        }
+        h2{
+            font-family: "LatoLight";
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 45px;
+            @media (max-width: 970px) and (min-width: 600px){
+                font-size: 18px;
+                margin-bottom: 19px;
+                padding-left: 25px;
+                letter-spacing: 0.09px;
+            }
+            @media (max-width: 599px){
+                font-size: 18px;
+                padding-left: 20px;
+                margin-bottom: 20px;
+            }
+            @media (max-width: 425px){
+                padding-left: 24px;
+                padding-right: 20px;
+            }
+        }
+
+        p{
+            font-family: "LatoLight";
+            font-size: 16px;
+            letter-spacing: 0.05px;
+            word-spacing: -1px;
+            line-height: 22px;
+            padding-right: 30px;
+            @media (max-width: 970px){
+                font-size: 14px;
+                line-height: 18px;
+                padding-left: 25px;
+            }
+            @media (max-width: 600px) and (min-width: 425px){
+                padding-left: 20px;
+                padding-right: 33px;
+            }
+            @media (max-width: 425px){
+                font-size: 14px;
+                padding-left: 24px;
+                line-height: 18px;
+                padding-right: 33px;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        .button{
+            float: right;
+            margin-right: 2px;
+            margin-top: 18px;
+            border: solid 1px #002454;
+            margin-right: 30px;
+            font-family: "LatoRegular";
+            font-size: 13px;
+            color: #002454;;
+            text-transform: uppercase;
+            padding: 7px 19px;
+            display: block;
+            padding-top: 12px;
+            letter-spacing: 0.1px;
+            &:hover{
+                background-color: #002454;
+                color: #ffffff;
+                text-decoration: none;
+            }
+            @media (max-width: 970px){
+                margin-right: 36px;
+            }
+            @media (max-width: 970px) and (min-width: 425px){
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            @media (max-width: 425px){
+                margin-top: 17px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .facts{
+            position: absolute;
+            //left: 2px;
+            left: 0;
+            bottom: 0;
+            max-width: 100px;
+            
+            @media (max-width: 970px) and (min-width: 425px){
+                display: none;
+            }
+            @media (max-width: 425px){
+                display: none;
+            }
+            .fact{
+                padding-right: 8px;
+                padding-top: 1px;
+                padding-bottom: 6px;
+                .fact-label, .fact-text{
+                    display: block;
+                    text-align: right;
+                }
+                .fact-label{
+                    font-family: "LatoBlack";
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+                .fact-text{
+                    font-family: "LatoRegular";
+                    font-size: 13px;
+                    letter-spacing: 0.1px;
+                }
+                &:nth-child(2){
+                    padding-bottom: 11px;
+                    .fact-label{
+                        padding-top: 12px;
+                        font-size: 30px;
+                    }
+                    .fact-text{
+                        padding-left: 11px;
+                    }
+                }
+            }
+        }
+    }
+}

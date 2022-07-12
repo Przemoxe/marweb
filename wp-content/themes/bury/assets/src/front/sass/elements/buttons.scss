@@ -1,0 +1,78 @@
+.button-primary{
+    font-family: "LatoRegular";
+    font-size: 13px;
+    color: $dark-blue;
+    text-transform: uppercase;
+    padding: 7px 19px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-right: 30px;
+    display: inline-block;
+    padding-top: 12px;
+    letter-spacing: 0.1px;
+    border: solid 1px $dark-blue;
+
+    &:hover{
+        text-decoration: none;
+        color: #ffffff;
+        background-color: $dark-blue;
+    }
+}
+
+.button-inverted{
+    font-family: "LatoRegular";
+    font-size: 13px;
+    color: #ffffff;
+    background-color: $dark-blue;
+    text-transform: uppercase;
+    padding: 7px 19px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 30px;
+    display: inline-block;
+    padding-top: 12px;
+    letter-spacing: 0.1px;
+    border: solid 1px $dark-blue;
+
+    &:hover{
+        text-decoration: none;
+        color: $dark-blue;
+        background-color: #ffffff;
+    }
+
+    .single-job_offers &{
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+}
+
+.button-white{
+    border: solid 1px $dark-blue;
+    font-family: "LatoRegular";
+    font-size: 13px;
+    color: $dark-blue;
+    text-transform: uppercase;
+    padding: 7px 19px;
+    display: inline-block;
+    padding-top: 12px;
+    letter-spacing: 0.1px;
+    background-color: white;
+
+    &:hover{
+        background-color: $dark-blue;
+        color: #ffffff;
+        text-decoration: none;
+        border: solid 1px $dark-blue;
+    }
+}
+
+    
+.button-secondary{
+    @extend .button-primary;
+    color: white;
+    border: solid 1px white;
+    &:hover{
+        color: $dark-blue;
+        background-color: white;
+    }
+}

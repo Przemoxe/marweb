@@ -1,0 +1,74 @@
+.cookie-notice{
+    background-color: #002454;
+    z-index: 999;
+    .row{
+        margin: 0;
+        padding-top: 12px;
+        padding-bottom: 0;
+        .cookie-notice__content{
+            padding: 0;
+            p{
+                color: #ffffff;
+                display: inline-block;
+                font-family: "LatoLight";
+                word-spacing: -1px;
+                font-size: 13px;
+                margin-bottom: 12px;
+                /*font-family: "LatoLight";
+                letter-spacing: 0.5px;
+                word-spacing: -1.2px;*/
+                line-height: 17px;
+            }
+        }
+        .cookie-notice__buttons{
+            padding: 0;
+            @media(max-width: 425px){
+                justify-content: space-between;
+                display: flex;
+            }
+            
+            .button{
+                font-size: 13px;
+                font-family: "LatoRegular";
+                text-transform: uppercase;
+                color: #ffffff;
+                border: solid 1px #ffffff;
+                background-color:#002454;
+                padding: 8px 19px;
+                padding-top: 11px;;
+                margin-top: 2px;
+                display: inline-block;
+                margin-bottom: 12px;
+                &:first-child{
+                    @media (max-width: 855px) and (min-width: 425px){
+                        margin-right: 0;
+                        padding: 8px 24px;
+                        padding-top: 11px;;
+                    }
+                }
+                &:nth-child(2){
+                    margin-left: 25px;
+                }
+                &:hover{
+                    border: solid 1px #002454;
+                    background-color: #ffffff;
+                    text-decoration: none;
+                    color: #002454;
+                }
+
+                @media(max-width: 425px){
+                    max-width: 50%;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+#cookie-notice.is-visible{
+    display: block;
+}
+#cookie-notice.is-clicked{
+    display: none;
+}

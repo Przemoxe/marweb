@@ -1,0 +1,30 @@
+.block-video{
+    margin-top: 20px;
+    margin-bottom: 184px;
+
+    @media(max-width: 970px){
+        margin-bottom: 84px;
+    }
+
+    @media(max-width: 599px){
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .container{
+        @media(max-width: 599px){
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+
+    &__content{
+        max-width: 90%;
+        margin: 0 auto;
+
+        @media(max-width: 599px){
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+}

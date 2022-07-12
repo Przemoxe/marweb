@@ -1,0 +1,48 @@
+.gallery {
+    display: flex;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    margin: auto -6px;
+    padding: 6px 0;
+    line-height: 1;
+    &-item {
+        flex: 0 0 auto;
+        flex-basis: 100%;
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 6px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    &-caption {
+        display: block;
+        margin-top: 0.8em;
+    }
+
+    &-icon{
+        overflow: hidden;
+        justify-content: center;
+        display: flex;
+
+        img{
+            height: auto;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        &-columns {
+            @for $i from 1 through 9 {
+                &-#{$i} {
+                    .gallery-item {
+                        flex-basis: percentage(1/$i);
+                        max-width: percentage(1/$i);
+                    }
+                }
+            }
+        }
+    }
+
+}

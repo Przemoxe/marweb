@@ -1,0 +1,25 @@
+.hamburger {
+  float: right;
+  margin-top: 21px;
+  background-color: #002454;
+  padding: 0;
+  border: unset;
+  margin-right: 6%;
+
+  @media (max-width: 599px) {
+    margin-top: 13px;
+  }
+
+  .hamburger-icon {
+    background: url('../images/hamburger.png') no-repeat center;
+    display: block;
+    width: 49px;
+    height: 40px;
+  }
+
+  .hamburger-icon.expanded {
+    background: url('../images/close.png') no-repeat center 8px;
+    width: 49px;
+    height: 62px;
+  }
+}

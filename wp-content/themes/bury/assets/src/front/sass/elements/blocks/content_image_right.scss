@@ -1,0 +1,455 @@
+.content-image-right,
+.content-html-right {
+  position: relative;
+
+  .text-content .content {
+    & > ul li:before {
+      content: '';
+      width: 7px;
+      content: '';
+      position: relative;
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      background-color: #c4103a;
+      left: -10px;
+      top: -3px;
+    }
+    & > ul li {
+      list-style-type: none;
+    }
+  }
+
+  .page-template-template-career & {
+    margin-bottom: 100px;
+
+    @media (max-width: 599px) {
+      margin-bottom: 0;
+    }
+  }
+
+  .container {
+    & > .row {
+      @media (max-width: 970px) and (min-width: 600px) {
+        margin: 0;
+      }
+    }
+  }
+
+  a {
+    color: $dark-blue;
+  }
+  .image-content,
+  .html-content {
+    position: absolute;
+    right: 0;
+    padding: 0;
+    background-size: cover;
+    min-height: 579px;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 100%;
+
+    @media (min-width: 970px) {
+      max-width: 54.333333%;
+    }
+    @media (max-width: 1235px) {
+      min-height: 381px;
+    }
+    @media (max-width: 970px) and (min-width: 600px) {
+      max-width: 56.4%;
+      min-height: 381px;
+    }
+    @media (max-width: 599px) {
+      min-height: 313px;
+      max-width: 100%;
+      position: relative;
+
+
+    
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .subtitle {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.5);
+      top: 39px;
+      left: 11px; // 2px
+      @media (max-width: 970px) and (min-width: 425px) {
+        top: 20px;
+        left: 15px;
+      }
+      @media (max-width: 425px) {
+        background-color: transparent;
+        top: 20px;
+        left: unset;
+        width: 100%;
+        text-align: center;
+      }
+      h2 {
+        color: #404040;
+        font-family: 'LatoLight';
+        text-transform: uppercase;
+        font-size: 30px;
+        margin-bottom: 0;
+        padding: 11px 22px;
+        padding-top: 15px;
+        letter-spacing: 0.2px;
+        padding-left: 14px;
+        @media (max-width: 970px) and (min-width: 425px) {
+          font-size: 18px;
+          padding: 3px 9px;
+          padding-top: 8px;
+          padding-left: 7px;
+        }
+        @media (max-width: 425px) {
+          font-size: 18px;
+          background-color: rgba(255, 255, 255, 0.5);
+          width: fit-content;
+          display: inline-block;
+          padding: 4px 9px;
+          padding-top: 8px;
+          padding-right: 7px;
+        }
+      }
+    }
+    .facts {
+      position: absolute;
+      right: 15px;
+      bottom: 0;
+      max-width: 87px;
+
+      .page-template-template-career & {
+        width: 87px;
+      }
+
+      @media (max-width: 599px) {
+        right: 9px;
+      }
+      @media (min-width: 1236px) {
+        display: none;
+      }
+      .fact {
+        padding-right: 8px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        .page-template-template-career & {
+          padding-top: 24px;
+          padding-left: 5px;
+
+          @media (max-width: 599px) {
+            padding-top: 18px;
+            padding-bottom: 7px;
+          }
+        }
+
+        .fact-label,
+        .fact-text {
+          display: block;
+          text-align: right;
+        }
+        .fact-label {
+          font-family: 'LatoBlack';
+          font-size: 20px;
+          line-height: 36px;
+          .page-template-template-career & {
+            font-size: 24px;
+
+            @media (max-width: 599px) {
+              line-height: 22px;
+            }
+          }
+        }
+        .fact-text {
+          font-family: 'LatoRegular';
+          font-size: 10px;
+          letter-spacing: 0.1px;
+          padding-bottom: 6px;
+
+          .page-template-template-career & {
+            font-size: 13px;
+
+            @media (max-width: 599px) {
+              font-size: 10px;
+            }
+          }
+
+          p {
+            margin-bottom: 0;
+
+            .page-template-template-career & {
+              margin-bottom: 1rem;
+            }
+          }
+        }
+        &:nth-child(2) {
+          padding-bottom: 4px;
+          .fact-label {
+            padding-top: 4px;
+            font-size: 24px;
+          }
+          .fact-text {
+            padding-left: 16px;
+            padding-bottom: 6px;
+          }
+        }
+      }
+    }
+  }
+  .html-content {
+    padding-top: 54px;
+  }
+
+  .text-content {
+    position: relative;
+    color: #404040;
+    // padding: 0;
+    padding-top: 54px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 45.666667%;
+    flex: 0 0 45.666667%;
+    /* padding-right: 28px; */
+    // padding-left: 30px;
+    letter-spacing: 0.5px;
+    text-align: -webkit-right;
+    min-height: 579px;
+    @media (min-width: 970px) {
+      // max-width: 45.666667%;
+      max-width: 43.266667%;
+    }
+    @media (max-width: 991px) and (min-width: 971px) {
+      padding-left: 29px;
+    }
+    @media (max-width: 970px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @media (max-width: 970px) and (min-width: 600px) {
+      max-width: 43.6%;
+      padding-top: 29px;
+      min-height: 381px;
+    }
+    @media (max-width: 599px) {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-top: 18px;
+      padding-left: 30px;
+      padding-right: 30px;
+      min-height: 245px;
+    }
+    .content {
+      max-width: 501px;
+      text-align: left;
+      position: relative;
+      height: 100%;
+      min-height: 450px;
+      @media (max-width: 1235px) {
+        min-height: 340px;
+      }
+      @media (max-width: 599px) {
+        max-width: 100%;
+        min-height: 245px;
+      }
+      @media (max-width: 425px) {
+        min-height: 255px;
+      }
+
+      a {
+        color: $dark-blue;
+        font-family: 'LatoRegular';
+
+        &:hover {
+          border-bottom: solid 2px $red;
+        }
+      }
+      .button {
+        float: right;
+        margin-right: 2px;
+        border: solid 1px #002454;
+        margin-right: 30px;
+        font-family: 'LatoRegular';
+        font-size: 13px;
+        color: #002454;
+        text-transform: uppercase;
+        padding: 7px 19px;
+        display: block;
+        padding-top: 12px;
+        letter-spacing: 0.1px;
+        margin-bottom: 51px;
+
+        &:hover {
+          background-color: #002454;
+          color: #ffffff;
+          text-decoration: none;
+          border: solid 1px #002454;
+        }
+        @media (max-width: 970px) {
+          margin-right: 36px;
+        }
+        @media (max-width: 970px) and (min-width: 425px) {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+        @media (max-width: 425px) {
+          margin-top: 17px;
+          margin-bottom: 10px;
+        }
+
+        .page-template-template-career & {
+          @media (min-width: 971px) {
+            margin-right: 19px;
+          }
+          @media (max-width: 599px) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    h2 {
+      font-family: 'LatoLight';
+      font-size: 30px;
+      margin-bottom: 17px;
+      position: relative;
+      @media (max-width: 970px) and (min-width: 600px) {
+        font-size: 18px;
+        margin-bottom: 19px;
+        // padding-left: 25px;
+        letter-spacing: 0.09px;
+      }
+      @media (max-width: 599px) {
+        font-size: 18px;
+        //  padding-left: 20px;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 425px) {
+        // padding-left: 24px;
+        // padding-right: 20px;
+      }
+
+      .page-template-template-career & {
+        margin-left: 25px;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 10px;
+          left: -25px;
+          @media (max-width: 970px) {
+            top: 3px;
+            left: -25px;
+          }
+          @extend .bury-point;
+        }
+      }
+    }
+
+    p {
+      font-family: 'LatoLight';
+      font-size: 16px;
+      letter-spacing: 0.05px;
+      word-spacing: -1px;
+      line-height: 22px;
+      padding-right: 30px;
+      //max-height: 200px;
+      overflow: hidden;
+      @media (max-width: 970px) {
+        font-size: 14px;
+        line-height: 18px;
+        //  padding-left: 25px;
+      }
+      @media (max-width: 600px) and (min-width: 425px) {
+        // padding-left: 20px;
+        //right: 33px;
+      }
+      @media (max-width: 425px) {
+        font-size: 14px;
+        // padding-left: 24px;
+        line-height: 18px;
+        // padding-right: 33px;
+        margin-bottom: 0.5rem;
+      }
+
+      .page-template-template-career & {
+        @media (max-width: 599px) {
+          padding-right: 0;
+        }
+      }
+    }
+
+    .facts {
+      position: absolute;
+      //left: 2px;
+      left: 0;
+      bottom: 0;
+      width: 100px;
+
+      @media (max-width: 1235px) and (min-width: 425px) {
+        display: none;
+      }
+      @media (max-width: 425px) {
+        display: none;
+      }
+      .fact {
+        padding-right: 8px;
+        padding-top: 1px;
+        padding-bottom: 6px;
+
+        .page-template-template-career & {
+          padding-top: 24px;
+        }
+
+        .fact-label,
+        .fact-text {
+          display: block;
+          text-align: right;
+        }
+        .fact-label {
+          font-family: 'LatoBlack';
+          font-size: 24px;
+          line-height: 36px;
+
+          .page-template-template-career & {
+            font-size: 29px;
+          }
+        }
+        .fact-text {
+          font-size: 12px;
+          p {
+            font-family: 'LatoRegular';
+            font-size: 12px;
+            padding-right: 0;
+            margin-bottom: 0;
+            line-height: 18px;
+
+            .page-template-template-career & {
+              margin-bottom: 1rem;
+            }
+          }
+        }
+        &:nth-child(2) {
+          padding-bottom: 11px;
+          .fact-label {
+            padding-top: 12px;
+            font-size: 30px;
+          }
+          .fact-text {
+            padding-left: 11px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.content-html-right {
+  .html-inner-content {
+    @media (max-width: 599px) {
+      padding: 0 25px;
+    }
+  }
+}

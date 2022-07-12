@@ -1,0 +1,52 @@
+.block__employees-list{
+
+    @media(min-width: 970px){
+        margin-bottom: 107px;
+    }
+
+    .container{
+        @media(max-width: 599px){
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+
+    .employee{
+        margin-bottom: 20px;
+        @media(max-width: 599px){
+            max-width: 100%;
+            flex: 0 0 100%;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__image{
+        @extend .block__post-list__image;
+        background-position: 50% 0%;
+    }
+
+    &__title{
+        @extend .block__post-list__title;
+        font-size: 30px;
+        line-height: 32px;
+        padding-bottom: 10px;
+        
+        @media(min-width: 970px){
+            padding-top: 20px;
+        }
+        @media(max-width: 970px){
+            font-size: 22px;
+            line-height: 28px;
+        }
+        @media(max-width: 599px){
+            font-size: 18px;
+            line-height: 20px;
+            padding-bottom: 5px;
+        }
+    }
+
+    &__position{
+        @extend .block__post-list__excerpt;
+        line-height: 20px;
+    }
+}

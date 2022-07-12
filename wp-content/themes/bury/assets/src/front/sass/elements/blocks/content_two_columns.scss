@@ -1,0 +1,69 @@
+.content-two-columns{
+    background-size: cover;
+    padding-top: 55px;
+    padding-bottom: 55px;
+
+    @media(max-width: 970px){
+        padding-top: 29px;
+        padding-bottom: 29px;
+    }
+    @media(max-width: 599px){
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    &__title{
+        font-family: "LatoLight";
+        font-size: 30px;
+        margin-bottom: 34px;
+        padding-right: 15px;
+        word-break: break-word;
+
+        @media (max-width: 970px) and (min-width: 600px){
+            font-size: 18px;
+            margin-bottom: 19px;
+        }
+        @media (max-width: 599px){
+            font-size: 18px;
+            margin-bottom: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    &__subtitle{
+        font-size: 16px;
+        font-family: "LatoBold";
+        margin-bottom: 1.5rem;
+    }
+
+    &__column{
+        max-width: 42%;
+        word-break: break-word;
+
+        @media(max-width: 970px){
+            max-width: 50%;
+        }
+        @media(max-width: 599px){
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        &>ul{
+            padding-left: 27px;
+        }
+
+        ul{
+            @extend .custom-ul;
+            li{
+                margin-bottom: 4px;
+            }
+        }
+    }
+
+    &__left{
+        @media(max-width: 599px){
+            margin-bottom: 6px;
+        }
+    }
+
+}

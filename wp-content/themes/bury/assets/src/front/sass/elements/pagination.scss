@@ -1,0 +1,85 @@
+.pagination-row{
+    .pagination{
+        ul.page-numbers{
+            list-style: none;
+            padding-inline-start: 0px;
+            margin-top: 66px;
+            margin-bottom: 64px;
+
+            @media(max-width: 970px){
+                margin-top: 38px;
+                margin-bottom: 36px;
+            }
+            @media(max-width: 599px){
+                margin-bottom: 42px;
+            }
+
+            li{
+                display: inline-block;
+                float: left;
+                margin: 0 13px;
+                font-family: "LatoRegular";
+                font-size: 20px;
+                color: #002454;
+                a{
+                    color: #002454;
+                    &:hover{
+                        text-decoration: none;
+                        color: #c4103a;
+                    }
+                }
+                .current{
+                    color: #c4103a;
+                }
+                .next, .prev{
+                    padding: 9px 19px;
+                    border: solid 1px #002454;                
+                }
+                .next{
+                    position: relative;
+                    margin-left: 31px;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        width: 8px;
+                        height: 8px;
+                        border-top: solid 2px #002454;
+                        border-right: solid 2px #002454;
+                        transform: rotate(45deg);
+                        top: 16px;
+                        right: 17px;
+                    }
+
+                    &:hover{
+                        &:before{
+                            border-top: solid 2px $red;
+                            border-right: solid 2px $red;
+                        }
+                    }
+                }
+                .prev{
+                    position: relative;
+                    margin-right: 31px;
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        width: 8px;
+                        height: 8px;
+                        border-bottom: solid 2px #002454;
+                        border-left: solid 2px #002454;
+                        transform: rotate(45deg);
+                        top: 16px;
+                        left: 17px;
+                    }
+                    
+                    &:hover{
+                        &:before{
+                            border-bottom: solid 2px $red;
+                            border-left: solid 2px $red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

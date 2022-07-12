@@ -1,0 +1,266 @@
+.management-list {
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 53%, $dark-blue 53%, $dark-blue 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 53%, $dark-blue 53%, $dark-blue 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 53%, $dark-blue 53%, $dark-blue 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#002454",GradientType=1);   
+    position: relative;
+
+    .container{
+        &>.row{
+            @media(max-width: 970px){
+                margin: 0;
+            }          
+        }
+    }
+
+    &.br-block{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    @media(max-width: 800px){
+        .container{
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &__left{
+        max-width: 43%;
+        flex: 0 0 45.666667%;
+        padding-right: 0;
+
+        @media (max-width: 991px) and (min-width: 971px){
+            padding-left: 30px;
+        }
+        
+        @media(max-width: 991px) and (min-width: 971px){
+            padding-left: 30px;
+        }
+        @media(max-width: 970px){
+            max-width: 43.6%;
+            padding-left: 0;
+        }
+        @media(max-width: 800px){
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        &>.row{
+            @media(max-width: 970px){
+                margin: 0;
+            }           
+        }
+    }
+
+    &__right{
+        flex: 0 0 58.33333333%;
+        max-width: 57%;
+        background-color: $dark-blue;
+
+        @media(max-width: 970px){
+            max-width: 56.4%;
+        }
+        @media (max-width: 970px) and (min-width: 425px){
+            padding-left: 0;
+            padding-bottom: 0;
+        }
+        @media (max-width: 800px){
+            -webkit-box-flex: 0;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        &>.row{
+            @media(max-width: 970px){
+                margin: 0;
+            }           
+        }
+    }
+
+    .management-description{
+        max-width: 100%;
+        flex: 0 0 100%;
+        background: #ffffff;
+        display: flex;
+        @media(max-width: 970px){
+            //max-width: 43.6%;
+        }
+        @media(max-width: 800px){
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .content{
+            padding-left: 0;
+            
+            @media (max-width: 970px){
+                color: #404040;   
+            }
+            @media (max-width: 970px) and (min-width: 425px){
+                padding-left: 15px;
+            }
+            @media(max-width: 800px){
+                max-width: 100%;
+                padding: 0;
+                min-height: unset;
+            }
+
+            .box-title{
+                text-transform: unset;
+                margin-bottom: 49px;
+                @media (max-width: 970px) and (min-width: 425px){
+                    margin-bottom: 1.5rem;
+                }
+                @media(max-width: 800px){
+                    padding-left: 35px;
+                    padding-right: 35px;
+                    font-size: 20px;
+                    margin-top: 30px;
+                }
+                @media(max-width: 425px){
+                    margin-bottom: 1.3rem;
+                    margin-top: 0;
+                }
+            }
+            .box-description{
+                letter-spacing: -0.1px;
+                line-height: 22px;
+                word-spacing: -0.3px;            
+                padding-right: 46px;
+                padding-bottom: 0.9rem;
+                @media (max-width: 970px) and (min-width: 425px){
+                    padding-right: 0;
+                    padding-bottom: 0.5rem;
+                }
+                @media(max-width: 800px){
+                    padding-left: 35px;
+                    padding-right: 35px;
+                    font-size: 16px;
+                }
+                @media(max-width: 599px){
+                    font-size: 14px;
+                }
+            }
+            .navbar{
+                padding-left: 0;
+                padding-right: 37px;
+                padding-bottom: 20px;
+                word-break: break-word;
+                
+                @media(max-width: 970px){
+                    padding-right: 0;
+                }
+
+                @media(max-width: 800px){
+                    background: url('/wp-content/themes/bury/assets/dist/images/innovation-left.png') no-repeat top;
+                    background-size: cover;
+                    padding-left: 35px;
+                    padding-right: 35px;
+                    padding-top: 0.8rem;
+                    padding-bottom: 0.5rem;
+                    max-width: 100%;
+                }
+
+                .ae-select{
+                    display: none;
+                    @media(max-width: 800px){
+                        display: block;
+                    }
+                    .ae-select-content{
+                        display: inline-block;
+                    }
+                }
+
+                .nav{
+                    width: 100%;          
+                    display: block;          
+                    .nav-link{
+                        color: #404040;
+                        font-family: "LatoLight";
+                        letter-spacing: -0.7px;
+                        word-spacing: 2.5px;
+                        padding-bottom: 2px;
+                        padding-left: 0px;        
+                        display: inline;                                  
+                        
+                        @media(max-width: 800px){
+                            font-family: "LatoBold";
+                            font-size: 16px;
+                            color: #ffffff;
+                            padding-bottom: 2px;
+                            letter-spacing: 0.1px;
+                            line-height: 27px;
+                        }
+                    }
+                    .active{
+                        font-size: 16px;
+                        border-bottom: solid 4px #c4103a;
+                    }
+                }
+                .ae-hide{
+                    @media(max-width: 800px){
+                        display: none;
+                    }                  
+                }
+            }
+        }
+    }
+       
+    .management-members{    
+        -webkit-box-flex: 0;
+        flex: 0 0 100%;
+        background: #002454;
+        padding-bottom: 0;
+        position: absolute;
+        top:0;
+        right: 0;
+        height: 100%;
+        max-width: 54.333333%;
+        
+        @media(max-width: 970px){
+            max-width: 56.4%;
+        }
+        @media (max-width: 970px) and (min-width: 425px){
+            padding-left: 0;
+            padding-bottom: 0;
+        }
+        @media (max-width: 800px){
+            -webkit-box-flex: 0;
+            flex: 0 0 100%;
+            max-width: 100%;
+            position: relative;
+        }
+        .tab-content{
+            padding-top: 0;
+            .tab-pane{
+                @media(max-width: 800px){
+                    height: auto!important;
+                }
+                .row{
+                    margin: 0;
+                    @media (max-width: 425px){
+                        -webkit-box-pack: center !important;
+                        -ms-flex-pack: center !important;
+                        justify-content: center !important;
+                    }
+                    .photo{
+                        padding: 0;
+                        max-width: 334px;
+                        @media(max-width: 800px){
+                            max-width: 100%;
+                        }
+                        .img-fluid{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

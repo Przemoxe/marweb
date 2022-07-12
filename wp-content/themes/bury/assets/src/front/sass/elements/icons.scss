@@ -1,0 +1,57 @@
+
+@import "variables/icons";
+$font-path: '/wp-content/themes/bury/assets/dist/fonts/';
+
+@font-face {
+    font-family: '#{$icomoon-font-family}';
+    src:  url($font-path + 'icomoon.eot?xor41z');
+    src:  url($font-path + 'icomoon.eot?xor41z#iefix') format('embedded-opentype'),
+    url($font-path + 'icomoon.ttf') format('truetype'),
+    url($font-path + 'icomoon.woff?xor41z') format('woff'),
+    url($font-path + 'icomoon.svg?xor41z#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: '#{$icomoon-font-family}' !important;
+    
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook {
+    &:before {
+        content: $icon-facebook; 
+    }
+}
+.icon-instagram {
+    &:before {
+        content: $icon-instagram; 
+    }
+}
+.icon-YouTube {
+    &:before {
+        content: $icon-YouTube; 
+    }
+}
+.icon-LinkedIn {
+    &:before {
+        content: $icon-LinkedIn; 
+    }
+}
+.icon-twitter {
+    &:before {
+        content: $icon-twitter; 
+    }
+}
+

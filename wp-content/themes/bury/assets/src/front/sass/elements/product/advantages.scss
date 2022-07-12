@@ -1,0 +1,117 @@
+.advantages{
+    &__title{
+        font-size: 1.875rem;
+        margin-bottom: 32px;
+        @media(max-width: 1199px) and (min-width: 600px){ 
+            padding-left: 20px;
+            padding-right: 33px;
+        }
+        @media (max-width: 970px){
+            margin-bottom: 19px;
+            font-size: 25px;
+        }
+        @media (max-width: 599px){
+            margin-bottom: 19px;
+            font-size: 18px;
+        }
+    }
+    
+
+    &__content{
+        max-width: 501px;
+        text-align: left;
+        padding-top: 54px;
+        padding-left: 30px;
+        padding-right: 15px;
+        word-break: break-word;
+        @media(max-width: 1199px){
+            max-width: 415px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        @media (max-width: 970px){
+            // padding-left: 20px;
+            padding-top: 30px;
+        }
+        @media (max-width: 599px){
+            padding-left: 33px;
+            padding-right: 15px;
+            padding-top: 16px;
+            max-width: 100%;
+        }
+    }
+
+    &__description{
+        font-size: 1rem;
+        letter-spacing: 0.05px;
+        word-spacing: -1px;
+        line-height: 22px;
+        margin-bottom: 15px;
+
+        @media(max-width: 1199px) and (min-width: 600px){ 
+            padding-left: 20px;
+            padding-right: 33px;
+        }
+
+        ul{
+            @extend .custom-ul;
+            padding-left: 29px;
+        }
+    }
+
+    &__left{
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        padding-right: 0;
+        min-height: 580px;
+
+        @media(max-width: 599px){
+            background-image: none!important;
+            padding-left: 0;
+            min-height: auto!important;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            @media(min-width: 600px){
+                display: none;
+            }
+        }
+
+        video{
+            position: absolute;
+            top: 0;
+            right: 0px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 100% 100%;
+
+            @media(max-width: 599px){
+                position: relative;
+            }
+        }
+
+        @media(min-width: 600px){
+            max-width: 54.333333%;
+        }
+        @media(max-width: 970px){
+            min-height: 520px;
+        }
+        @media(max-width: 599px){
+            min-height: 314px;
+        }
+    }
+
+    &__right{
+        padding-left: 0;
+        background-color: #f6f7f7;
+        @media(min-width: 600px){
+            flex: 0 0 45.666667%;
+            max-width: 45.666667%;
+        }
+    }
+}

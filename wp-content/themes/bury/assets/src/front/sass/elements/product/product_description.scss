@@ -1,0 +1,33 @@
+.product-description{
+    color: $font;
+
+    &__content{
+        @extend .category__description;
+        margin-top: 58px;
+        margin-bottom: 40px;
+        max-width: 100%;
+
+        @media(max-width: 970px){
+            margin-top: 40px;
+            margin-bottom: 22px;
+        }
+        @media(max-width: 599px){
+            max-width: 100%;
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
+
+        video{
+            max-width: 100%!important;
+            height: auto!important;
+            width: 100%!important;;
+            display: block!important;
+        }
+
+        .wp-video{
+            max-width: 100%!important;
+            width: 100%!important;
+            display: block!important;
+        }
+    }  
+}

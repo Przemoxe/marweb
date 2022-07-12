@@ -1,0 +1,11 @@
+.block-header{
+    @media(max-width: 599px){
+        margin-top: 0!important;
+    }
+    .container{
+        @media(max-width: 599px){
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+}

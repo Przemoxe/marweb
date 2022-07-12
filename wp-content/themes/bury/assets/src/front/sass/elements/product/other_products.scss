@@ -1,0 +1,103 @@
+.other-products{
+
+    &>.container{
+        @media(max-width: 599px){
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+
+    &__header{
+        font-family: "LatoLight";
+        font-size: 1.875rem;
+        color: $font;
+        margin-top: 44px;
+        margin-bottom: 20px;
+
+        @media(max-width: 970px){
+            margin-top: 22px;
+        }
+        @media(max-width: 599px){
+            font-size: 18px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    &__row{
+        margin-bottom: 35px;
+        @media(max-width: 970px){
+            margin-bottom: 40px;
+        }
+        @media(max-width: 599px){
+            margin-bottom: 3px;
+        }
+    }
+
+    &__col{       
+        position: relative;
+        margin-bottom: 20px;
+        &:hover{
+            .other-products__name{
+                border-bottom: solid 2px $red;
+            }
+        }
+        
+        &:last-child{
+            @media(max-width: 970px){
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__name-container{
+        @media(max-width: 599px){
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    &__name{
+        font-family: "LatoBold";
+        font-size: 1.25rem;
+        color: $font;
+        padding-bottom: 2px;
+        word-break: break-word;
+    }
+
+    &__description{
+        font-family: "LatoLight";
+        font-size: 1rem;
+        color: $font;
+        margin-top: 19px;
+        @media(max-width: 970px){
+            margin-top: 12px;
+        }
+        @media(max-width: 599px){
+            font-size: 14px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    &__image{
+        margin-bottom: 10px;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.container.single-products{
+    .button-primary{
+        margin-bottom: 77px;
+        @media(max-width: 970px){
+            margin-bottom: 47px;
+        }
+        @media(max-width: 599px){
+            margin-bottom: 30px;
+        }
+    }
+}

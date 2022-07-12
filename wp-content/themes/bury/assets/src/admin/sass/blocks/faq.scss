@@ -1,0 +1,93 @@
+.faq-block{
+    border: none;
+    border-radius: 0em;
+
+    &:first-child{
+        margin-top: 15px;
+    }
+
+    &:last-child{
+        margin-bottom: 35px;
+    }
+
+    .faq-block-title{
+        position: relative;
+        font-size: 18px;
+        font-family: "LatoBold";
+        border-bottom: solid 1px $blue;
+        margin-bottom: 0px!important;
+        background-color: white;
+        padding: 0;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        a{
+            display: inline-block;
+            width: 100%;
+            color: $font;
+            background-color: $blue;
+            padding-bottom: 15px;
+            padding-left: 20px;
+            padding-right: 55px;
+            padding-top: 22px;
+
+            &:hover{
+                text-decoration: none;
+                color: $font;
+            }
+
+            &.collapsed{
+                background-color: $white;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    right: 2.5%;
+                    display: block;
+                    width: 7px;
+                    height: 7px;
+                    top: 45%;
+                    transform: rotateZ(45deg);
+                    border-bottom: solid 2px $dark-blue;
+                    border-right: solid 2px $dark-blue;
+                }
+            }
+
+            &:after{
+                content: "";
+                position: absolute;
+                right: 2.5%;
+                display: block;
+                width: 7px;
+                height: 7px;
+                top: 45%;
+                transform: rotateZ(225deg);
+                border-bottom: solid 2px $dark-blue;
+                border-right: solid 2px $dark-blue;
+            }
+            
+            @media(max-width: 970px){
+                font-size: 16px;
+            }
+            @media(max-width: 425px){
+                padding-left: 15px;
+                padding-right: 30px;
+            }
+        }
+    }
+    .faq-block-answer{
+        padding: 28px 100px;
+        font-family: "LatoRegular";
+        color: $dark-blue;
+        transition: padding-top 0.4s;
+
+        @media(max-width: 970px){
+            font-size: 14px;
+            padding: 20px 40px;
+        }
+        @media(max-width: 425px){
+            padding-left: 25px;
+        }
+    }
+}

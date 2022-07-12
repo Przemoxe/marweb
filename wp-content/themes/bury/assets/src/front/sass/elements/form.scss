@@ -1,0 +1,219 @@
+.contact-form-7{
+    padding-top: 34px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    >img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .content{
+        @media(max-width: 970px){
+            padding: 0;
+        }
+    }
+}
+
+.wpcf7{
+    display: flex;
+    justify-content: center;
+}
+
+.wpcf7-form, .mc4wp-form-theme-bury{
+    color: $font;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    max-width: 86%;
+
+    @media(max-width: 970px){
+        max-width: 100%;
+    }
+    @media(max-width: 707px) and (min-width: 600px){
+        font-size: 11px;
+    }
+    @media(max-width: 599px){
+        font-size: 16px;
+    }
+
+    &>*{
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    &>div{
+        margin-bottom: 5px;
+        @media(max-width: 599px){
+            max-width: 100%!important;
+            flex: 0 0 100%!important;
+        }
+    }
+
+    label{
+        width: 100%;
+    }
+
+    p{
+        margin-bottom: 4px;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    input{
+        &:focus{
+            outline-color: $dark-blue;
+            outline-offset: -2px;
+            outline-width: 1px;
+            outline: 1px solid $dark-blue;
+        }
+
+    }
+
+    /*for FireFox*/
+    input[type=text]::-moz-focus-inner,
+    input[type=number]::-moz-focus-inner{
+        outline-color: $dark-blue;
+        outline-offset: -2px;
+        outline-width: 1px;
+        outline: 1px solid $dark-blue;
+    }
+    
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    textarea{
+        height: 272px;
+
+        &:focus{
+            outline-color: $dark-blue;
+            outline-offset: -2px;
+            outline-width: 1px;
+            outline: 1px solid $dark-blue;
+        }
+    }
+
+    select{
+        box-shadow: none;
+        background-color: white;
+        outline: 0;
+        cursor: pointer;
+
+        &:focus{
+            outline-color: $dark-blue;
+            box-shadow: 0 0 1px 1px $dark-blue; 
+        }
+
+    }
+
+    /* Reset Select */
+    // select {
+    //     appearance: none;
+    //     outline: 0;
+    //     box-shadow: none;
+    //     background-color: white;
+    //     cursor: pointer;
+    //     background-image: none;
+    // }
+    // /* Remove IE arrow */
+    // select::-ms-expand {
+    //     display: none;
+    // }
+
+    // /* Custom select */
+    // select{
+    //     cursor: pointer;
+    //     position: relative;
+    // }
+
+    &-control{
+        width: 100%;
+        height: 100%;
+
+        &.wpcf7-submit{
+            width: auto;
+            @extend .button-primary;
+            background-color: white;
+            height: auto;
+
+            @media(max-width: 599px){
+                float: right;
+                margin-right: 0;
+            }
+        }
+    }
+
+    &-control-wrap{
+        display: block;
+        margin-top: 5px;
+        width: 100%;
+        height: 38px;
+    }
+
+    .clause{
+        line-height: 23px;
+        margin-top: 11px;
+        font-size: 13px;
+    }
+
+    .read-more-btn{
+        color: $red;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .hide{
+        display: none;
+
+        &-mobile{
+            @media(min-width: 600px){
+                display: block;
+            }
+        }
+    }
+
+    div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-ng, div.wpcf7-aborted{
+        color: $red;
+        font-family: "LatoBold";
+        border: 0;
+        margin: 0 0 10px 0;
+    }
+
+    span.wpcf7-not-valid-tip{
+        color: $red;
+        font-family: "LatoBold";
+    }
+
+    .ajax-loader{
+        @media(max-width: 599px){
+            margin-top: 20px!important;
+        }       
+    }
+
+    .wpcf7-acceptance{
+        .wpcf7-list-item{
+            margin: 0;
+        }
+    }
+
+    .wpcf7-checkbox{
+        .first{
+            margin: 0;
+        }
+    }
+}

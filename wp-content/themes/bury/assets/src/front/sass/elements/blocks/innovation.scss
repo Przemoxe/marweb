@@ -1,0 +1,357 @@
+.innovation {
+  // background: url('../images/innovation-right.png') no-repeat top right 15px ;
+  // background-size: 20% 100%;
+  &.br-block {
+    position: relative;
+  }
+
+  &__background-right {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    background: url('../images/innovation-right.png') no-repeat top;
+    background-size: cover;
+  }
+
+  &__background-left {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    background: url('../images/innovation-left.png') no-repeat top;
+    background-size: cover;
+  }
+
+  &.container {
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
+  }
+}
+
+.tab-pane {
+  height: auto !important;
+}
+.management-description {
+  padding-right: 0;
+  -webkit-box-flex: 0;
+  // -ms-flex: 0 0 43.666667%;
+  // flex: 0 0 45.666667%;
+  // max-width: 45.666667%;
+  flex: 0 0 45.666667%;
+  max-width: 43.266667%;
+  text-align: -webkit-right;
+  // background: url('../images/innovation-left.png') no-repeat top left 15px;
+  // background-size: cover;
+  @media (max-width: 991px) and (min-width: 600px) {
+    max-width: 43.6%;
+    padding-left: 0;
+  }
+  @media (max-width: 599px) {
+    max-width: 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    padding: 0;
+  }
+  .content-navbar {
+    //max-width: 501px;
+    @media (max-width: 599px) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  .content {
+    padding-left: 32px;
+    padding-right: 12px;
+    color: #404040;
+    background-color: white;
+    // max-width: 503px;
+    /* float: right; */
+    text-align: left;
+    @media (min-width: 971px) {
+      min-height: auto !important;
+    }
+    @media (max-width: 991px) {
+      padding-left: 21px;
+    }
+    @media (max-width: 970px) and (min-width: 600px) {
+      background-color: transparent;
+      color: #ffffff;
+      padding-right: 22px;
+      //min-height: 295px;
+      color: #404040;
+      background-color: white;
+      padding-top: 28px;
+    }
+
+    @media (max-width: 599px) {
+      padding-left: 20px;
+      padding-right: 29px;
+      //min-height: unset;
+      color: #404040;
+      background-color: white;
+      max-width: 100%;
+      width: 100%;
+      min-height: auto !important;
+    }
+    .box-title {
+      font-family: 'LatoLight';
+      font-size: 30px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 1.6rem;
+      @media (min-width: 970px) {
+        padding-top: 53px;
+      }
+      @media (max-width: 970px) and (min-width: 425px) {
+        font-size: 18px;
+        margin-bottom: 1.3rem;
+      }
+      @media (max-width: 425px) {
+        font-size: 18px;
+        padding-top: 18px;
+        margin-bottom: 1.3rem;
+      }
+    }
+
+    .box-description {
+      font-size: 16px;
+      font-family: 'LatoLight';
+      line-height: 22px;
+      letter-spacing: -0.1px;
+      word-spacing: -0.1px;
+      padding-bottom: 1.25rem;
+      strong {
+        font-family: 'LatoBold';
+        letter-spacing: 0.08px;
+      }
+      @media (max-width: 970px) and (min-width: 425px) {
+        font-size: 14px;
+        line-height: 18px;
+      }
+      @media (max-width: 425px) {
+        font-size: 14px;
+        line-height: 18px;
+        padding-bottom: 2.2rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .navbar {
+    max-width: 503px;
+    text-align: left;
+    padding-top: 0.8rem;
+    padding-left: 2rem;
+    @media (max-width: 599px) {
+      padding-left: 21px;
+      padding-right: 37px;
+      max-width: 100%;
+      width: 100%;
+    }
+    .ae-select {
+      display: none;
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 17px;
+      @media (max-width: 970px) {
+        display: block;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+      .ae-select-content {
+        font-family: 'LatoBold';
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #ffffff;
+        display: inline-block;
+      }
+      .arrow {
+        @extend .ae-select-arrow;
+      }
+    }
+    .ae-hide {
+      @media (max-width: 970px) {
+        display: none;
+      }
+    }
+    .nav {
+      &.innovation-flex-column {
+        flex-direction: column !important;
+      }
+
+      .innovation-li {
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        word-break: break-word;
+
+        .nav-link:not(.active) {
+          &:hover {
+            border-bottom: solid 2px $red;
+          }
+        }
+      }
+
+      .nav-link {
+        font-family: 'LatoBold';
+        font-size: 16px;
+        color: #ffffff;
+        padding-bottom: 2px;
+        padding-left: 0px;
+        letter-spacing: 0.1px;
+        padding-right: 10px;
+        line-height: 27px;
+        display: inline;
+      }
+      .active {
+        border-bottom: solid 4px #c4103a;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.management-members {
+  background-color: #ffffff;
+  // -ms-flex: 0 0 34.333333;
+  // flex: 0 0 34.333333%;
+  // max-width: 34.333333%;
+  flex: 0 0 55.733333%;
+  max-width: 55.6%;
+  padding: 0;
+  padding-bottom: 20px;
+  overflow: hidden;
+  @media (max-width: 1190px) and (min-width: 971px) {
+    max-width: 55.32%;
+  }
+  @media (max-width: 991px) and (min-width: 600px) {
+    flex: 0 0 57.333333%;
+    max-width: 56.4%;
+  }
+  @media (max-width: 970px) and (min-width: 600px) {
+    padding-bottom: 0;
+  }
+  @media (max-width: 599px) {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 1px;
+  }
+  .tab-content {
+    padding-top: 53px;
+    @media (max-width: 970px) and (min-width: 600px) {
+      padding-top: 28px;
+    }
+    @media (max-width: 599px) {
+      padding-top: 28px;
+    }
+    .tab-pane {
+      display: inline-block;
+      visibility: hidden;
+      position: absolute;
+      z-index: 0;
+      width: 100%;
+      &.active {
+        position: static;
+        visibility: visible;
+        z-index: 2;
+      }
+
+      @media (max-width: 599px) {
+        height: auto !important;
+      }
+    }
+    .innovation-title {
+      font-family: 'LatoLight';
+      font-size: 30px;
+      color: #404040;
+      text-transform: uppercase;
+      letter-spacing: 0.2px;
+      word-spacing: -1px;
+      padding-left: 29px;
+      @media (max-width: 970px) and (min-width: 600px) {
+        font-size: 18px;
+        padding: 0 16px;
+      }
+      @media (max-width: 599px) {
+        font-size: 18px;
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+        padding: 0 18px;
+      }
+    }
+    .innovation-item-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 25px;
+      padding-left: 29px;
+      @media (max-width: 970px) and (min-width: 600px) {
+        margin-top: 0px;
+        width: 38%;
+        max-width: 250px;
+      }
+      @media (max-width: 599px) {
+        margin-top: 0px;
+        width: 38%;
+        max-width: 250px;
+      }
+    }
+    .innovation-body {
+      padding-left: 29px;
+      font-family: 'LatoLight';
+      font-size: 16px;
+      line-height: 22px;
+      word-spacing: -1px;
+      padding-top: 10px;
+      padding-right: 29px;
+      strong {
+        font-family: 'LatoBold';
+        letter-spacing: 0.3px;
+        word-spacing: -1.5px;
+      }
+      @media (max-width: 970px) and (min-width: 600px) {
+        font-size: 14px;
+        padding-left: 18px;
+        line-height: 18px;
+        padding-top: 10px;
+        padding-right: 37px;
+      }
+      @media (max-width: 599px) {
+        font-size: 14px;
+        padding-left: 35px;
+        line-height: 18px;
+        padding-top: 23px;
+        padding-right: 37px;
+      }
+    }
+    .button {
+      margin-bottom: 20px;
+      margin-top: 19px;
+      border: solid 1px #002454;
+      font-family: 'LatoRegular';
+      font-size: 13px;
+      color: #002454;
+      text-transform: uppercase;
+      padding: 7px 19px;
+      display: inline-block;
+      padding-top: 12px;
+      letter-spacing: 0.1px;
+      &:hover {
+        background-color: #002454;
+        color: #ffffff;
+        text-decoration: none;
+      }
+      @media (max-width: 970px) and (min-width: 600px) {
+        margin-top: 8px;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 599px) {
+        margin-top: 8px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

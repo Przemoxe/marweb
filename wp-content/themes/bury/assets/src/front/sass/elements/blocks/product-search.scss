@@ -1,0 +1,59 @@
+.product-search-block {
+    color: $font;
+    font-size: 1rem;
+    &__field {
+        margin-bottom: 1rem;
+        @include media-breakpoint-up(md) {
+            .row {
+                max-width: 445px;
+            }
+        }
+    }
+    &__submit {
+        font-family: "LatoRegular";
+        font-size: 13px;
+        color: #002454;
+        text-transform: uppercase;
+        padding: 7px 19px;
+        display: inline-block;
+        padding-top: 12px;
+        letter-spacing: 0.1px;
+        border: solid 1px #002454;
+        &-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 1rem;
+        }
+    }
+    &__col-label {
+        min-width: 100px;
+    }
+    &__col-input {
+        &--align-right {
+            display: flex;
+            justify-content: flex-end;
+        }
+        @include media-breakpoint-up(md) {
+            max-width: 330px !important;
+        }
+    }
+    .v-select {
+        @include media-breakpoint-up(md) {
+            min-width: 300px;
+        }
+        .vs--open {
+            outline-color: #002454;
+            outline-offset: -2px;
+            outline-width: 1px;
+            outline: 1px solid #002454;
+        }
+    }
+    label{
+        width: 100%;
+        margin-bottom: 0;
+        text-align: end;
+        @include media-breakpoint-down(md) {
+            text-align: start;
+        }
+    }
+}
