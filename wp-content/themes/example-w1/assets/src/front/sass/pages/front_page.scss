@@ -1,11 +1,287 @@
+
+
+
+.intro-section{
+  position: relative;
+  min-height:100vh;
+  margin-top:-188px;
+  .main-container-px20{
+    padding-top:288px;
+    padding-bottom:200px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    .banner-container {
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .preheading {
+        color: rgba(255, 255, 255, 0.65);
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: Objective, sans-serif;
+        font-size: 12px;
+      }
+      .heading {
+        color: white;
+        line-height: 1.35;
+        margin-bottom: 1.5rem;
+        font-size: 2.125rem;
+        letter-spacing: -0.05em;
+        font-weight: 500;
+        font-family: Objective, sans-serif;
+      }
+      .subheading {
+        color: rgba(255, 255, 255, 0.65);
+        font-family: Objective, sans-serif;
+        font-size: 12px;
+        margin-bottom: 34px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.75;
+      }
+      .buttons {
+        display: flex;
+        a {
+          text-decoration: none;
+          color: white;
+          letter-spacing: 0;
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: 12px;
+          padding: 15px 22px;
+        }
+        .btn-check {
+          background-color: var(--MW-btn-color-background);
+          border: 1px solid var(--MW-btn-color-border);
+          color: var(--MW-btn-color);
+          &:hover {
+            background-color: var(--MW-btn-color-background-hover);
+            border: 1px solid var(--MW-btn-color-border-hover);
+            color: var(--MW-btn-color-hover);
+          }
+        }
+      }
+    }
+    .ask-us-container {
+      display: flex;
+      justify-content: end;
+      width: 50%;
+      position: relative;
+      
+      @media (max-width: 992px) {
+        display: none;
+      }
+      .form {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 400px;
+        background-color: var(--MW-form-background);
+        padding: 40px;
+        border-top: 4px solid var(--MW-color-const-1);
+        .wpcf7 {
+          form {
+            .wpcf7-response-output {
+              padding: 10px 10px;
+              margin: 23px 0 1em 0;
+              color: var(--MW-form-h4);
+              font-family: "Trebuchet MS", "Lucida Sans Unicode",
+                "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+            }
+          }
+        }
+        h4 {
+          margin-top: 0;
+          color: var(--MW-form-h4);
+          line-height: 1.35;
+          font-weight: 600;
+          font-family: Objective, sans-serif;
+        }
+        label {
+          color: #6c757d;
+          font-size: 13px;
+          font-weight: 400;
+          font-family: Objective, sans-serif;
+        }
+        .form-group {
+          .input-group {
+            border: 1px solid #dee2e6;
+            margin-top: 7px;
+            margin-bottom: 13px;
+            transition: 0.2s;
+            display: flex;
+            &:focus-within {
+              border: 1px solid var(--MW-form-input-border-hover);
+              i {
+                color: var(--MW-form-input-border-hover);
+              }
+            }
+            i {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 2px;
+              text-align: center;
+              width: 40px;
+              margin-right: 5px;
+              color: #6c757d;
+              transition: 0.2s;
+            }
+            .fa-comments {
+              align-items: start;
+            }
+            input {
+              caret-color: var(--MW-form-h4);
+              line-height: 18px;
+              width: 98%;
+              background-color: transparent;
+              color: var(--MW-form-input-color);
+              border: 0;
+              padding: 13px 0;
+              font-size: 13px;
+              font-family: "Trebuchet MS", "Lucida Sans Unicode",
+                "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+              &:focus {
+                outline: none;
+              }
+            }
+
+            .wpcf7-not-valid-tip {
+              position: absolute;
+              margin-top: 5px;
+              right: -50px;;
+              font-family: "Trebuchet MS", "Lucida Sans Unicode",
+                "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+            }
+          }
+          .input-group-textarea {
+            .wpcf7-form-control-wrap {
+              margin: 10px 0;
+              .wpcf7-not-valid-tip{
+                margin-top: 15px;
+              }
+            }
+            i {
+              margin-top: 12px;
+            }
+            .input:-internal-autofill-selected{
+              background-color: red;
+            }
+            textarea {
+              height: 18px;
+              line-height: 18px;
+              font-family: "Trebuchet MS", "Lucida Sans Unicode",
+                "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+              font-size: 13px;
+              color: var(--MW-form-input-color);
+              background-color: transparent;
+              width: 97%;
+              border: 0;
+              overflow: hidden;
+              resize: none;
+
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+        .button-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 10px;
+          .btn-send {
+            border: 1px solid var(--MW-btn-color-border);
+            padding: 15px 25px;
+            background-color: var(--MW-btn-color-background);
+            color: var(--MW-btn-color);
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: 500;
+            color: white;
+            &:hover {
+              color: var(--MW-btn-color-hover);
+              background-color: var(--MW-btn-color-background-hover);
+              border: 1px solid var(--MW-btn-color-border-hover);
+            }
+          }
+          .wpcf7-spinner {
+            background-color: var(--MW-color-const-1);
+            margin:0;
+          }
+        }
+      }
+      .call-us {
+        margin-bottom: 0;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          color: orange;
+        }
+        .call-us-text {
+          color: var(--MW-form-input-color);
+          font-family: "Poppins", Arial;
+          padding-left: 10px;
+        }
+        a {
+          color: var(--MW-form-input-color);
+          text-decoration: none;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  @media(max-width:1200px){
+    margin-top:-94px;
+    min-height:90vh;
+    padding-bottom:40px;
+    .main-container-px20{
+      padding-top:200px;
+      padding-bottom:40px;
+    }
+  }
+  .bg-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.507);
+    z-index: 1;
+  }
+    .bg-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    z-index: 0;
+    img{
+      width:100%;
+      height:100%;
+      object-fit: cover;
+    }
+  }
+}
+
 .banner-section {
   @media (max-width: 992px) {
-    height: 65vh;
+
   }
   position: relative;
   width: 100%;
   margin-top: -112px;
-  height: 80vh;
+  min-height: 80vh;
 
   .bg-image {
     position: absolute;
@@ -43,6 +319,9 @@
     }
     .banner-container {
       max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       .preheading {
         color: rgba(255, 255, 255, 0.65);
         font-weight: 600;

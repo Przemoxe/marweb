@@ -39,10 +39,11 @@ $blogSectionPosts = get_field('blog_section_posts');
 
 ?>
 
-<section class="banner-section">
-    <div class="bg-image" style="background-image: url('<?= $bannerImg ?>)">
-    </div>
+<section class="intro-section">
     <div class="bg-overlay"></div>
+    <div class="bg-img">
+        <img src="<?= $bannerImg ?>" alt="Zdjęcie bannera">
+    </div>
     <div class="main-container-px20">
         <div class="banner-container">
             <p class="preheading">
@@ -63,14 +64,15 @@ $blogSectionPosts = get_field('blog_section_posts');
                 </a>
             </div>
         </div>
-        <div class="ask-us-container">
+                <div class="ask-us-container">
             <div class="form">
                 <?= apply_shortcodes($bannerFormShortCode); ?>
             </div>
-           
+
         </div>
     </div>
 </section>
+
 <section class="services-section">
     <div class="main-container-px20">
         <div class="services-description">
