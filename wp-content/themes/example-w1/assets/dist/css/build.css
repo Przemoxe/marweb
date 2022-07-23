@@ -3337,6 +3337,11 @@ input:-webkit-autofill:active {
           justify-content: space-between;
 }
 
+.nav-top .nav-container .language-menu #language-menu li a img {
+  width: 22px;
+  height: 16px;
+}
+
 .nav-top-mobile {
   background-color: var(--MW-menu-background);
   display: none;
@@ -3454,8 +3459,8 @@ input:-webkit-autofill:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 600;
   font-size: 12px;
@@ -3484,9 +3489,15 @@ input:-webkit-autofill:active {
 
 .nav-top-mobile .main-container-px20 .nav-lists .language-menu ul li {
   position: relative;
-  height: 24px;
+  height: 61px;
   background-color: var(--MW-mobile-lists-li-color);
   margin-top: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav-top-mobile .main-container-px20 .nav-lists .language-menu ul li a {
@@ -3519,6 +3530,10 @@ input:-webkit-autofill:active {
   background-color: var(--MW-menu-background-active);
   color: var(--MW-menu-background-active-color) !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-top-mobile-active .main-container-px20 {
+  min-height: 100vh;
 }
 
 .nav-top-mobile-active .main-container-px20 .nav-mobile .nav-hamburger i {
