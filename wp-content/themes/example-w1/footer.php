@@ -6,7 +6,7 @@
             <div class="footer-widgets">
                 <aside class="widget">
                     <div class="widget-title">
-                        <h6><?= __('O Nas', 'marweb') ?></h6>
+                        <h3><?= __('O Nas', 'marweb') ?></h3>
                     </div>
                     <div class="textwidget">
                         <p>

@@ -196,9 +196,9 @@ $blogSectionPosts = get_field('blog_section_posts');
                                 <img src="<?= get_the_post_thumbnail_url($el->ID) ?>" alt="blog image">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">
+                                <h3 class="card-title">
                                     <?= $el->post_title ?>
-                                </h4>
+                                </h3>
                                 <p class="card-text">
 
                                     <?= get_the_excerpt($el->ID) ?>
