@@ -41,13 +41,10 @@ const buttonColors = document.querySelectorAll(".color-icon");
 
 var body = document.querySelector(":root");
 
-const logofrontDark = document.querySelector(".logo-front-dark");
-const logofrontWhite = document.querySelector(".logo-front-white");
 checkCookie();
 
 // night day button desktop && mobile
 if (body.classList.contains("dark")) {
-
   buttonColors.forEach((el) => {
     el.classList.add("color-night");
   });
@@ -82,5 +79,67 @@ buttonColors.forEach((el) => {
     }
   });
 });
+////////front-page
+const logofrontDay = document.querySelector(".front-page-logo-day");
+const logofrontDark = document.querySelector(".front-page-logo-night");
+
+var body = document.querySelector(":root");
+
+let state = false
+
+if(logofrontDay || logofrontDark){
+
+  if(body.classList.contains('dark')){
+    state = true
+  }else{
+    state = false
+  }
+  
+  if(state == true){
+    logofrontDark.classList.add('logo-active')
+    logofrontDay.classList.remove('logo-active')
+  }else{
+    logofrontDark.classList.remove('logo-active')
+    logofrontDay.classList.add('logo-active')
+  }
+  
+  buttonColors.forEach((el) => {
+    el.addEventListener("click", function() {
+      if (el.classList.contains("color-night")) {
+        logofrontDark.classList.add('logo-active')
+        logofrontDay.classList.remove('logo-active')
+      } else {
+        logofrontDark.classList.remove('logo-active')
+        logofrontDay.classList.add('logo-active')
+      }
+    });
+  });    
+}
+
+////no front page 
+const darkLogoRestPage = document.querySelector('.dark-logo-rest-page')
+const whiteLogoRestPage = document.querySelector('.white-logo-rest-page')
 
 
+if(!logofrontDay || !logofrontDark){
+
+  if(body.classList.contains('dark')){
+    darkLogoRestPage.classList.remove('logo-active')
+    whiteLogoRestPage.classList.add('logo-active')
+  }else{
+    darkLogoRestPage.classList.add('logo-active')
+    whiteLogoRestPage.classList.remove('logo-active')
+  }
+  buttonColors.forEach((el) => {
+    el.addEventListener("click", function() {
+      if (el.classList.contains("color-night")) {
+        whiteLogoRestPage.classList.add('logo-active')
+        darkLogoRestPage.classList.remove('logo-active')
+      } else {
+        darkLogoRestPage.classList.add('logo-active')
+        whiteLogoRestPage.classList.remove('logo-active')
+      }
+    });
+  }); 
+   
+}

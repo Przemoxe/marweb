@@ -18,6 +18,7 @@
     padding-bottom: 2px;
     div {
       a {
+        height:55px;
         text-decoration: none;
         color: var(--MW-color-const-1);
         font-weight: 700;
@@ -28,11 +29,23 @@
       }
     }
     .logo-container{
-      a{
-        .logo-front-dark {
+      .front-page-logo-day{
+        display: none;
+        .dark-logo{
           display: none;
         }
-        .logo-front-white{
+        .white-logo{
+          display: none;
+        }
+      }
+      .front-page-logo-night{
+        display: none;
+      }
+      .rest-page{
+        .dark-logo-rest-page{
+          display: none;
+        }
+        .white-logo-rest-page{
           display: none;
         }
       }
@@ -355,7 +368,7 @@
 }
 
 
-.logo-front-active{
+.logo-active{
   display: block!important;
 }
 .logo-front-deactive{

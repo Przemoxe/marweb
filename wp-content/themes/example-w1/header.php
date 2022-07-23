@@ -30,15 +30,20 @@
 				<?php
 				if (is_front_page()) {
 				?>
-					<a href="<?= get_home_url() ?>" aria-label="Link Logo" class="front-day">
-						<img class="logo-front-dark logo-front-active" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-dark.png' ?>" alt="Logo">
-						<img class="logo-front-white " src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-white.png' ?>" alt="Logo">
+					<a href="<?= get_home_url() ?>" aria-label="Link Logo" class="front-page-logo-day">
+						<img class="dark-logo logo-active" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-dark-2-2-removebg-preview.png' ?>" alt="Logo">
+						<img class="white-logo" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-white.png' ?>" alt="Logo">
 					</a>
+					<a href="<?= get_home_url() ?>" aria-label="Link Logo" class="front-page-logo-night">
+						<img class="" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-dark-2-2-removebg-preview.png' ?>" alt="Logo">
+					</a>
+			
 				<?php
 				} else {
 				?>
-					<a href="<?= get_home_url() ?>" aria-label="Link Logo">
-						<img src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-white.png' ?>" alt="Logo">
+					<a href="<?= get_home_url() ?>" aria-label="Link Logo" class="rest-page">
+						<img class="dark-logo-rest-page" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-white.png' ?>" alt="Logo">
+						<img class="white-logo-rest-page" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-dark-2-2-removebg-preview.png' ?>" alt="Logo">
 					</a>
 				<?php
 				}

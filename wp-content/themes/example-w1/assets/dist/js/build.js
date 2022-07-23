@@ -3983,21 +3983,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // schema: new Component().init();
     requestAnimationFrame(function () {
         [_NightDayButton2.default, _FaqAccordion2.default, _AutoResizeTextarea2.default, _ShowHamburgerMenu2.default, _NavExample2.default];
-
-        var body = document.querySelector(":root");
-
-        console.log(body);
-        if (body.classList.contains('dark')) {
-            console.log('dark');
-        }
-
-        window.addEventListener("resize", function () {
-            if (body.classList.contains("dark")) {
-                console.log('dark');
-            } else {
-                console.log('day');
-            }
-        });
     });
 });
 
@@ -9643,20 +9628,21 @@ singleLink.addEventListener("click", function () {
 "use strict";
 
 
+var navContainer = document.querySelector(".nav-top");
+var navMoblieContainer = document.querySelector(".nav-top-mobile");
+var darkLogo = document.querySelector(".dark-logo");
+var whiteLogo = document.querySelector(".white-logo");
+
+var navText = document.querySelectorAll(".menu-item a");
+
 window.onscroll = function () {
   // pageYOffset or scrollY
-  var navContainer = document.querySelector(".nav-top");
-  var navMoblieContainer = document.querySelector(".nav-top-mobile");
-  var logofrontDark = document.querySelector(".logo-front-dark");
-  var logofrontWhite = document.querySelector(".logo-front-white");
-
-  var navText = document.querySelectorAll(".menu-item a");
 
   if (window.pageYOffset > 0) {
-
-    logofrontDark.classList.remove("logo-front-active");
-    logofrontWhite.classList.add("logo-front-active");
-
+    if (darkLogo) {
+      darkLogo.classList.remove('logo-active');
+      whiteLogo.classList.add('logo-active');
+    }
     navContainer.classList.add("nav-top-active");
     navMoblieContainer.classList.add("nav-top-active");
 
@@ -9665,9 +9651,10 @@ window.onscroll = function () {
       el.classList.add("text-black");
     });
   } else {
-    logofrontDark.classList.add("logo-front-active");
-    logofrontWhite.classList.remove("logo-front-active");
-
+    if (darkLogo) {
+      darkLogo.classList.add('logo-active');
+      whiteLogo.classList.remove('logo-active');
+    }
     navContainer.classList.remove("nav-top-active");
     navMoblieContainer.classList.remove("nav-top-active");
 
@@ -9676,6 +9663,23 @@ window.onscroll = function () {
     });
   }
 };
+
+if (window.pageYOffset > 0) {
+  navContainer.classList.add("nav-top-active");
+  navMoblieContainer.classList.add("nav-top-active");
+
+  // logofrontWhite.classList.add('active');
+  navText.forEach(function (el) {
+    el.classList.add("text-black");
+  });
+} else {
+  navContainer.classList.remove("nav-top-active");
+  navMoblieContainer.classList.remove("nav-top-active");
+
+  navText.forEach(function (el) {
+    el.classList.remove("text-black");
+  });
+}
 
 /***/ }),
 /* 338 */
@@ -9726,13 +9730,10 @@ var buttonColors = document.querySelectorAll(".color-icon");
 
 var body = document.querySelector(":root");
 
-var logofrontDark = document.querySelector(".logo-front-dark");
-var logofrontWhite = document.querySelector(".logo-front-white");
 checkCookie();
 
 // night day button desktop && mobile
 if (body.classList.contains("dark")) {
-
   buttonColors.forEach(function (el) {
     el.classList.add("color-night");
   });
@@ -9767,6 +9768,68 @@ buttonColors.forEach(function (el) {
     }
   });
 });
+////////front-page
+var logofrontDay = document.querySelector(".front-page-logo-day");
+var logofrontDark = document.querySelector(".front-page-logo-night");
+
+var body = document.querySelector(":root");
+
+var state = false;
+
+if (logofrontDay || logofrontDark) {
+
+  if (body.classList.contains('dark')) {
+    state = true;
+  } else {
+    state = false;
+  }
+
+  if (state == true) {
+    logofrontDark.classList.add('logo-active');
+    logofrontDay.classList.remove('logo-active');
+  } else {
+    logofrontDark.classList.remove('logo-active');
+    logofrontDay.classList.add('logo-active');
+  }
+
+  buttonColors.forEach(function (el) {
+    el.addEventListener("click", function () {
+      if (el.classList.contains("color-night")) {
+        logofrontDark.classList.add('logo-active');
+        logofrontDay.classList.remove('logo-active');
+      } else {
+        logofrontDark.classList.remove('logo-active');
+        logofrontDay.classList.add('logo-active');
+      }
+    });
+  });
+}
+
+////no front page 
+var darkLogoRestPage = document.querySelector('.dark-logo-rest-page');
+var whiteLogoRestPage = document.querySelector('.white-logo-rest-page');
+
+if (!logofrontDay || !logofrontDark) {
+
+  if (body.classList.contains('dark')) {
+    darkLogoRestPage.classList.remove('logo-active');
+    whiteLogoRestPage.classList.add('logo-active');
+  } else {
+    darkLogoRestPage.classList.add('logo-active');
+    whiteLogoRestPage.classList.remove('logo-active');
+  }
+  buttonColors.forEach(function (el) {
+    el.addEventListener("click", function () {
+      if (el.classList.contains("color-night")) {
+        whiteLogoRestPage.classList.add('logo-active');
+        darkLogoRestPage.classList.remove('logo-active');
+      } else {
+        darkLogoRestPage.classList.add('logo-active');
+        whiteLogoRestPage.classList.remove('logo-active');
+      }
+    });
+  });
+}
 
 /***/ }),
 /* 339 */

@@ -1,5 +1,4 @@
-
-    const hamburgerButton = document.querySelector(".nav-hamburger .fa-bars");
+const hamburgerButton = document.querySelector(".nav-hamburger .fa-bars");
 const hamburgerMenuLists = document.querySelector(".nav-top-mobile .main-container-px20 .nav-lists");
 const backgroundMobileMenu = document.querySelector(".nav-top-mobile")
 const singleLink = document.querySelector("#mobile-main-menu li a")
