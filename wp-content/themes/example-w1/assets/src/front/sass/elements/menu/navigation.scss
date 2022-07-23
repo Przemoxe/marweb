@@ -27,6 +27,17 @@
         }
       }
     }
+    .logo-container{
+      a{
+        .logo-front-dark {
+          display: none;
+        }
+        .logo-front-white{
+          display: none;
+        }
+      }
+
+    }
     .main-menu {
       width: 100%;
       #main-menu {
@@ -342,3 +353,12 @@
     }
   }
 }
+
+
+.logo-front-active{
+  display: block!important;
+}
+.logo-front-deactive{
+  display: none!important;
+}
+

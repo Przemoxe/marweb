@@ -24,6 +24,23 @@ document.addEventListener('DOMContentLoaded', () => {
         [
             NightDayButton, FaqAccordion, AutoResizeTextarea, ShowHamburgerMenu, NavExample
         ]
-    
+
+
+        let body = document.querySelector(":root");
+
+        console.log(body)
+        if(body.classList.contains('dark')){
+            console.log('dark')
+        }
+
+        window.addEventListener("resize", function() {
+            if (body.classList.contains("dark")) {
+              console.log('dark')
+            } else {
+              console.log('day')
+            }
+          });
+
+
     });
 });

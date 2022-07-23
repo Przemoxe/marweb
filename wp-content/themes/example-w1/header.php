@@ -20,17 +20,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<?php wp_head(); ?>
-	<title><?=get_bloginfo('description')?></title>
+	<title><?= get_bloginfo('description') ?></title>
 </head>
 
 <body>
 	<div class="nav-top <?= !is_front_page() ? 'nav-top-not-front' : '' ?>">
 		<div class="main-container-px20 nav-container">
-			<div>
-				<a href="<?= get_home_url() ?>" aria-label="Link Logo">
-					<img src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode.png' ?>" alt="Logo">
-				</a>
+			<div class="logo-container">
+				<?php
+				if (is_front_page()) {
+				?>
+					<a href="<?= get_home_url() ?>" aria-label="Link Logo" class="front-day">
+						<img class="logo-front-dark logo-front-active" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-dark.png' ?>" alt="Logo">
+						<img class="logo-front-white " src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-white.png' ?>" alt="Logo">
+					</a>
+				<?php
+				} else {
+				?>
+					<a href="<?= get_home_url() ?>" aria-label="Link Logo">
+						<img src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-white.png' ?>" alt="Logo">
+					</a>
+				<?php
+				}
 
+				?>
 			</div>
 			<div class="change-color-container">
 				<div class="color-icon ">
@@ -55,12 +68,13 @@
 		</div>
 	</div>
 
+
 	<div class="nav-top-mobile <?= !is_front_page() ? 'nav-top-not-front-mobile' : '' ?>">
 		<div class="main-container-px20">
 			<div class="nav-mobile">
 				<div class="nav-logo">
 					<a href="<?= get_home_url() ?>" aria-label="link logo">
-					<img src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode.png' ?>" alt="logo">
+						<img src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-dark.png' ?>" alt="logo">
 					</a>
 					<div class="change-color-container">
 						<div class="color-icon color-icon-mobile">

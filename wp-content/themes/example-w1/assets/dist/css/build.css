@@ -3263,6 +3263,14 @@ input:-webkit-autofill:active {
   width: 180px;
 }
 
+.nav-top .nav-container .logo-container a .logo-front-dark {
+  display: none;
+}
+
+.nav-top .nav-container .logo-container a .logo-front-white {
+  display: none;
+}
+
 .nav-top .nav-container .main-menu {
   width: 100%;
 }
@@ -3626,6 +3634,14 @@ input:-webkit-autofill:active {
 
 .change-color-container .color-night .fa-moon-o {
   display: block;
+}
+
+.logo-front-active {
+  display: block !important;
+}
+
+.logo-front-deactive {
+  display: none !important;
 }
 
 footer {

@@ -41,10 +41,13 @@ const buttonColors = document.querySelectorAll(".color-icon");
 
 var body = document.querySelector(":root");
 
+const logofrontDark = document.querySelector(".logo-front-dark");
+const logofrontWhite = document.querySelector(".logo-front-white");
 checkCookie();
 
 // night day button desktop && mobile
 if (body.classList.contains("dark")) {
+
   buttonColors.forEach((el) => {
     el.classList.add("color-night");
   });

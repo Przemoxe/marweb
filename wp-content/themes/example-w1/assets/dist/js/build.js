@@ -3983,6 +3983,21 @@ document.addEventListener('DOMContentLoaded', function () {
     // schema: new Component().init();
     requestAnimationFrame(function () {
         [_NightDayButton2.default, _FaqAccordion2.default, _AutoResizeTextarea2.default, _ShowHamburgerMenu2.default, _NavExample2.default];
+
+        var body = document.querySelector(":root");
+
+        console.log(body);
+        if (body.classList.contains('dark')) {
+            console.log('dark');
+        }
+
+        window.addEventListener("resize", function () {
+            if (body.classList.contains("dark")) {
+                console.log('dark');
+            } else {
+                console.log('day');
+            }
+        });
     });
 });
 
@@ -9632,17 +9647,30 @@ window.onscroll = function () {
   // pageYOffset or scrollY
   var navContainer = document.querySelector(".nav-top");
   var navMoblieContainer = document.querySelector(".nav-top-mobile");
+  var logofrontDark = document.querySelector(".logo-front-dark");
+  var logofrontWhite = document.querySelector(".logo-front-white");
+
   var navText = document.querySelectorAll(".menu-item a");
 
   if (window.pageYOffset > 0) {
+
+    logofrontDark.classList.remove("logo-front-active");
+    logofrontWhite.classList.add("logo-front-active");
+
     navContainer.classList.add("nav-top-active");
     navMoblieContainer.classList.add("nav-top-active");
+
+    // logofrontWhite.classList.add('active');
     navText.forEach(function (el) {
       el.classList.add("text-black");
     });
   } else {
+    logofrontDark.classList.add("logo-front-active");
+    logofrontWhite.classList.remove("logo-front-active");
+
     navContainer.classList.remove("nav-top-active");
     navMoblieContainer.classList.remove("nav-top-active");
+
     navText.forEach(function (el) {
       el.classList.remove("text-black");
     });
@@ -9698,10 +9726,13 @@ var buttonColors = document.querySelectorAll(".color-icon");
 
 var body = document.querySelector(":root");
 
+var logofrontDark = document.querySelector(".logo-front-dark");
+var logofrontWhite = document.querySelector(".logo-front-white");
 checkCookie();
 
 // night day button desktop && mobile
 if (body.classList.contains("dark")) {
+
   buttonColors.forEach(function (el) {
     el.classList.add("color-night");
   });
