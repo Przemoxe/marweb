@@ -92,7 +92,7 @@ $blogSectionPosts = get_field('blog_section_posts');
                         <i class="fa <?= $el['icon'] ?> fa-2x" aria-hidden="true"></i>
                     </div>
                     <div class="icon-box-title">
-                        <h3><?= $el['title'] ?></h3>
+                        <h2><?= $el['title'] ?></h3>
                     </div>
                     <div class="icon-box-content">
                         <p><?= $el['description'] ?></p>

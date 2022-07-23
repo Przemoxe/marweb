@@ -850,7 +850,7 @@ input:-webkit-autofill:active {
   transition: 0.2s;
 }
 
-.services-section .main-container .icon-box-container .icon-box .icon-box-title h3 {
+.services-section .main-container .icon-box-container .icon-box .icon-box-title h2 {
   color: var(--MW-form-h4);
   margin: 0;
   font-size: 14px;
