@@ -850,7 +850,7 @@ input:-webkit-autofill:active {
   transition: 0.2s;
 }
 
-.services-section .main-container .icon-box-container .icon-box .icon-box-title h6 {
+.services-section .main-container .icon-box-container .icon-box .icon-box-title h3 {
   color: var(--MW-form-h4);
   margin: 0;
   font-size: 14px;
@@ -3660,7 +3660,7 @@ footer .main-container .footer-widgets-container .footer-widgets .widget {
   padding-right: 20px;
 }
 
-footer .main-container .footer-widgets-container .footer-widgets .widget .widget-title h6 {
+footer .main-container .footer-widgets-container .footer-widgets .widget .widget-title h3 {
   text-transform: uppercase;
   letter-spacing: 2.1px;
   font-weight: 700;

@@ -92,7 +92,7 @@ $blogSectionPosts = get_field('blog_section_posts');
                         <i class="fa <?= $el['icon'] ?> fa-2x" aria-hidden="true"></i>
                     </div>
                     <div class="icon-box-title">
-                        <h6><?= $el['title'] ?></h6>
+                        <h3><?= $el['title'] ?></h3>
                     </div>
                     <div class="icon-box-content">
                         <p><?= $el['description'] ?></p>
@@ -125,10 +125,10 @@ $blogSectionPosts = get_field('blog_section_posts');
                                 <img src="<?= get_the_post_thumbnail_url($el->ID) ?>" alt="portfolio img">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title">
+                                <h3 class="card-title">
                                     <?= $el->post_title ?>
                                     
-                                </h4>
+                                </h3>
                                 <p class="card-text">
                                     <?= get_the_excerpt($el->ID) ?>
                                 </p>
@@ -191,9 +191,9 @@ $blogSectionPosts = get_field('blog_section_posts');
             ?>
                 <div class="portfolio-project">
                     <div class="single-project">
-                        <a href="<?= get_permalink($el->ID) ?>" class="card" aria-label="link portfolio">
+                        <a href="<?= get_permalink($el->ID) ?>" class="card" aria-label="link blog">
                             <div class="card-img-top">
-                                <img src="<?= get_the_post_thumbnail_url($el->ID) ?>" alt="portfolio image">
+                                <img src="<?= get_the_post_thumbnail_url($el->ID) ?>" alt="blog image">
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title">

@@ -70,7 +70,7 @@
             <div class="footer-widgets">
                 <aside class="widget widget-recent-entries">
                     <div class="widget-title">
-                        <h6><?= __('Ostatnie wpisy', 'marweb') ?></h6>
+                        <h3><?= __('Ostatnie wpisy', 'marweb') ?></h3>
                     </div>
                     <ul>
                         <?php
@@ -96,7 +96,7 @@
             <div class="footer-widgets">
                 <aside class="widget widget-menu">
                     <div class="widget-title">
-                        <h6>Menu</h6>
+                        <h3>Menu</h3>
                         <?php
                         wp_nav_menu([
                             'theme_location'    => 'footer-menu',
@@ -111,7 +111,7 @@
             <div class="footer-widgets">
                 <aside class="widget widget-recent-works">
                     <div class="widget-title">
-                        <h6>Portfolio</h6>
+                        <h3>Portfolio</h3>
                     </div>
                     <div class="container-recent-works">
                         <?php
