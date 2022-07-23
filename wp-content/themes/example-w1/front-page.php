@@ -56,10 +56,10 @@ $blogSectionPosts = get_field('blog_section_posts');
                 <?= $bannerSubheading ?>
             </p>
             <div class="buttons">
-                <a href="<?= $bannerFirstButtonUrl ?>" class="btn-check">
+                <a href="<?= $bannerFirstButtonUrl ?>" class="btn-check" aria-label="check">
                     <?= $bannerFirstButtonText ?>
                 </a>
-                <a href="<?= $bannerSecondButtonUrl ?>" class="btn-read-more">
+                <a href="<?= $bannerSecondButtonUrl ?>" class="btn-read-more" aria-label="read more">
                     <?= $bannerSecondButtonText ?>
                 </a>
             </div>
@@ -80,7 +80,7 @@ $blogSectionPosts = get_field('blog_section_posts');
             <p><?= __($serviceSectionDescription, 'marweb') ?></p>
         </div>
         <div class="services-image" id="services">
-            <img src="<?= $serviceImage ?>" alt="">
+            <img src="<?= $serviceImage ?>" alt="service image">
         </div>
     </div>
     <div class="main-container">
@@ -120,9 +120,9 @@ $blogSectionPosts = get_field('blog_section_posts');
             ?>
                 <div class="portfolio-project">
                     <div class="single-project">
-                        <a href="<?= get_field('portfolio_single_url', $el->ID)?>" class="card" target="_blank">
+                        <a href="<?= get_field('portfolio_single_url', $el->ID)?>" class="card" target="_blank" aria-label="portfolio link">
                             <div class="card-img-top">
-                                <img src="<?= get_the_post_thumbnail_url($el->ID) ?>" alt="">
+                                <img src="<?= get_the_post_thumbnail_url($el->ID) ?>" alt="portfolio img">
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title">
@@ -162,15 +162,15 @@ $blogSectionPosts = get_field('blog_section_posts');
         </p>
         <div class="container">
             <div id="carousel">
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/sass.jpg' ?>"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/vuejs.jpg' ?>"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/jquery-js.png' ?>"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/Laravel-9.jpg' ?>"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/php.png' ?>"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/mysql.png' ?>"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/google-analytics.jpg' ?>"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/woocommerce.png' ?>"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/wordpress.jpg' ?>"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/sass.jpg' ?>" alt="sass"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/vuejs.jpg' ?>" alt="vue"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/jquery-js.png' ?>" alt="jquery"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/Laravel-9.jpg' ?>" alt="laravel"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/php.png' ?>" alt="php"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/mysql.png' ?>" alt="mysql"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/google-analytics.jpg' ?>" alt="google analytics"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/woocommerce.png' ?>" alt="woocommerce"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/wordpress.jpg' ?>" alt="wordpress"></figure>
             </div>
         </div>
     </div>
@@ -191,9 +191,9 @@ $blogSectionPosts = get_field('blog_section_posts');
             ?>
                 <div class="portfolio-project">
                     <div class="single-project">
-                        <a href="<?= get_permalink($el->ID) ?>" class="card">
+                        <a href="<?= get_permalink($el->ID) ?>" class="card" aria-label="link portfolio">
                             <div class="card-img-top">
-                                <img src="<?= get_the_post_thumbnail_url($el->ID) ?>" alt="">
+                                <img src="<?= get_the_post_thumbnail_url($el->ID) ?>" alt="portfolio image">
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title">

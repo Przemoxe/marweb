@@ -27,7 +27,7 @@
                                 $query->the_post();
                                 $description = get_field('description', get_the_ID());
                             ?>
-                                <a href="<?= get_the_permalink() ?>">
+                                <a href="<?= get_the_permalink() ?>"  aria-label="blog link">
                                     <?= mb_strimwidth($description, 0, 100, "..."); ?>
                                 </a>
                             <?php
@@ -76,12 +76,15 @@
                         <?php
                         $blog = new WP_Query(array(
                             'posts_per_page' => 6,
-                            'post_type' => 'blog',
+                            'post_type' => 'post',
                         ));
+                        
                         while ($blog->have_posts()) {
-                            $blog->the_post(); ?>
-
-                            <li><a href="#"><?= get_the_excerpt() ?></a><span class="post-date"><?= get_the_date() ?></span></li>
+                            $blog->the_post(); 
+         
+                            ?>
+    
+                            <li><a href="<?= get_permalink() ?>" aria-label="excerpt blog"><?= get_the_excerpt() ?></a><span class="post-date"><?= get_the_date() ?></span></li>
 
                         <?php }
                         wp_reset_postdata();
@@ -120,7 +123,7 @@
                             $blog->the_post(); ?>
                             <div class="container-card-recent-work">
                                 <div class="card-recent-work">
-                                    <a href="<?= get_field('portfolio_single_url', $el->ID)?>" target="_blank">
+                                    <a href="<?= get_field('portfolio_single_url', $el->ID)?>" target="_blank"  aria-label="portfolio link">
                                         <?= get_the_post_thumbnail() ?>
                                     </a>
                                 </div>

@@ -26,12 +26,9 @@
 	<div class="nav-top <?= !is_front_page() ? 'nav-top-not-front' : '' ?>">
 		<div class="main-container-px20 nav-container">
 			<div>
-				<a href="<?= get_home_url() ?>">
-					<img src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode.png' ?>" alt="">
+				<a href="<?= get_home_url() ?>" aria-label="Link Logo">
+					<img src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode.png' ?>" alt="Logo">
 				</a>
-				<a href=""></a>
-				<a href=""></a>
-				<a href=""></a>
 
 			</div>
 			<div class="change-color-container">
@@ -61,8 +58,8 @@
 		<div class="main-container-px20">
 			<div class="nav-mobile">
 				<div class="nav-logo">
-					<a href="<?= get_home_url() ?>">
-					<img src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode.png' ?>" alt="">
+					<a href="<?= get_home_url() ?>" aria-label="link logo">
+					<img src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode.png' ?>" alt="logo">
 					</a>
 					<div class="change-color-container">
 						<div class="color-icon color-icon-mobile">
