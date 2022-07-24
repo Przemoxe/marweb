@@ -3890,7 +3890,13 @@ footer .main-container .footer-widgets-container .footer-widgets .widget-recent-
 @media (max-width: 576px) {
   footer .main-container .footer-widgets-container .footer-widgets .widget-recent-works .container-recent-works .container-card-recent-work {
     width: calc(100% / 3);
-    height: 110px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 450px) {
+  footer .main-container .footer-widgets-container .footer-widgets .widget-recent-works .container-recent-works .container-card-recent-work {
+    height: 70px;
   }
 }
 

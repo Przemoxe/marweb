@@ -150,7 +150,10 @@ footer {
               }
               @media(max-width:576px){
                 width: calc(100% / 3);
-                height:110px;
+                height:90px;
+              }
+              @media(max-width:450px){
+                height:70px;
               }
 
               .card-recent-work {
