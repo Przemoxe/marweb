@@ -60,7 +60,7 @@ $image = get_field("portfolio-image")["sizes"]["medium_large"];
                 
                 <div class="portfolio-project">
                     <div class="single-project">
-                        <a href="<?=get_field('portfolio_single_url')?>" class="card">
+                        <a href="<?=get_field('portfolio_single_url')?>" class="card" target="_blank">
                             <div class="card-img-top">
                                 <img src="<?= get_the_post_thumbnail_url() ?>" alt="portfolio-url">
                                 <div class="card-plus">
