@@ -142,12 +142,13 @@
       @media(max-width:576px){
         padding-top: 12.5px;
         padding-bottom: 12.5px;
+            display: flex;
+    flex-wrap: wrap;
       }
       border-bottom: 1px solid var(--MW-menu-border-bottom);
       padding-top: 9px;
       padding-bottom: 9px;
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       line-height: 1.5;
@@ -156,17 +157,41 @@
         align-items: center;
         a {
           @media(max-width:576px){
-            width:160px;
+                width: 150px;
+                height:55px;
           }
+          width:180px;
           text-decoration: none;
           color: var(--MW-color-const-1);
           font-weight: 700;
           font-family: Objective, sans-serif;
           display: flex;
           img {
+            object-fit: contain;
             width: 100%;
           }
         }
+        .mobile-front-page-logo-day{
+          display: none;
+          .mobile-dark-logo{
+            display: none;
+          }
+          .mobile-white-logo{
+            display: none;
+          }
+        }
+        .mobile-front-page-logo-night{
+          display: none;
+        }
+        .mobile-rest-page{
+          .mobile-dark-logo-rest-page{
+            display: none;
+          }
+          .mobile-white-logo-rest-page{
+            display: none;
+          }
+        }
+
       }
       .nav-hamburger {
         width:40px;
@@ -175,7 +200,6 @@
         i {
           font-size: 25px;
           cursor: pointer;
-          margin-right: 15px;
           color: rgb(239, 239, 239);
         }
       }
@@ -262,6 +286,7 @@
   }
   .main-container-px20 {
     .nav-mobile {
+      
       .nav-hamburger {
         i {
           color: var(--MW-form-h4);
@@ -335,6 +360,7 @@
   border-radius: 50px;
   overflow: hidden;
   margin-left: 25px;
+  margin-right:10px;
   .color-icon {
     height: 100%;
     display: flex;
@@ -369,7 +395,7 @@
 
 
 .logo-active{
-  display: block!important;
+  display: flex!important;
 }
 .logo-front-deactive{
   display: none!important;

@@ -3398,8 +3398,6 @@ input:-webkit-autofill:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -3413,6 +3411,11 @@ input:-webkit-autofill:active {
   .nav-top-mobile .main-container-px20 .nav-mobile {
     padding-top: 12.5px;
     padding-bottom: 12.5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -3426,6 +3429,7 @@ input:-webkit-autofill:active {
 }
 
 .nav-top-mobile .main-container-px20 .nav-mobile .nav-logo a {
+  width: 180px;
   text-decoration: none;
   color: var(--MW-color-const-1);
   font-weight: 700;
@@ -3437,12 +3441,39 @@ input:-webkit-autofill:active {
 
 @media (max-width: 576px) {
   .nav-top-mobile .main-container-px20 .nav-mobile .nav-logo a {
-    width: 160px;
+    width: 150px;
+    height: 55px;
   }
 }
 
 .nav-top-mobile .main-container-px20 .nav-mobile .nav-logo a img {
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
+}
+
+.nav-top-mobile .main-container-px20 .nav-mobile .nav-logo .mobile-front-page-logo-day {
+  display: none;
+}
+
+.nav-top-mobile .main-container-px20 .nav-mobile .nav-logo .mobile-front-page-logo-day .mobile-dark-logo {
+  display: none;
+}
+
+.nav-top-mobile .main-container-px20 .nav-mobile .nav-logo .mobile-front-page-logo-day .mobile-white-logo {
+  display: none;
+}
+
+.nav-top-mobile .main-container-px20 .nav-mobile .nav-logo .mobile-front-page-logo-night {
+  display: none;
+}
+
+.nav-top-mobile .main-container-px20 .nav-mobile .nav-logo .mobile-rest-page .mobile-dark-logo-rest-page {
+  display: none;
+}
+
+.nav-top-mobile .main-container-px20 .nav-mobile .nav-logo .mobile-rest-page .mobile-white-logo-rest-page {
+  display: none;
 }
 
 .nav-top-mobile .main-container-px20 .nav-mobile .nav-hamburger {
@@ -3458,7 +3489,6 @@ input:-webkit-autofill:active {
 .nav-top-mobile .main-container-px20 .nav-mobile .nav-hamburger i {
   font-size: 25px;
   cursor: pointer;
-  margin-right: 15px;
   color: #efefef;
 }
 
@@ -3606,6 +3636,7 @@ input:-webkit-autofill:active {
   border-radius: 50px;
   overflow: hidden;
   margin-left: 25px;
+  margin-right: 10px;
 }
 
 .change-color-container .color-icon {
@@ -3654,7 +3685,9 @@ input:-webkit-autofill:active {
 }
 
 .logo-active {
-  display: block !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 .logo-front-deactive {

@@ -9632,6 +9632,8 @@ var navContainer = document.querySelector(".nav-top");
 var navMoblieContainer = document.querySelector(".nav-top-mobile");
 var darkLogo = document.querySelector(".dark-logo");
 var whiteLogo = document.querySelector(".white-logo");
+var mobileDarkLogo = document.querySelector(".mobile-dark-logo");
+var mobileWhiteLogo = document.querySelector(".mobile-white-logo");
 
 var navText = document.querySelectorAll(".menu-item a");
 
@@ -9639,9 +9641,13 @@ window.onscroll = function () {
   // pageYOffset or scrollY
 
   if (window.pageYOffset > 0) {
-    if (darkLogo) {
+    if (darkLogo || whiteLogo) {
       darkLogo.classList.remove('logo-active');
       whiteLogo.classList.add('logo-active');
+    }
+    if (mobileDarkLogo) {
+      mobileDarkLogo.classList.remove('logo-active');
+      mobileWhiteLogo.classList.add('logo-active');
     }
     navContainer.classList.add("nav-top-active");
     navMoblieContainer.classList.add("nav-top-active");
@@ -9651,9 +9657,13 @@ window.onscroll = function () {
       el.classList.add("text-black");
     });
   } else {
-    if (darkLogo) {
+    if (darkLogo || whiteLogo) {
       darkLogo.classList.add('logo-active');
       whiteLogo.classList.remove('logo-active');
+    }
+    if (mobileWhiteLogo) {
+      mobileDarkLogo.classList.add('logo-active');
+      mobileWhiteLogo.classList.remove('logo-active');
     }
     navContainer.classList.remove("nav-top-active");
     navMoblieContainer.classList.remove("nav-top-active");
@@ -9667,6 +9677,22 @@ window.onscroll = function () {
 if (window.pageYOffset > 0) {
   navContainer.classList.add("nav-top-active");
   navMoblieContainer.classList.add("nav-top-active");
+
+  var body = document.querySelector(":root");
+  if (!body.classList.contains('dark')) {
+    var _darkLogo = document.querySelector(".dark-logo");
+    var _whiteLogo = document.querySelector(".white-logo");
+    var _mobileDarkLogo = document.querySelector(".mobile-dark-logo");
+    var _mobileWhiteLogo = document.querySelector(".mobile-white-logo");
+    if (_darkLogo || _whiteLogo) {
+      _darkLogo.classList.remove('logo-active');
+      _whiteLogo.classList.add('logo-active');
+    }
+    if (_mobileDarkLogo || _mobileWhiteLogo) {
+      _mobileDarkLogo.classList.remove('logo-active');
+      _mobileWhiteLogo.classList.add('logo-active');
+    }
+  }
 
   // logofrontWhite.classList.add('active');
   navText.forEach(function (el) {
@@ -9826,6 +9852,72 @@ if (!logofrontDay || !logofrontDark) {
       } else {
         darkLogoRestPage.classList.add('logo-active');
         whiteLogoRestPage.classList.remove('logo-active');
+      }
+    });
+  });
+}
+
+//////mobile front page
+
+var mobilelogofrontDay = document.querySelector(".mobile-front-page-logo-day");
+var mobileLogofrontDark = document.querySelector(".mobile-front-page-logo-night");
+
+var body = document.querySelector(":root");
+
+var mobileState = false;
+
+if (mobilelogofrontDay || mobileLogofrontDark) {
+
+  if (body.classList.contains('dark')) {
+    mobileState = true;
+  } else {
+    mobileState = false;
+  }
+
+  if (mobileState == true) {
+    mobileLogofrontDark.classList.add('logo-active');
+    mobilelogofrontDay.classList.remove('logo-active');
+  } else {
+    mobileLogofrontDark.classList.remove('logo-active');
+    mobilelogofrontDay.classList.add('logo-active');
+  }
+
+  buttonColors.forEach(function (el) {
+    el.addEventListener("click", function () {
+      if (el.classList.contains("color-night")) {
+        mobileLogofrontDark.classList.add('logo-active');
+        mobilelogofrontDay.classList.remove('logo-active');
+      } else {
+        mobileLogofrontDark.classList.remove('logo-active');
+        mobilelogofrontDay.classList.add('logo-active');
+      }
+    });
+  });
+}
+
+////no front page 
+var mobileDarkLogoRestPage = document.querySelector('.mobile-dark-logo-rest-page');
+var mobileWhiteLogoRestPage = document.querySelector('.mobile-white-logo-rest-page');
+
+if (!mobilelogofrontDay || !mobileLogofrontDark) {
+
+  if (body.classList.contains('dark')) {
+    mobileDarkLogoRestPage.classList.remove('logo-active');
+    mobileWhiteLogoRestPage.classList.add('logo-active');
+    console.log('dark');
+  } else {
+    mobileDarkLogoRestPage.classList.add('logo-active');
+    mobileWhiteLogoRestPage.classList.remove('logo-active');
+    console.log('day');
+  }
+  buttonColors.forEach(function (el) {
+    el.addEventListener("click", function () {
+      if (el.classList.contains("color-night")) {
+        mobileWhiteLogoRestPage.classList.add('logo-active');
+        mobileDarkLogoRestPage.classList.remove('logo-active');
+      } else {
+        mobileDarkLogoRestPage.classList.add('logo-active');
+        mobileWhiteLogoRestPage.classList.remove('logo-active');
       }
     });
   });

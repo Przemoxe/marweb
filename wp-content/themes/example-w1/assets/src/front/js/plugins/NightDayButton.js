@@ -143,3 +143,71 @@ if(!logofrontDay || !logofrontDark){
   }); 
    
 }
+
+//////mobile front page
+
+const mobilelogofrontDay = document.querySelector(".mobile-front-page-logo-day");
+const mobileLogofrontDark = document.querySelector(".mobile-front-page-logo-night");
+
+var body = document.querySelector(":root");
+
+let mobileState = false
+
+if(mobilelogofrontDay || mobileLogofrontDark){
+
+  if(body.classList.contains('dark')){
+    mobileState = true
+  }else{
+    mobileState = false
+  }
+  
+  if(mobileState == true){
+    mobileLogofrontDark.classList.add('logo-active')
+    mobilelogofrontDay.classList.remove('logo-active')
+  }else{
+    mobileLogofrontDark.classList.remove('logo-active')
+    mobilelogofrontDay.classList.add('logo-active')
+  }
+  
+  buttonColors.forEach((el) => {
+    el.addEventListener("click", function() {
+      if (el.classList.contains("color-night")) {
+        mobileLogofrontDark.classList.add('logo-active')
+        mobilelogofrontDay.classList.remove('logo-active')
+      } else {
+        mobileLogofrontDark.classList.remove('logo-active')
+        mobilelogofrontDay.classList.add('logo-active')
+      }
+    });
+  });    
+}
+
+////no front page 
+const mobileDarkLogoRestPage = document.querySelector('.mobile-dark-logo-rest-page')
+const mobileWhiteLogoRestPage = document.querySelector('.mobile-white-logo-rest-page')
+
+
+if(!mobilelogofrontDay || !mobileLogofrontDark){
+
+  if(body.classList.contains('dark')){
+    mobileDarkLogoRestPage.classList.remove('logo-active')
+    mobileWhiteLogoRestPage.classList.add('logo-active')
+    console.log('dark')
+  }else{
+    mobileDarkLogoRestPage.classList.add('logo-active')
+    mobileWhiteLogoRestPage.classList.remove('logo-active')
+    console.log('day')
+  }
+  buttonColors.forEach((el) => {
+    el.addEventListener("click", function() {
+      if (el.classList.contains("color-night")) {
+        mobileWhiteLogoRestPage.classList.add('logo-active')
+        mobileDarkLogoRestPage.classList.remove('logo-active')
+      } else {
+        mobileDarkLogoRestPage.classList.add('logo-active')
+        mobileWhiteLogoRestPage.classList.remove('logo-active')
+      }
+    });
+  }); 
+   
+}

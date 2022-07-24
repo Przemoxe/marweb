@@ -31,19 +31,19 @@
 				if (is_front_page()) {
 				?>
 					<a href="<?= get_home_url() ?>" aria-label="Link Logo" class="front-page-logo-day">
-						<img class="dark-logo logo-active" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-dark-2-2-removebg-preview.png' ?>" alt="Logo">
-						<img class="white-logo" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-white.png' ?>" alt="Logo">
+						<img class="dark-logo logo-active" src="<?= get_template_directory_uri() . '/assets/src/front/images/dark2-removebg-preview.png' ?>" alt="Logo">
+						<img class="white-logo" src="<?= get_template_directory_uri() . '/assets/src/front/images/white1-removebg-preview.png' ?>" alt="Logo">
 					</a>
 					<a href="<?= get_home_url() ?>" aria-label="Link Logo" class="front-page-logo-night">
-						<img class="" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-dark-2-2-removebg-preview.png' ?>" alt="Logo">
+						<img class="" src="<?= get_template_directory_uri() . '/assets/src/front/images/dark2-removebg-preview.png' ?>" alt="Logo">
 					</a>
 			
 				<?php
 				} else {
 				?>
 					<a href="<?= get_home_url() ?>" aria-label="Link Logo" class="rest-page">
-						<img class="dark-logo-rest-page" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-white.png' ?>" alt="Logo">
-						<img class="white-logo-rest-page" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-dark-2-2-removebg-preview.png' ?>" alt="Logo">
+						<img class="dark-logo-rest-page" src="<?= get_template_directory_uri() . '/assets/src/front/images/white1-removebg-preview.png' ?>" alt="Logo">
+						<img class="white-logo-rest-page" src="<?= get_template_directory_uri() . '/assets/src/front/images/dark2-removebg-preview.png' ?>" alt="Logo">
 					</a>
 				<?php
 				}
@@ -78,9 +78,28 @@
 		<div class="main-container-px20">
 			<div class="nav-mobile">
 				<div class="nav-logo">
-					<a href="<?= get_home_url() ?>" aria-label="link logo">
-						<img src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-dark.png' ?>" alt="logo">
+				<?php
+				if (is_front_page()) {
+				?>
+					<a href="<?= get_home_url() ?>" aria-label="Link Logo" class="mobile-front-page-logo-day">
+						<img class="mobile-dark-logo logo-active" src="<?= get_template_directory_uri() . '/assets/src/front/images/dark2-removebg-preview.png' ?>" alt="Logo">
+						<img class="mobile-white-logo" src="<?= get_template_directory_uri() . '/assets/src/front/images/white1-removebg-preview.png' ?>" alt="Logo">
 					</a>
+					<a href="<?= get_home_url() ?>" aria-label="Link Logo" class="mobile-front-page-logo-night">
+						<img class="" src="<?= get_template_directory_uri() . '/assets/src/front/images/dark2-removebg-preview.png' ?>" alt="Logo">
+					</a>
+			
+				<?php
+				} else {
+				?>
+					<a href="<?= get_home_url() ?>" aria-label="Link Logo" class="mobile-rest-page">
+						<img class="mobile-dark-logo-rest-page" src="<?= get_template_directory_uri() . '/assets/src/front/images/white1-removebg-preview.png' ?>" alt="Logo">
+						<img class="mobile-white-logo-rest-page" src="<?= get_template_directory_uri() . '/assets/src/front/images/dark2-removebg-preview.png' ?>" alt="Logo">
+					</a>
+				<?php
+				}
+
+				?>
 					<div class="change-color-container">
 						<div class="color-icon color-icon-mobile">
 							<i class="fa fa-sun-o" aria-hidden="true"></i>
