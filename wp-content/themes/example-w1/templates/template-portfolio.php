@@ -46,7 +46,6 @@ $image = get_field("portfolio-image")["sizes"]["medium_large"];
         </div>
     </div>
 </section>
-
 <section class="archive-portfolio-projects-section">
     <div class="main-container">
         <div class="container-portfolio-projects">
@@ -56,12 +55,14 @@ $image = get_field("portfolio-image")["sizes"]["medium_large"];
                 'post_type' => 'portfolio',
             ));
             while ($blog->have_posts()) {
-                $blog->the_post(); ?>
+                $blog->the_post(); 
+                ?>
+                
                 <div class="portfolio-project">
                     <div class="single-project">
-                        <a href="index-header-carousel.html" class="card">
+                        <a href="<?=get_field('portfolio_single_url')?>" class="card">
                             <div class="card-img-top">
-                                <img src="<?= get_the_post_thumbnail_url() ?>" alt="">
+                                <img src="<?= get_the_post_thumbnail_url() ?>" alt="portfolio-url">
                                 <div class="card-plus">
                                     <i class="fa fa-plus" aria-hidden="true"></i>
                                 </div>

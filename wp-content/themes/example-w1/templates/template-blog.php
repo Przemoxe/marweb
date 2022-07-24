@@ -12,6 +12,7 @@ $preheading = get_field("blog-preheading");
 $getAllUrl = get_field('all_categories_url');
 
 ?>
+
 <nav class="single-blog-nav">
     <div class="main-container-px20">
         <nav class="single-blog-nav">
