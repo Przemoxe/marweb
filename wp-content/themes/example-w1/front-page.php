@@ -162,15 +162,15 @@ $blogSectionPosts = get_field('blog_section_posts');
         </p>
         <div class="container">
             <div id="carousel">
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/sass.jpg' ?>" alt="sass"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/vuejs.jpg' ?>" alt="vue"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/jquery-js.png' ?>" alt="jquery"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/Laravel-9.jpg' ?>" alt="laravel"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/php.png' ?>" alt="php"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/mysql.png' ?>" alt="mysql"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/google-analytics.jpg' ?>" alt="google analytics"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/woocommerce.png' ?>" alt="woocommerce"></figure>
-                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/wordpress.jpg' ?>" alt="wordpress"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/webp/sass.webp' ?>" alt="sass"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/webp/vuejs.webp' ?>" alt="vue"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/webp/jquery-js.webp' ?>" alt="jquery"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/webp/Laravel-9.webp' ?>" alt="laravel"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/webp/php.webp' ?>" alt="php"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/webp/mysq.webp' ?>" alt="mysql"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/webp/google-analytic.webp' ?>" alt="google analytics"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/webp/woocommerce.webp' ?>" alt="woocommerce"></figure>
+                <figure> <img src="<?= get_template_directory_uri() . '/assets/src/front/images/webp/wordpress.webp' ?>" alt="wordpress"></figure>
             </div>
         </div>
     </div>
