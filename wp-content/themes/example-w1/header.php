@@ -31,19 +31,19 @@
 				if (is_front_page()) {
 				?>
 					<a href="<?= get_home_url() ?>" aria-label="Link Logo" class="front-page-logo-day">
-						<img class="dark-logo logo-active" src="<?= get_template_directory_uri() . '/assets/src/front/images/dark2-removebg-preview.png' ?>" alt="Logo">
-						<img class="white-logo" src="<?= get_template_directory_uri() . '/assets/src/front/images/white1-removebg-preview.png' ?>" alt="Logo">
+						<img class="dark-logo logo-active" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-strony-www.webp' ?>" alt="Logo">
+						<img class="white-logo" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-sklepy-www.webp' ?>" alt="Logo">
 					</a>
 					<a href="<?= get_home_url() ?>" aria-label="Link Logo" class="front-page-logo-night">
-						<img class="" src="<?= get_template_directory_uri() . '/assets/src/front/images/dark2-removebg-preview.png' ?>" alt="Logo">
+						<img class="" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-strony-www.webp' ?>" alt="Logo">
 					</a>
 			
 				<?php
 				} else {
 				?>
 					<a href="<?= get_home_url() ?>" aria-label="Link Logo" class="rest-page">
-						<img class="dark-logo-rest-page" src="<?= get_template_directory_uri() . '/assets/src/front/images/white1-removebg-preview.png' ?>" alt="Logo">
-						<img class="white-logo-rest-page" src="<?= get_template_directory_uri() . '/assets/src/front/images/dark2-removebg-preview.png' ?>" alt="Logo">
+						<img class="dark-logo-rest-page" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-sklepy-www.webp' ?>" alt="Logo">
+						<img class="white-logo-rest-page" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-strony-www.webp' ?>" alt="Logo">
 					</a>
 				<?php
 				}
@@ -82,19 +82,19 @@
 				if (is_front_page()) {
 				?>
 					<a href="<?= get_home_url() ?>" aria-label="Link Logo" class="mobile-front-page-logo-day">
-						<img class="mobile-dark-logo logo-active" src="<?= get_template_directory_uri() . '/assets/src/front/images/dark2-removebg-preview.png' ?>" alt="Logo">
-						<img class="mobile-white-logo" src="<?= get_template_directory_uri() . '/assets/src/front/images/white1-removebg-preview.png' ?>" alt="Logo">
+						<img class="mobile-dark-logo logo-active" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-strony-www.webp' ?>" alt="Logo">
+						<img class="mobile-white-logo" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-sklepy-www.webp' ?>" alt="Logo">
 					</a>
 					<a href="<?= get_home_url() ?>" aria-label="Link Logo" class="mobile-front-page-logo-night">
-						<img class="" src="<?= get_template_directory_uri() . '/assets/src/front/images/dark2-removebg-preview.png' ?>" alt="Logo">
+						<img class="" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-strony-www.webp' ?>" alt="Logo">
 					</a>
 			
 				<?php
 				} else {
 				?>
 					<a href="<?= get_home_url() ?>" aria-label="Link Logo" class="mobile-rest-page">
-						<img class="mobile-dark-logo-rest-page" src="<?= get_template_directory_uri() . '/assets/src/front/images/white1-removebg-preview.png' ?>" alt="Logo">
-						<img class="mobile-white-logo-rest-page" src="<?= get_template_directory_uri() . '/assets/src/front/images/dark2-removebg-preview.png' ?>" alt="Logo">
+						<img class="mobile-dark-logo-rest-page" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-sklepy-www.webp' ?>" alt="Logo">
+						<img class="mobile-white-logo-rest-page" src="<?= get_template_directory_uri() . '/assets/src/front/images/elcode-strony-www.webp' ?>" alt="Logo">
 					</a>
 				<?php
 				}
