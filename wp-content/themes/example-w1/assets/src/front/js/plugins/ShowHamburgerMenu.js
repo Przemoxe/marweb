@@ -3,11 +3,13 @@ const hamburgerMenuLists = document.querySelector(".nav-top-mobile .main-contain
 const backgroundMobileMenu = document.querySelector(".nav-top-mobile")
 const singleLink = document.querySelector("#mobile-main-menu li a")
 const allLinks = document.querySelector(".nav-lists")
+var body = document.querySelector(":root");
 
 
 hamburgerButton.addEventListener("click", function(){
     hamburgerMenuLists.classList.toggle("nav-mobile-visible")
     backgroundMobileMenu.classList.toggle("nav-top-mobile-active")
+
 });
 
 

@@ -9610,6 +9610,7 @@ var hamburgerMenuLists = document.querySelector(".nav-top-mobile .main-container
 var backgroundMobileMenu = document.querySelector(".nav-top-mobile");
 var singleLink = document.querySelector("#mobile-main-menu li a");
 var allLinks = document.querySelector(".nav-lists");
+var body = document.querySelector(":root");
 
 hamburgerButton.addEventListener("click", function () {
     hamburgerMenuLists.classList.toggle("nav-mobile-visible");
@@ -9880,6 +9881,17 @@ if (mobilelogofrontDay || mobileLogofrontDark) {
   } else {
     mobileLogofrontDark.classList.remove('logo-active');
     mobilelogofrontDay.classList.add('logo-active');
+
+    var hamburgerButton = document.querySelector(".nav-hamburger .fa-bars");
+    var mobileDarkLogo = document.querySelector(".mobile-dark-logo");
+    var mobileWhiteLogo = document.querySelector(".mobile-white-logo");
+    var navList = document.querySelector(".nav-lists");
+    hamburgerButton.addEventListener("click", function () {
+      if (window.pageYOffset < 1) {
+        mobileDarkLogo.classList.toggle('logo-active');
+        mobileWhiteLogo.classList.toggle('logo-active');
+      }
+    });
   }
 
   buttonColors.forEach(function (el) {
@@ -9904,11 +9916,9 @@ if (!mobilelogofrontDay || !mobileLogofrontDark) {
   if (body.classList.contains('dark')) {
     mobileDarkLogoRestPage.classList.remove('logo-active');
     mobileWhiteLogoRestPage.classList.add('logo-active');
-    console.log('dark');
   } else {
     mobileDarkLogoRestPage.classList.add('logo-active');
     mobileWhiteLogoRestPage.classList.remove('logo-active');
-    console.log('day');
   }
   buttonColors.forEach(function (el) {
     el.addEventListener("click", function () {

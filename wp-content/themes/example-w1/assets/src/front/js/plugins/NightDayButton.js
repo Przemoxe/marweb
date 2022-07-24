@@ -164,9 +164,23 @@ if(mobilelogofrontDay || mobileLogofrontDark){
   if(mobileState == true){
     mobileLogofrontDark.classList.add('logo-active')
     mobilelogofrontDay.classList.remove('logo-active')
+
+
   }else{
     mobileLogofrontDark.classList.remove('logo-active')
     mobilelogofrontDay.classList.add('logo-active')
+
+    const hamburgerButton = document.querySelector(".nav-hamburger .fa-bars");
+    let mobileDarkLogo = document.querySelector(".mobile-dark-logo");
+    let mobileWhiteLogo = document.querySelector(".mobile-white-logo");
+    let navList = document.querySelector(".nav-lists")
+    hamburgerButton.addEventListener("click", function(){
+          if(window.pageYOffset < 1){
+            mobileDarkLogo.classList.toggle('logo-active')
+            mobileWhiteLogo.classList.toggle('logo-active')
+          }
+
+    });
   }
   
   buttonColors.forEach((el) => {
@@ -192,11 +206,9 @@ if(!mobilelogofrontDay || !mobileLogofrontDark){
   if(body.classList.contains('dark')){
     mobileDarkLogoRestPage.classList.remove('logo-active')
     mobileWhiteLogoRestPage.classList.add('logo-active')
-    console.log('dark')
   }else{
     mobileDarkLogoRestPage.classList.add('logo-active')
     mobileWhiteLogoRestPage.classList.remove('logo-active')
-    console.log('day')
   }
   buttonColors.forEach((el) => {
     el.addEventListener("click", function() {
