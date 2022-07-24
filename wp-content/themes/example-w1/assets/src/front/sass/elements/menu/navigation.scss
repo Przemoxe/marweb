@@ -139,6 +139,8 @@
   .main-container-px20 {
     height: 100%;
     .nav-mobile {
+          display: flex;
+    flex-wrap: wrap;
       @media(max-width:576px){
         padding-top: 12.5px;
         padding-bottom: 12.5px;
@@ -355,12 +357,15 @@
 
 .change-color-container {
   background-color: var(--MW-mobile-lists-li-color);
-  width: 50px;
+  width: 65px;
   height: 22px;
   border-radius: 50px;
   overflow: hidden;
   margin-left: 25px;
   margin-right:10px;
+  @media(max-width:1200px){
+    width:50px;
+  }
   .color-icon {
     height: 100%;
     display: flex;

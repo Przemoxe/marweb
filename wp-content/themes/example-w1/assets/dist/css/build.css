@@ -3392,11 +3392,14 @@ input:-webkit-autofill:active {
 }
 
 .nav-top-mobile .main-container-px20 .nav-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border-bottom: 1px solid var(--MW-menu-border-bottom);
   padding-top: 9px;
   padding-bottom: 9px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -3631,12 +3634,18 @@ input:-webkit-autofill:active {
 
 .change-color-container {
   background-color: var(--MW-mobile-lists-li-color);
-  width: 50px;
+  width: 65px;
   height: 22px;
   border-radius: 50px;
   overflow: hidden;
   margin-left: 25px;
   margin-right: 10px;
+}
+
+@media (max-width: 1200px) {
+  .change-color-container {
+    width: 50px;
+  }
 }
 
 .change-color-container .color-icon {
