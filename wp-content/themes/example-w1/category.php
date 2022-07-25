@@ -19,7 +19,13 @@ $currentlang = get_bloginfo('language');
         <nav class="single-blog-nav">
             <div class="container-title">
                 <h5>
-                    <?= get_the_title() ?>
+                <?php
+                    if (single_cat_title("", false)) {
+                        echo single_cat_title("", false);
+                    } else {
+                        echo get_the_title();
+                    }
+                    ?>
                 </h5>
             </div>
             <div class="container-links">
@@ -28,7 +34,13 @@ $currentlang = get_bloginfo('language');
                 </span>
                 <span class="breadcrumb-item active">
                     <i class="arrow right"></i>
-                    <?= single_cat_title("", false) ?>
+                    <?php
+                    if (single_cat_title("", false)) {
+                        echo single_cat_title("", false);
+                    } else {
+                        echo get_the_title();
+                    }
+                    ?>
                 </span>
             </div>
         </nav>
@@ -52,7 +64,7 @@ $currentlang = get_bloginfo('language');
                 <div class="blog-top-container">
                     <div class="blog-top-left">
                         <p class="preheading">
-                            <?= $preheading ?>
+                            <?= __('najnowszy wpis', 'marweb') ?>
                         </p>
                         <h1>
                             <?= get_the_title() ?>
@@ -97,7 +109,7 @@ $currentlang = get_bloginfo('language');
                             </div>
                             <div class="content-container">
                                 <h4>
-                                    <?= get_the_title() ?> 
+                                    <?= get_the_title() ?>
                                 </h4>
                                 <p class="mb-0 text-sm text-muted">
                                     <?= get_the_excerpt() ?>
@@ -111,7 +123,7 @@ $currentlang = get_bloginfo('language');
                 ?>
 
             <?php
-            $counter++;
+                $counter++;
             }
             wp_reset_postdata();
             ?>
@@ -122,14 +134,14 @@ $currentlang = get_bloginfo('language');
                     Categories
                 </h6>
                 <div class="categories-cards">
-                    <a href="<?php 
-                        if($currentlang == 'en-US'){
-                            echo $getAllUrlEng;
-                        }
-                        if($currentlang == 'pl-PL'){
-                            echo $getAllUrlPL;
-                        }
-                    ?>"><?= __('All', 'marweb')?></a>
+                    <a href="<?php
+                                if ($currentlang == 'en-US') {
+                                    echo $getAllUrlEng;
+                                }
+                                if ($currentlang == 'pl-PL') {
+                                    echo $getAllUrlPL;
+                                }
+                                ?>"><?= __('All', 'marweb') ?></a>
                     <?php
                     $args = array(
                         "hide_empty" => 0,
