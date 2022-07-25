@@ -1048,8 +1048,8 @@ input:-webkit-autofill:active {
 }
 
 .portfolio-section .main-container .container-portfolio-projects .portfolio-project .single-project .card:hover .card-img-top {
-  padding-bottom: 3px;
-  margin-top: -3px;
+  padding-bottom: 7px;
+  margin-top: -7px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -1057,8 +1057,8 @@ input:-webkit-autofill:active {
 .portfolio-section .main-container .container-portfolio-projects .portfolio-project .single-project .card:hover .card-img-top img {
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-box-shadow: 0 1rem 2rem -1rem black;
-          box-shadow: 0 1rem 2rem -1rem black;
+  -webkit-box-shadow: 0 1rem .8rem -1rem black;
+          box-shadow: 0 1rem .8rem -1rem black;
 }
 
 .section-our-techonologies {

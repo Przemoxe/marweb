@@ -752,12 +752,12 @@
             }
             &:hover {
               .card-img-top {
-                padding-bottom: 3px;
-                margin-top: -3px;
+                padding-bottom: 7px;
+                margin-top: -7px;
                 transition: 0.2s;
                 img {
                   transition: 0.2s;
-                  box-shadow: 0 1rem 2rem -1rem black;
+                  box-shadow: 0 1rem .8rem -1rem black;
                 }
               }
             }
