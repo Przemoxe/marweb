@@ -1025,7 +1025,7 @@ input:-webkit-autofill:active {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   overflow: hidden;
-  height: 240px;
+  height: 220px;
 }
 
 .portfolio-section .main-container .container-portfolio-projects .portfolio-project .single-project .card .card-img-top-blog img {
