@@ -192,7 +192,7 @@ $blogSectionPosts = get_field('blog_section_posts');
                 <div class="portfolio-project">
                     <div class="single-project">
                         <a href="<?= get_permalink($el->ID) ?>" class="card" aria-label="link blog">
-                            <div class="card-img-top">
+                            <div class="card-img-top-blog">
                                 <img src="<?= get_the_post_thumbnail_url($el->ID) ?>" alt="blog image">
                             </div>
                             <div class="card-body">

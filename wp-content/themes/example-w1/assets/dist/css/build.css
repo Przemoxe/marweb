@@ -1,7 +1,6 @@
 body {
   padding-top: 94px;
   margin: 0;
-  max-width: 1920px;
 }
 
 @media (max-width: 1200px) {
@@ -1018,6 +1017,22 @@ input:-webkit-autofill:active {
 
 .portfolio-section .main-container .container-portfolio-projects .portfolio-project .single-project .card .card-img-top img {
   width: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.portfolio-section .main-container .container-portfolio-projects .portfolio-project .single-project .card .card-img-top-blog {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  overflow: hidden;
+  height: 240px;
+}
+
+.portfolio-section .main-container .container-portfolio-projects .portfolio-project .single-project .card .card-img-top-blog img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
