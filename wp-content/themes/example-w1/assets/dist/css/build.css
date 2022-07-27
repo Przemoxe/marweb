@@ -1550,6 +1550,13 @@ input:-webkit-autofill:active {
   color: var(--MW-form-h4);
 }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
+}
+
 .archive-portfolio-top-section {
   background-color: var(--third-color);
   padding-top: 60px;
