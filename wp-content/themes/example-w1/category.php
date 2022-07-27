@@ -171,7 +171,9 @@ $currentlang = get_bloginfo('language');
         </div>
     </div>
 </section>
-
+<div id="stop" class="scrollTop">
+    <span><a href="">Top</a></span>
+  </div>
 <?php
 get_footer();
 ?>

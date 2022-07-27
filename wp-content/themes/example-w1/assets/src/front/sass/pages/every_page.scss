@@ -58,3 +58,32 @@ h1,h2,h3,h4,h5,h6{
     }
   }
 }
+
+.scrollTop {
+  position: fixed;
+  right: 10%;
+  bottom: 10px;
+  background-color: #343a40;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+  width:50px;
+  height:50px;
+  z-index: 1000;
+}
+
+.scrollTop a {
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  position: absolute;
+  width: 100%;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  i{
+    font-size:50px;
+    margin-top: -5px;
+  }
+}

@@ -3968,6 +3968,10 @@ var _DelayAnchorScroll = __webpack_require__(348);
 
 var _DelayAnchorScroll2 = _interopRequireDefault(_DelayAnchorScroll);
 
+var _ScrollTopButton = __webpack_require__(349);
+
+var _ScrollTopButton2 = _interopRequireDefault(_ScrollTopButton);
+
 function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : { default: obj };
 }
@@ -3986,7 +3990,7 @@ window.$ = jQuery;
 document.addEventListener('DOMContentLoaded', function () {
     // schema: new Component().init();
     requestAnimationFrame(function () {
-        [_NightDayButton2.default, _FaqAccordion2.default, _AutoResizeTextarea2.default, _ShowHamburgerMenu2.default, _NavExample2.default, _DelayAnchorScroll2.default];
+        [_NightDayButton2.default, _FaqAccordion2.default, _AutoResizeTextarea2.default, _ShowHamburgerMenu2.default, _NavExample2.default, _DelayAnchorScroll2.default, _ScrollTopButton2.default];
     });
 });
 
@@ -10000,6 +10004,44 @@ $('a[href*="#"]')
     }
   }
 });
+
+/***/ }),
+/* 349 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// BY KAREN GRIGORYAN
+
+$(document).ready(function () {
+  /******************************
+      BOTTOM SCROLL TOP BUTTON
+   ******************************/
+
+  // declare variable
+  var scrollTop = $(".scrollTop");
+
+  $(window).scroll(function () {
+    // declare variable
+    var topPos = $(this).scrollTop();
+
+    // if user scrolls down - show scroll to top button
+    if (topPos > 100) {
+      $(scrollTop).css("opacity", "1");
+    } else {
+      $(scrollTop).css("opacity", "0");
+    }
+  }); // scroll END
+
+  //Click event to scroll to top
+  $(scrollTop).click(function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+  }); // click() scroll top EMD
+}); // ready() END
 
 /***/ })
 /******/ ]);
