@@ -1550,6 +1550,10 @@ input:-webkit-autofill:active {
   color: var(--MW-form-h4);
 }
 
+h2 {
+  scroll-margin-top: 4em;
+}
+
 .archive-portfolio-top-section {
   background-color: var(--third-color);
   padding-top: 60px;
