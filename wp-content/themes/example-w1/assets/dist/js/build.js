@@ -3988,7 +3988,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 var delay;
 
-$('a').click(function (e) {
+$('.blog-content ul li a').click(function (e) {
     e.preventDefault();
     delay = 0;
 
