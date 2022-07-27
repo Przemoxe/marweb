@@ -3964,8 +3964,12 @@ var _NightDayButton = __webpack_require__(338);
 
 var _NightDayButton2 = _interopRequireDefault(_NightDayButton);
 
+var _DelayAnchorScroll = __webpack_require__(348);
+
+var _DelayAnchorScroll2 = _interopRequireDefault(_DelayAnchorScroll);
+
 function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
+    return obj && obj.__esModule ? obj : { default: obj };
 }
 
 window.$ = jQuery;
@@ -3980,42 +3984,10 @@ window.$ = jQuery;
  */
 
 document.addEventListener('DOMContentLoaded', function () {
-  // schema: new Component().init();
-  requestAnimationFrame(function () {
-    [_NightDayButton2.default, _FaqAccordion2.default, _AutoResizeTextarea2.default, _ShowHamburgerMenu2.default, _NavExample2.default];
-  });
-});
-
-// Select all links with hashes
-$('a[href*="#"]')
-// Remove links that don't actually link to anything
-.not('[href="#"]').not('[href="#0"]').click(function (event) {
-  // On-page links
-  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-    // Figure out element to scroll to
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-    // Does a scroll target exist?
-    if (target.length) {
-      // Only prevent default if animation is actually gonna happen
-      event.preventDefault();
-      $('html, body').animate({
-        scrollTop: target.offset().top
-      }, 1000, function () {
-        // Callback after animation
-        // Must change focus!
-        var $target = $(target);
-        $target.focus();
-        if ($target.is(":focus")) {
-          // Checking if the target was focused
-          return false;
-        } else {
-          $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-          $target.focus(); // Set focus again
-        };
-      });
-    }
-  }
+    // schema: new Component().init();
+    requestAnimationFrame(function () {
+        [_NightDayButton2.default, _FaqAccordion2.default, _AutoResizeTextarea2.default, _ShowHamburgerMenu2.default, _NavExample2.default, _DelayAnchorScroll2.default];
+    });
 });
 
 /***/ }),
@@ -9982,6 +9954,52 @@ if (!mobilelogofrontDay || !mobileLogofrontDark) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */,
+/* 348 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// Select all links with hashes
+
+$('a[href*="#"]')
+// Remove links that don't actually link to anything
+.not('[href="#"]').not('[href="#0"]').click(function (event) {
+  // On-page links
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    // Figure out element to scroll to
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    // Does a scroll target exist?
+    if (target.length) {
+      // Only prevent default if animation is actually gonna happen
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 500, function () {
+        // Callback after animation
+        // Must change focus!
+        var $target = $(target);
+        $target.focus();
+        if ($target.is(":focus")) {
+          // Checking if the target was focused
+          return false;
+        } else {
+          $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+          $target.focus(); // Set focus again
+        };
+      });
+    }
+  }
+});
 
 /***/ })
 /******/ ]);
