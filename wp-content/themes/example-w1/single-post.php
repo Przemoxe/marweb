@@ -16,6 +16,18 @@ get_header();
                 </span>
                 <span class="breadcrumb-item active">
                     <i class="arrow right"></i>
+                    <?php 
+                    
+             
+                    foreach(get_the_category() as $el){
+                       ?>
+                       <a href="/wiedza">Wiedza</a>
+                       <i class="arrow right"></i>
+                       <a href="<?=get_category_link($el)?>"><?=$el->name?></a>
+                       <i class="arrow right"></i>
+                       <?php
+                    }
+                    ?>
                     <?= get_the_title() ?>
                 </span>
             </div>
@@ -28,6 +40,7 @@ get_header();
         <div class="blog-header">
             <h1>
                 <?= get_the_title() ?>
+                
             </h1>
         </div>
         <div class="blog-thumbnail">

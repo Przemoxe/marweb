@@ -26,6 +26,7 @@ $currentlang = get_bloginfo('language');
                         echo get_the_title();
                     }
                     ?>
+                    
                 </h5>
             </div>
             <div class="container-links">
@@ -33,10 +34,15 @@ $currentlang = get_bloginfo('language');
                     <a href="<?= get_home_url() ?>"><?= get_the_title(get_option('page_on_front')); ?></a>
                 </span>
                 <span class="breadcrumb-item active">
+                    
                     <i class="arrow right"></i>
                     <?php
                     if (single_cat_title("", false)) {
-                        echo single_cat_title("", false);
+                        ?>
+                            <a href="/wiedza">Wiedza</a>
+                            <i class="arrow right"></i>
+                            <?=single_cat_title("", false)?>
+                        <?php
                     } else {
                         echo get_the_title();
                     }

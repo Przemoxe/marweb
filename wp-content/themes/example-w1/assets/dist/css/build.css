@@ -3339,7 +3339,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-top .nav-container .main-menu #main-menu li a:hover {
-  color: orange !important;
+  color: var(--MW-color-const-1) !important;
 }
 
 .nav-top .nav-container .main-menu #main-menu li:last-child a {

@@ -71,7 +71,7 @@
             font-family: Objective, sans-serif;
             line-height: 4;
             &:hover {
-              color: orange !important;
+              color: var(--MW-color-const-1) !important;
             }
           }
           &:last-child {
