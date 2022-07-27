@@ -2123,7 +2123,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .single-blog-nav {
   background-color: #343a40;
-  height: 72px;
+  min-height: 72px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
