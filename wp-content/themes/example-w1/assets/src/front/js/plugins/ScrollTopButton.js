@@ -26,7 +26,7 @@ $(document).ready(function() {
     $(scrollTop).click(function() {
       $('html, body').animate({
         scrollTop: 0
-      }, 800);
+      }, 500);
       return false;
   
     }); // click() scroll top EMD
