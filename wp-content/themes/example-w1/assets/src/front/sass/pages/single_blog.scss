@@ -1,4 +1,7 @@
 .single-blog-nav{
+  @media(max-width:576px){
+    padding:5px 0;
+  }
   background-color: #343a40;
   min-height:72px;
   display: flex;

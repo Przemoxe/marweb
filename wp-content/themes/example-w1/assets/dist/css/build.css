@@ -2132,6 +2132,12 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
 }
 
+@media (max-width: 576px) {
+  .single-blog-nav {
+    padding: 5px 0;
+  }
+}
+
 .single-blog-nav .main-container-px20 {
   width: 100%;
 }
