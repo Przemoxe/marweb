@@ -1551,10 +1551,8 @@ input:-webkit-autofill:active {
 }
 
 a.anchor {
-  display: block;
-  position: relative;
-  top: -250px;
-  visibility: hidden;
+  padding-top: 40px;
+  margin-top: -40px;
 }
 
 .archive-portfolio-top-section {
