@@ -384,6 +384,10 @@ input:-webkit-autofill:active {
   padding-left: 10px;
 }
 
+.intro-section .main-container-px20 .ask-us-container .call-us div a {
+  font-family: Objective, sans-serif;
+}
+
 @media (max-width: 1200px) {
   .intro-section {
     margin-top: -94px;
