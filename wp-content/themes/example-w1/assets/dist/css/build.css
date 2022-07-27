@@ -1554,6 +1554,11 @@ h2 {
   scroll-margin-top: 4em;
 }
 
+.blog-content ul li a {
+  color: var(--MW-form-h4);
+  text-decoration: none;
+}
+
 .archive-portfolio-top-section {
   background-color: var(--third-color);
   padding-top: 60px;
