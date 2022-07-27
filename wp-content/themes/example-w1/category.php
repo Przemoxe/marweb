@@ -17,18 +17,7 @@ $currentlang = get_bloginfo('language');
 <nav class="single-blog-nav">
     <div class="main-container-px20">
         <nav class="single-blog-nav">
-            <div class="container-title">
-                <h5>
-                <?php
-                    if (single_cat_title("", false)) {
-                        echo single_cat_title("", false);
-                    } else {
-                        echo get_the_title();
-                    }
-                    ?>
-                    
-                </h5>
-            </div>
+
             <div class="container-links">
                 <span class="breadcrumb-item">
                     <a href="<?= get_home_url() ?>"><?= get_the_title(get_option('page_on_front')); ?></a>
@@ -48,6 +37,20 @@ $currentlang = get_bloginfo('language');
                     }
                     ?>
                 </span>
+            </div>
+            <div class="container-title">
+                <h5>
+                <?php
+                    if (single_cat_title("", false)) {
+                        echo single_cat_title("", false);
+                    } else {
+                     ?>
+                     <?=__('Wszystkie kategorie', 'marweb')?>
+                     <?php
+                    }
+                    ?>
+                    
+                </h5>
             </div>
         </nav>
     </div>
@@ -137,7 +140,7 @@ $currentlang = get_bloginfo('language');
         <div class="archive-blog-posts-nav">
             <div>
                 <h6 class="title">
-                    Categories
+                    <?=__('Kategorie', 'marweb')?>
                 </h6>
                 <div class="categories-cards">
                     <a href="<?php
@@ -147,7 +150,7 @@ $currentlang = get_bloginfo('language');
                                 if ($currentlang == 'pl-PL') {
                                     echo $getAllUrlPL;
                                 }
-                                ?>"><?= __('All', 'marweb') ?></a>
+                                ?>"><?= __('Wszystkie', 'marweb') ?></a>
                     <?php
                     $args = array(
                         "hide_empty" => 0,

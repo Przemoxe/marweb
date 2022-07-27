@@ -2154,15 +2154,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .single-blog-nav .main-container-px20 .single-blog-nav .container-links .breadcrumb-item a {
-  color: var(--MW-color-const-1);
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   font-family: Objective, sans-serif;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .single-blog-nav .main-container-px20 .single-blog-nav .container-links .active {
-  color: rgba(255, 255, 255, 0.5);
+  color: white;
+  text-decoration: none;
+  font-family: Objective, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .single-blog-section {

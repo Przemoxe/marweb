@@ -5,11 +5,7 @@ get_header();
 <nav class="single-blog-nav">
     <div class="main-container-px20">
         <nav class="single-blog-nav">
-            <div class="container-title">
-                <h5>
-                    Blog post
-                </h5>
-            </div>
+
             <div class="container-links">
                 <span class="breadcrumb-item">
                     <a href="<?= get_home_url() ?>"><?= get_the_title( get_option('page_on_front') ); ?></a>
@@ -30,6 +26,11 @@ get_header();
                     ?>
                     <?= get_the_title() ?>
                 </span>
+            </div>
+            <div class="container-title">
+                <h5>
+                    <?=__('Wpis', 'marweb')?>
+                </h5>
             </div>
         </nav>
     </div>

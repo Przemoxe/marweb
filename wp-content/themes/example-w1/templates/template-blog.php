@@ -117,10 +117,10 @@ $getAllUrl = get_field('all_categories_url');
         <div class="archive-blog-posts-nav">
             <div>
                 <h6 class="title">
-                    Categories
+                    <?=__('Kategorie', 'marweb')?>
                 </h6>
                 <div class="categories-cards">
-                    <a href="<?= $getAllUrl ?>"><?= __('All', 'marweb')?></a>
+                    <a href="<?= $getAllUrl ?>"><?= __('Wszystkie', 'marweb')?></a>
                     <?php
                     $args = array(
                         "hide_empty" => 0,
