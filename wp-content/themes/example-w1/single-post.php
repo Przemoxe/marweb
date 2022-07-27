@@ -96,9 +96,11 @@ get_header();
         </div>
     </div>
 </section>
-<div id="stop" class="scrollTop">
-    <a href=""><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-  </div>
+<div class="main-container-px20">
+    <div id="stop" class="scrollTop">
+        <a href=""><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    </div>
+</div>
 <?php
 get_footer();
 ?>
