@@ -172,8 +172,8 @@ $currentlang = get_bloginfo('language');
     </div>
 </section>
 <div id="stop" class="scrollTop">
-    <span><a href="">Top</a></span>
-  </div>
+    <a href=""><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+</div>
 <?php
 get_footer();
 ?>
