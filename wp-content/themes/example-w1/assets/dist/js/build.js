@@ -3986,6 +3986,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+var delay;
+
+$('a').click(function (e) {
+    e.preventDefault();
+    delay = 0;
+
+    if ($(this).attr('href').split('#')[1] === 'whatwedo') {
+        delay = 1000;
+    }
+
+    setTimeout(function () {
+        // do scroll here
+    }, delay);
+});
+
 /***/ }),
 /* 132 */
 /***/ (function(module, exports, __webpack_require__) {

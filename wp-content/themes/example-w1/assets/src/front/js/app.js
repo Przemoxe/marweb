@@ -26,3 +26,18 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
     });
 });
+
+var delay;
+
+$('a').click(function(e) {
+    e.preventDefault();
+    delay = 0;
+
+    if ($(this).attr('href').split('#')[1] === 'whatwedo') {
+        delay = 1000;
+    }
+
+    setTimeout(function() {
+        // do scroll here
+    },delay);
+});
