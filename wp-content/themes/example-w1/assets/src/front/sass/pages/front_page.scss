@@ -22,7 +22,10 @@
         font-weight: 600;
         text-transform: uppercase;
         font-family: Objective, sans-serif;
-        font-size: 12px;
+        font-size: 26px;
+        @media(max-width:768px){
+          font-size: 17px;
+        }
       }
       .heading {
         color: white;
@@ -36,13 +39,15 @@
       .subheading {
         color: rgba(255, 255, 255, 0.9);
         font-family: Objective, sans-serif;
-        font-size: 12px;
+        font-size: 18px;
         margin-bottom: 34px;
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
-        font-size: 14px;
         font-weight: 500;
         line-height: 1.75;
+        @media(max-width:768px){
+          font-size: 16px;
+        }
       }
       .buttons {
         display: flex;
@@ -337,7 +342,7 @@
         font-weight: 600;
         text-transform: uppercase;
         font-family: Objective, sans-serif;
-        font-size: 12px;
+
       }
       .heading {
         color: white;
@@ -351,7 +356,6 @@
       .subheading {
         color: rgba(255, 255, 255, 0.9);
         font-family: Objective, sans-serif;
-        font-size: 12px;
         margin-bottom: 34px;
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
