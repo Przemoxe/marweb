@@ -98,7 +98,7 @@ get_header();
 </section>
 <div class="main-container-px20">
     <div id="stop" class="scrollTop">
-        <a href="" tabindex="-1"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+        <div class="arrow-box" tabindex="-1"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
     </div>
 </div>
 <?php

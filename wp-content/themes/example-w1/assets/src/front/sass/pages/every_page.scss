@@ -71,10 +71,9 @@ h1,h2,h3,h4,h5,h6{
   z-index: 1000;
 }
 
-.scrollTop a {
+.scrollTop .arrow-box {
   font-size: 18px;
   color: #fff;
-  position: absolute;
   position: absolute;
   width: 100%;
   text-decoration: none;
@@ -82,6 +81,7 @@ h1,h2,h3,h4,h5,h6{
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   i{
     font-size:50px;
     margin-top: -5px;
