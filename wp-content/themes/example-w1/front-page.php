@@ -46,12 +46,12 @@ $blogSectionPosts = get_field('blog_section_posts');
     </div>
     <div class="main-container-px20">
         <div class="banner-container">
-            <p class="preheading">
+            <h2 class="preheading">
                 <?= $bannerPreheading ?>
-            </p>
-            <h1 class="heading">
+            </h2>
+            <h2 class="heading">
                 <?= $bannerHeading ?>
-            </h1>
+            </h2>
             <p class="subheading">
                 <?= $bannerSubheading ?>
             </p>
