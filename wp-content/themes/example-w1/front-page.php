@@ -42,7 +42,7 @@ $blogSectionPosts = get_field('blog_section_posts');
 <section class="intro-section">
     <div class="bg-overlay"></div>
     <div class="bg-img">
-        <img src="<?= $bannerImg ?>" alt="Zdjęcie bannera">
+        <img src="<?= $bannerImg ?>" alt="banner image">
     </div>
     <div class="main-container-px20">
         <div class="banner-container">
@@ -210,6 +210,11 @@ $blogSectionPosts = get_field('blog_section_posts');
             <?php
             }
             ?>
+        </div>
+    </div>
+    <div class="main-container-px20">
+        <div class="services-description">
+            <?php the_content()?>
         </div>
     </div>
 </section>
