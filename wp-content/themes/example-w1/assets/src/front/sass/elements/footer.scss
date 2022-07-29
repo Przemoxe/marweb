@@ -111,8 +111,11 @@ footer {
                 color: #cecece;
 
                 a {
+                  @media(max-width:768px){
+                    padding: 24px 0px;
+                  }
                   display: block;
-                  padding: 13px 0px;
+                  padding: 7px 0px;
                   text-decoration: none;
                   font-size: 13px;
                   color: #cecece !important;
